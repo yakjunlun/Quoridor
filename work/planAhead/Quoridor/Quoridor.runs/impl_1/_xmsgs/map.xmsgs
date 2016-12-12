@@ -11,12 +11,12 @@
 <msg type="info" file="LIT" num="243" delta="new" >Logical network <arg fmt="%s" index="1">avr_rx_busy_IBUF</arg> has no load.
 </msg>
 
-<msg type="info" file="LIT" num="395" delta="new" >The above <arg fmt="%s" index="1">info</arg> message is repeated <arg fmt="%d" index="2">11</arg> more times for the following (max. 5 shown):
+<msg type="info" file="LIT" num="395" delta="new" >The above <arg fmt="%s" index="1">info</arg> message is repeated <arg fmt="%d" index="2">8</arg> more times for the following (max. 5 shown):
 <arg fmt="%s" index="3">io_dip(6)_IBUF,
 io_dip(5)_IBUF,
 io_dip(4)_IBUF,
-io_dip(2)_IBUF,
-io_dip(1)_IBUF</arg>
+spi_mosi_IBUF,
+spi_ss_IBUF</arg>
 To see the details of these <arg fmt="%s" index="4">info</arg> messages, please use the -detail switch.
 </msg>
 

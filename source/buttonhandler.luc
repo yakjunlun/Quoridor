@@ -56,12 +56,12 @@ module buttonHandler (
       
     /* Left Button */
     else if(edge_detector3.out==1){
-      button.d=b101001;
+      button.d=b100001;
     }
       
     /* Right Button */
     else if(edge_detector4.out==1){
-      button.d=b100001;
+      button.d=b101001;
     }
       
     //enter for wall  

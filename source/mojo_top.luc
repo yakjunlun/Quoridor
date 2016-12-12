@@ -27,7 +27,7 @@ module mojo_top (
     sig b[3];
     //sig wall;
     sig rst;                  // reset signal
-    sig fn;
+    sig fn[5];
   sig pos_rst;
       
   
@@ -44,7 +44,7 @@ module mojo_top (
 
 
     .rst(rst)  {
-    counter sclk(#SIZE(1),#DIV(25));
+    counter sclk(#SIZE(1),#DIV(24));
     buttonHandler buttonHandler;
     counter1 counter1;
     wallcounter wallcounter;
@@ -81,7 +81,7 @@ module mojo_top (
   
      //a=35hAC000000;
      b=3b0;
-     fn=5b0; 
+     //fn=5b0; 
     
     reset_cond.in = ~rst_n; // input raw inverted reset signal
     rst = reset_cond.out;   // conditioned reset
@@ -107,21 +107,23 @@ module mojo_top (
     buttonHandler.btnright=io_button[4];
     buttonHandler.enter=io_button[1];
     
-    fn=b100000;
-    //fn=c{io_dip[2:0],buttonHandler.out[4:3]}; //fn is determined by dip(modes - p1, p2, wall) and buttonHandler
-    b=b001;
-    //b=buttonHandler.out[2:0];  
+    //fn=b10000;
+    fn=c{io_dip[2:0],buttonHandler.out[4:3]}; //fn is determined by dip(modes - p1, p2, wall) and buttonHandler
+    //b=b001;
+    b=buttonHandler.out[2:0];  
     a=pos.out;    
     
     alu.alufn=fn; //ALUFN mode selector 
+    led[4:0]=fn;
     alu.a=a;      //36bit input to alu.a - [errorbit][apos][bpos][wallpos][wallmodes]
     alu.b=b;      //3bit input 
     
-    led=a[34:30];
+    //led[4:0]=a[34:30];
     io_led[7] = cntr.value;
     //io_led[4:0] = column.out;
    //io_led[2:0]= io_dip[2:0];
     io_led[6] = pos.debug;
+    led[7:5] = alu.debug;
 
     buttonHandler.button_rst=io_dip[3]; //buttonHandler reset signal
     
@@ -153,11 +155,22 @@ module mojo_top (
     row.pos = 0;
     column.pos = 0;
     
-    row.pos = a[34:30]; //input player 1 position into row module to get the row to ON
+    case(counter1.out){
+      b00:
+        row.pos = a[34:30]; //input player 1 position into row module to get the row to ON
         gp10row[row.out]=0;  //output of row module is wired to all my rows
         column.pos = a[34:30]; //same for columns
         p1col[column.out] = 1;
-    io_led[column.out]=1;
+        //light up player 1
+      b01:
+        row.pos= a[29:25];
+        bp20row[row.out]=0;
+        column.pos = a[29:25];
+        p1col[column.out] = 1;
+        //light up player 2
+      //b10: //io_led[0]=1;//scan wall
+      
+    }
     
     
     

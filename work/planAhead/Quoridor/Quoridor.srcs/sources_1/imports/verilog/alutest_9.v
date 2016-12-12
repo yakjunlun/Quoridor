@@ -10,6 +10,7 @@ module alutest_9 (
     input [35:0] a,
     input [4:0] alufn,
     input [2:0] b,
+    output reg [2:0] debug,
     output reg [35:0] result
   );
   
@@ -29,19 +30,19 @@ module alutest_9 (
   reg [35:0] a1;
   
   always @* begin
+    debug = 1'h0;
     M_adder_a = a[30+4-:5];
     M_adder_b = b;
     M_adder_alufn = alufn[0+1-:2];
     a1 = {1'h0, a[0+34-:35]};
     if (alufn[0+1-:2] == 2'h3) begin
       result = a;
+      debug = 3'h1;
     end else begin
       
       case (alufn[1+3-:4])
-        default: begin
-          result = a;
-        end
-        10'h3e8: begin
+        4'h8: begin
+          debug = 3'h2;
           M_adder_a = a[30+4-:5];
           if (M_adder_sum == a[25+4-:5]) begin
             result = {1'h1, a[0+34-:35]};
@@ -53,7 +54,8 @@ module alutest_9 (
             end
           end
         end
-        7'h64: begin
+        4'h4: begin
+          debug = 3'h3;
           M_adder_a = a[25+4-:5];
           if (M_adder_sum == a[30+4-:5]) begin
             result = {1'h1, a[0+34-:35]};
@@ -65,17 +67,23 @@ module alutest_9 (
             end
           end
         end
-        4'ha: begin
+        4'h2: begin
+          debug = 3'h4;
           M_adder_a = a[20+4-:5];
           result = {1'h0, a[25+9-:10], M_adder_sum, a[0+19-:20]};
         end
-        4'hb: begin
+        4'h3: begin
+          debug = 3'h5;
           if (a[(a[20+4-:5])*1+0-:1] == 1'h1) begin
             result = {1'h1, a[0+34-:35]};
           end else begin
             a1[(a[20+4-:5])*1+0-:1] = 1'h1;
             result = a1;
           end
+        end
+        default: begin
+          result = a;
+          debug = 3'h7;
         end
       endcase
     end

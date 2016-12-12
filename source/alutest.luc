@@ -4,6 +4,7 @@ module alutest (
   input a[36],  
   input alufn[5],
   input b[3],
+    output debug[3],
    
            
   output result[36] ){  //output into mojo_top
@@ -14,6 +15,7 @@ module alutest (
   
   
   always{
+  debug = 0;
   adder.a=a[34:30];
   adder.b=b;
   adder.alufn=alufn[1:0];
@@ -22,14 +24,14 @@ module alutest (
     
      if (alufn[1:0] == b11){
     result = a;
+      debug = b001;
       }
     else{
     
     case (alufn[4:1]){    //first 4 bits of alufn
     
-      default:result = a;
-    
-      1000: //player a
+      b1000: //player a
+        debug = b010;
         adder.a=a[34:30];
         if (adder.sum==a[29:25]){
             result=c{1,a[34:0]};}          //error result, msb=1
@@ -39,7 +41,8 @@ module alutest (
         else{  
         result=c{0,adder.sum,a[29:0]};}   
         
-      0100: //player b
+      b0100: //player b
+        debug = b011;
          adder.a=a[29:25];
         if (adder.sum==a[34:30]){
             result=c{1,a[34:0]};}
@@ -49,18 +52,24 @@ module alutest (
         else{
           result=c{0, a[34:30], adder.sum,a[24:0]};}   
         
-      0010: //wall cursor
+      b0010: //wall cursor
+        debug = b100;
         adder.a=a[24:20];
         result=c{0,a[34:25],adder.sum,a[19:0]};
         
         
-      0011: //wall enter
+      b0011: //wall enter
+        debug = b101;
         if (a[a[24:20]]==1){
             result=c{1,a[34:0]};}
         else{
         
         a1[a[24:20]]=1;
-        result=a1;}      
+        result=a1;}
+            
+       default:
+        result = a;
+        debug = b111;      
         
         }
     }

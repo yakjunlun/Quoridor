@@ -46,18 +46,18 @@ module pos_8 (
   
   always @(posedge clk) begin
     if (rst == 1'b1) begin
-      M_debug1_q <= 1'h0;
+      M_regs_q <= 36'h0ac000000;
     end else begin
-      M_debug1_q <= M_debug1_d;
+      M_regs_q <= M_regs_d;
     end
   end
   
   
   always @(posedge clk) begin
     if (rst == 1'b1) begin
-      M_regs_q <= 36'h0ac000000;
+      M_debug1_q <= 1'h0;
     end else begin
-      M_regs_q <= M_regs_d;
+      M_debug1_q <= M_debug1_d;
     end
   end
   

@@ -35,7 +35,7 @@ module mojo_top_0 (
   
   reg rst;
   
-  reg fn;
+  reg [4:0] fn;
   
   reg pos_rst;
   
@@ -119,6 +119,7 @@ module mojo_top_0 (
   localparam S3_main = 2'd3;
   
   reg [1:0] M_main_d, M_main_q = S0_main;
+  wire [3-1:0] M_alu_debug;
   wire [36-1:0] M_alu_result;
   reg [36-1:0] M_alu_a;
   reg [5-1:0] M_alu_alufn;
@@ -129,6 +130,7 @@ module mojo_top_0 (
     .a(M_alu_a),
     .alufn(M_alu_alufn),
     .b(M_alu_b),
+    .debug(M_alu_debug),
     .result(M_alu_result)
   );
   wire [1-1:0] M_cntr_value;
@@ -142,7 +144,6 @@ module mojo_top_0 (
     M_main_d = M_main_q;
     
     b = 3'h0;
-    fn = 5'h00;
     M_reset_cond_in = ~rst_n;
     rst = M_reset_cond_out;
     io_led = 8'h00;
@@ -162,15 +163,16 @@ module mojo_top_0 (
     M_buttonHandler_btnleft = io_button[3+0-:1];
     M_buttonHandler_btnright = io_button[4+0-:1];
     M_buttonHandler_enter = io_button[1+0-:1];
-    fn = 6'h20;
-    b = 3'h1;
+    fn = {io_dip[0+2-:3], M_buttonHandler_out[3+1-:2]};
+    b = M_buttonHandler_out[0+2-:3];
     a = M_pos_out;
     M_alu_alufn = fn;
+    led[0+4-:5] = fn;
     M_alu_a = a;
     M_alu_b = b;
-    led = a[30+4-:5];
     io_led[7+0-:1] = M_cntr_value;
     io_led[6+0-:1] = M_pos_debug;
+    led[5+2-:3] = M_alu_debug;
     M_buttonHandler_button_rst = io_dip[3+0-:1];
     
     case (M_main_q)
@@ -198,11 +200,21 @@ module mojo_top_0 (
     pos_rst = io_dip[7+0-:1];
     M_row_pos = 1'h0;
     M_column_pos = 1'h0;
-    M_row_pos = a[30+4-:5];
-    gp10row[(M_row_out)*1+0-:1] = 1'h0;
-    M_column_pos = a[30+4-:5];
-    p1col[(M_column_out)*1+0-:1] = 1'h1;
-    io_led[(M_column_out)*1+0-:1] = 1'h1;
+    
+    case (M_counter1_out)
+      2'h0: begin
+        M_row_pos = a[30+4-:5];
+        gp10row[(M_row_out)*1+0-:1] = 1'h0;
+        M_column_pos = a[30+4-:5];
+        p1col[(M_column_out)*1+0-:1] = 1'h1;
+      end
+      2'h1: begin
+        M_row_pos = a[25+4-:5];
+        bp20row[(M_row_out)*1+0-:1] = 1'h0;
+        M_column_pos = a[25+4-:5];
+        p1col[(M_column_out)*1+0-:1] = 1'h1;
+      end
+    endcase
   end
   
   always @(posedge M_sclk_value) begin

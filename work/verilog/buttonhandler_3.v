@@ -113,10 +113,10 @@ module buttonHandler_3 (
         M_button_d = 6'h2d;
       end else begin
         if (M_edge_detector3_out == 1'h1) begin
-          M_button_d = 6'h29;
+          M_button_d = 6'h21;
         end else begin
           if (M_edge_detector4_out == 1'h1) begin
-            M_button_d = 6'h21;
+            M_button_d = 6'h29;
           end else begin
             if (M_edge_detector_out == 1'h1) begin
               M_button_d = 6'h30;

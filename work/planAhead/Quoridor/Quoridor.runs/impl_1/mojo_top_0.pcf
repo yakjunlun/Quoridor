@@ -1,5 +1,5 @@
 //! **************************************************************************
-// Written by: Map P.20131013 on Mon Dec 12 19:34:05 2016
+// Written by: Map P.20131013 on Mon Dec 12 20:33:30 2016
 //! **************************************************************************
 
 SCHEMATIC START;
@@ -19,12 +19,12 @@ COMP "wall0row[0]" LOCATE = SITE "P84" LEVEL 1;
 COMP "wall0row[1]" LOCATE = SITE "P85" LEVEL 1;
 COMP "wall0row[2]" LOCATE = SITE "P82" LEVEL 1;
 COMP "wall0row[3]" LOCATE = SITE "P83" LEVEL 1;
-COMP "io_dip(0)" LOCATE = SITE "P120" LEVEL 1;
-COMP "io_dip(1)" LOCATE = SITE "P121" LEVEL 1;
-COMP "io_dip(2)" LOCATE = SITE "P118" LEVEL 1;
 COMP "io_dip(4)" LOCATE = SITE "P116" LEVEL 1;
 COMP "io_dip(5)" LOCATE = SITE "P117" LEVEL 1;
 COMP "io_dip(6)" LOCATE = SITE "P114" LEVEL 1;
+COMP "io_dip[0]" LOCATE = SITE "P120" LEVEL 1;
+COMP "io_dip[1]" LOCATE = SITE "P121" LEVEL 1;
+COMP "io_dip[2]" LOCATE = SITE "P118" LEVEL 1;
 COMP "io_dip[3]" LOCATE = SITE "P119" LEVEL 1;
 COMP "io_dip[7]" LOCATE = SITE "P115" LEVEL 1;
 COMP "rst_n" LOCATE = SITE "P38" LEVEL 1;
@@ -65,6 +65,8 @@ COMP "gp10row[3]" LOCATE = SITE "P75" LEVEL 1;
 COMP "gp10row[4]" LOCATE = SITE "P74" LEVEL 1;
 COMP "spi_mosi" LOCATE = SITE "P44" LEVEL 1;
 TIMEGRP clk = BEL "buttonHandler/M_button_q_5" BEL
+        "buttonHandler/M_button_q_4" BEL "buttonHandler/M_button_q_3" BEL
+        "buttonHandler/M_button_q_2" BEL
         "buttonHandler/edge_detector1/M_last_q" BEL
         "buttonHandler/edge_detector2/M_last_q" BEL
         "buttonHandler/edge_detector3/M_last_q" BEL
@@ -182,7 +184,8 @@ TIMEGRP clk = BEL "buttonHandler/M_button_q_5" BEL
         "buttonHandler/button_cond/sync/Mshreg_M_pipe_q_1" BEL
         "clk_BUFGP/BUFG" BEL "reset_cond/M_stage_q_3" BEL
         "reset_cond/M_stage_q_2" BEL "reset_cond/M_stage_q_1" BEL
-        "reset_cond/M_stage_q_0" BEL "sclk/M_ctr_q_0" BEL "sclk/M_ctr_q_1" BEL
+        "reset_cond/M_stage_q_0" BEL "counter1/M_counter_q_0" BEL
+        "counter1/M_counter_q_1" BEL "sclk/M_ctr_q_0" BEL "sclk/M_ctr_q_1" BEL
         "sclk/M_ctr_q_2" BEL "sclk/M_ctr_q_3" BEL "sclk/M_ctr_q_4" BEL
         "sclk/M_ctr_q_5" BEL "sclk/M_ctr_q_6" BEL "sclk/M_ctr_q_7" BEL
         "sclk/M_ctr_q_8" BEL "sclk/M_ctr_q_9" BEL "sclk/M_ctr_q_10" BEL
@@ -190,7 +193,7 @@ TIMEGRP clk = BEL "buttonHandler/M_button_q_5" BEL
         "sclk/M_ctr_q_14" BEL "sclk/M_ctr_q_15" BEL "sclk/M_ctr_q_16" BEL
         "sclk/M_ctr_q_17" BEL "sclk/M_ctr_q_18" BEL "sclk/M_ctr_q_19" BEL
         "sclk/M_ctr_q_20" BEL "sclk/M_ctr_q_21" BEL "sclk/M_ctr_q_22" BEL
-        "sclk/M_ctr_q_23" BEL "sclk/M_ctr_q_24" BEL "sclk/M_ctr_q_25";
+        "sclk/M_ctr_q_23" BEL "sclk/M_ctr_q_24";
 TS_clk = PERIOD TIMEGRP "clk" 50 MHz HIGH 50%;
 SCHEMATIC END;
 
