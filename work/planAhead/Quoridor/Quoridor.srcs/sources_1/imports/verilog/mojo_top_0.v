@@ -52,6 +52,12 @@ module mojo_top_0 (
     .rst(rst),
     .value(M_sclk_value)
   );
+  wire [1-1:0] M_scanclk_value;
+  counter_3 scanclk (
+    .clk(clk),
+    .rst(rst),
+    .value(M_scanclk_value)
+  );
   wire [6-1:0] M_buttonHandler_out;
   wire [1-1:0] M_buttonHandler_debug;
   reg [1-1:0] M_buttonHandler_enter;
@@ -60,7 +66,7 @@ module mojo_top_0 (
   reg [1-1:0] M_buttonHandler_btnleft;
   reg [1-1:0] M_buttonHandler_btnright;
   reg [1-1:0] M_buttonHandler_button_rst;
-  buttonHandler_3 buttonHandler (
+  buttonHandler_4 buttonHandler (
     .clk(clk),
     .rst(rst),
     .enter(M_buttonHandler_enter),
@@ -72,30 +78,31 @@ module mojo_top_0 (
     .out(M_buttonHandler_out),
     .debug(M_buttonHandler_debug)
   );
+  
   wire [2-1:0] M_counter1_out;
-  counter1_4 counter1 (
-    .clk(clk),
+  counter1_5 counter1 (
+    .clk(M_scanclk_value),
     .rst(rst),
     .out(M_counter1_out)
   );
   wire [5-1:0] M_wallcounter_out;
-  wallcounter_5 wallcounter (
-    .clk(clk),
+  wallcounter_6 wallcounter (
+    .clk(M_scanclk_value),
     .rst(rst),
     .out(M_wallcounter_out)
   );
   wire [5-1:0] M_row_out;
   reg [5-1:0] M_row_pos;
-  row_6 row (
-    .clk(clk),
+  row_7 row (
+    .clk(M_scanclk_value),
     .rst(rst),
     .pos(M_row_pos),
     .out(M_row_out)
   );
   wire [5-1:0] M_column_out;
   reg [5-1:0] M_column_pos;
-  column_7 column (
-    .clk(clk),
+  column_8 column (
+    .clk(M_scanclk_value),
     .rst(rst),
     .pos(M_column_pos),
     .out(M_column_out)
@@ -105,7 +112,7 @@ module mojo_top_0 (
   wire [1-1:0] M_pos_debug;
   reg [1-1:0] M_pos_en;
   reg [36-1:0] M_pos_data;
-  pos_8 pos (
+  pos_9 pos (
     .clk(M_sclk_value),
     .rst(pos_rst),
     .en(M_pos_en),
@@ -124,7 +131,7 @@ module mojo_top_0 (
   reg [36-1:0] M_alu_a;
   reg [5-1:0] M_alu_alufn;
   reg [3-1:0] M_alu_b;
-  alutest_9 alu (
+  alutest_10 alu (
     .clk(M_sclk_value),
     .rst(rst),
     .a(M_alu_a),
@@ -134,7 +141,7 @@ module mojo_top_0 (
     .result(M_alu_result)
   );
   wire [1-1:0] M_cntr_value;
-  counter_10 cntr (
+  counter_11 cntr (
     .clk(M_sclk_value),
     .rst(rst),
     .value(M_cntr_value)

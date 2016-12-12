@@ -7,39 +7,39 @@
 /*
    Parameters:
      SIZE = 1
-     DIV = 0
+     DIV = 10
      TOP = 0
      UP = 1
 */
-module counter_10 (
+module counter_3 (
     input clk,
     input rst,
     output reg [0:0] value
   );
   
   localparam SIZE = 1'h1;
-  localparam DIV = 1'h0;
+  localparam DIV = 4'ha;
   localparam TOP = 1'h0;
   localparam UP = 1'h1;
   
   
-  reg [0:0] M_ctr_d, M_ctr_q = 1'h0;
+  reg [10:0] M_ctr_d, M_ctr_q = 1'h0;
   
-  localparam MAX_VALUE = 1'h0;
+  localparam MAX_VALUE = 11'h3ff;
   
   always @* begin
     M_ctr_d = M_ctr_q;
     
-    value = M_ctr_q[0+0-:1];
+    value = M_ctr_q[10+0-:1];
     if (1'h1) begin
       M_ctr_d = M_ctr_q + 1'h1;
-      if (1'h0 && M_ctr_q == 1'h0) begin
+      if (1'h0 && M_ctr_q == 11'h3ff) begin
         M_ctr_d = 1'h0;
       end
     end else begin
       M_ctr_d = M_ctr_q - 1'h1;
       if (1'h0 && M_ctr_q == 1'h0) begin
-        M_ctr_d = 1'h0;
+        M_ctr_d = 11'h3ff;
       end
     end
   end

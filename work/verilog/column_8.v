@@ -4,7 +4,7 @@
    This is a temporary file and any changes made to it will be destroyed.
 */
 
-module row_6 (
+module column_8 (
     input [4:0] pos,
     input clk,
     input rst,
@@ -14,6 +14,6 @@ module row_6 (
   
   
   always @* begin
-    out = pos / 3'h5;
+    out = pos - (3'h5 * (pos / 3'h5));
   end
 endmodule

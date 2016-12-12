@@ -45,11 +45,9 @@ module mojo_top (
 
     .rst(rst)  {
     counter sclk(#SIZE(1),#DIV(24));
+    counter scanclk(#SIZE(1),#DIV(10));
     buttonHandler buttonHandler;
-    counter1 counter1;
-    wallcounter wallcounter;
-      row row;
-      column column;
+    
 
 
       
@@ -58,6 +56,15 @@ module mojo_top (
     //edge_detector edge;  
     
       }
+  }
+  .clk(scanclk.value){
+  .rst(rst){
+  counter1 counter1;
+    wallcounter wallcounter;
+      row row;
+      column column;
+    }
+  
   }
     .clk(sclk.value){
 

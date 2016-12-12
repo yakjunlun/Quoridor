@@ -4,29 +4,29 @@
    This is a temporary file and any changes made to it will be destroyed.
 */
 
-module wallcounter_5 (
+module counter1_5 (
     input clk,
     input rst,
-    output reg [4:0] out
+    output reg [1:0] out
   );
   
   
   
-  reg [5:0] M_wallcounter_d, M_wallcounter_q = 1'h0;
+  reg [1:0] M_counter_d, M_counter_q = 1'h0;
   
   always @* begin
-    M_wallcounter_d = M_wallcounter_q;
+    M_counter_d = M_counter_q;
     
-    if (M_wallcounter_q / 2'h3 == 5'h14) begin
-      M_wallcounter_d = 1'h0;
+    out = M_counter_q;
+    if (M_counter_q == 2'h2) begin
+      M_counter_d = 1'h0;
     end else begin
-      M_wallcounter_d = M_wallcounter_q + 1'h1;
+      M_counter_d = M_counter_q + 1'h1;
     end
-    out = M_wallcounter_q / 2'h3;
   end
   
   always @(posedge clk) begin
-    M_wallcounter_q <= M_wallcounter_d;
+    M_counter_q <= M_counter_d;
   end
   
 endmodule
