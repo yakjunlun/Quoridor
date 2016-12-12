@@ -47,8 +47,12 @@ module alutest_11 (
           if (M_adder_sum == a[25+4-:5]) begin
             result = {1'h1, a[0+34-:35]};
           end else begin
-            if (a[(M_adder_sum)*1+0-:1] == 1'h1 | a[(M_adder_sum - 3'h5)*1+0-:1] == 1'h1) begin
-              result = {1'h1, a[0+34-:35]};
+            if (b == 3'h5) begin
+              if (a[(M_adder_sum)*1+0-:1] == 1'h1 | a[(M_adder_sum - 3'h5)*1+0-:1] == 1'h1) begin
+                result = {1'h1, a[0+34-:35]};
+              end else begin
+                result = {1'h0, M_adder_sum, a[0+29-:30]};
+              end
             end else begin
               result = {1'h0, M_adder_sum, a[0+29-:30]};
             end
@@ -60,8 +64,12 @@ module alutest_11 (
           if (M_adder_sum == a[30+4-:5]) begin
             result = {1'h1, a[0+34-:35]};
           end else begin
-            if (a[(M_adder_sum)*1+0-:1] == 1'h1 | a[(M_adder_sum - 3'h5)*1+0-:1] == 1'h1) begin
-              result = {1'h1, a[0+34-:35]};
+            if (b == 3'h5) begin
+              if (a[(M_adder_sum)*1+0-:1] == 1'h1 | a[(M_adder_sum - 3'h5)*1+0-:1] == 1'h1) begin
+                result = {1'h1, a[0+34-:35]};
+              end else begin
+                result = {1'h0, a[30+4-:5], M_adder_sum, a[0+24-:25]};
+              end
             end else begin
               result = {1'h0, a[30+4-:5], M_adder_sum, a[0+24-:25]};
             end

@@ -45,7 +45,7 @@ module mojo_top (
 
     .rst(rst)  {
     counter sclk(#SIZE(1),#DIV(21));
-    counter scanclk(#SIZE(1),#DIV(11));
+    counter scanclk(#SIZE(1),#DIV(12));
     buttonHandler buttonHandler;
     
 
