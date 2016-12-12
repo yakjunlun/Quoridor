@@ -1,0 +1,21 @@
+module extra (
+    input sum[8],   // 8 bit inputs (note that adder is forced to subtract)
+    input a[1],
+    input b[8],
+    output z,        // z v n are condition code bits for adder
+    output v,
+    output n){
+  
+always{
+  
+     v = (a[7] & ~b[7] & (~sum[7])) | ((~a[7])&(b[7])&sum[7]);//v is the equation in lab3
+    
+    n = sum[7]; //n passes the most significant bit of sum
+    z = ~|sum; //pass all 8 bits through an OR gate,
+               //which returns a 0 iff all bits are 0
+               //then invert the result to get Z.   
+
+    
+
+}
+}

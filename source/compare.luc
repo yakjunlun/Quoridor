@@ -1,0 +1,31 @@
+module compare ( 
+  //compare instructions: CMPEQ CMPLT CMPLE
+    
+    
+  input alufn[6],
+  input z,    // z v n are condition codes
+  input v,
+  input n,
+  output cmp){   //8 bit output: "0" if false and "1" if true
+  
+    always{
+    cmp=8b0;
+    case(alufn[2:1]){  //using alufn[1] and alufn[2] to control compare unit
+                       // since alufn[0] is used to control adder/subtractor unit
+                        // eg alufn[0]=1 is used to force a subtract
+                        // eg alufn[0]=1 is used to force an addition
+    b01:
+    cmp=z;  // for comparison a=b
+                // eqn for least significant bit:
+                // lsb= z
+      
+    b10:
+    cmp=(n^v);  // for comparison a<b
+                 // lsb= n xor v 
+      
+    b11:        
+    cmp=z|(n^v);  // for comparison a<=b
+                        // lsb= z or (n xor v)
+  }    
+}
+}

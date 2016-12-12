@@ -1,0 +1,78 @@
+module alu (
+  input clk,
+  input rst,
+  input a[36],  
+  input alufn[5],
+  input b[3],
+   
+           
+  output result[36] ){  //output into mojo_top
+    
+  //import modules
+  adder adder;
+  sig a1[36];
+  
+  
+  always{
+  adder.a=a;
+  adder.b=b;
+  adder.alufn=alufn[1:0];
+  a1=c{0,a[34:0]};
+    
+  if (alufn[1:0] == b11){
+    result = a;
+      }
+    else{
+    
+    case (alufn[4:1]){    //first 4 bits of alufn
+    
+      default:result = a;
+    
+      1000: //player a
+        adder.a=a[34:30];
+        if (adder.sum==a[29:25]){
+            result=c{1,a[34:0]};}          //error result, msb=1
+        else if(a[adder.sum]==1| a[adder.sum-d5]==1){
+            result=c{1,a[34:0]};}
+      
+        else{  
+        result=c{0,adder.sum,a[29:0]};}   
+        
+      0100: //player b
+         adder.a=a[29:25];
+        if (adder.sum==a[34:30]){
+            result=c{1,a[34:0]};}
+          
+       else if(a[adder.sum]==1| a[adder.sum-d5]==1){
+            result=c{1,a[34:0]};}
+        else{
+          result=c{0, a[34:30], adder.sum,a[24:0]};}   
+        
+      0010: //wall cursor
+        adder.a=a[24:20];
+        result=c{0,a[34:25],adder.sum,a[19:0]};
+        
+        
+      0011: //wall enter
+        if (a[a[24:20]]==1){
+            result=c{1,a[34:0]};}
+        else{
+        
+        a1[a[24:20]]=1;
+        result=a1;}      
+        
+        }
+    }
+    }
+  }
+  
+  
+  
+    
+    
+  
+  
+  
+  
+  
+  

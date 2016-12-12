@@ -1,0 +1,77 @@
+module buttonHandler (
+    input enter,
+    input btntop,
+    input btndown,
+    input btnleft,
+    input btnright,
+    input clk,
+    input rst,
+    input button_rst,
+    output out[6],
+    output debug
+  ) {
+  
+  /*  Initialization of buttonHandlers and edge_detector */
+  // Detects button press on rising edge - i.e., when the button is pressed (rather than when the button is released
+  
+  .clk(clk){
+    dff button[6](#INIT(b011000),.rst(button_rst));
+    edge_detector edge_detector;
+    button_conditioner button_cond;
+    edge_detector edge_detector1;
+    button_conditioner button_cond1;
+    edge_detector edge_detector2;
+    button_conditioner button_cond2;
+    edge_detector edge_detector3;
+    button_conditioner button_cond3;
+    edge_detector edge_detector4;
+    button_conditioner button_cond4;
+    
+  }
+  always {
+    
+    button_cond.in=enter;
+    edge_detector.in=button_cond.out;
+    button_cond1.in=btntop;
+    edge_detector1.in=button_cond1.out;
+    button_cond2.in=btndown;
+    edge_detector2.in=button_cond2.out;
+    button_cond3.in=btnleft;
+    edge_detector3.in=button_cond3.out;
+    button_cond4.in=btnright;
+    edge_detector4.in=button_cond4.out;
+    debug=0;
+   
+      
+    /*  Up button  */  
+    if(edge_detector1.out==1){
+      button.d=b100101;
+      debug=1;
+    }
+      
+    /*  Down Button  */
+    else if(edge_detector2.out==1){
+      button.d=b101101;
+    }
+      
+    /* Left Button */
+    else if(edge_detector3.out==1){
+      button.d=b101001;
+    }
+      
+    /* Right Button */
+    else if(edge_detector4.out==1){
+      button.d=b100001;
+    }
+      
+    //enter for wall  
+    else if(edge_detector.out==1){
+      button.d=b110000;
+    }
+    else{
+    button.d= button.q;
+
+    }
+        out = button.q;
+  }
+}

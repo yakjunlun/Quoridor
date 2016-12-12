@@ -1,0 +1,21 @@
+module adder (
+
+  input a[5],       
+  input b[3],
+  input alufn[2],  
+  output sum[5] )    
+    
+  
+  {always{
+  sum = a;
+  
+    
+  case(alufn){
+  
+    00: sum=a+b;
+    
+    01: sum=a-b;
+    
+  
+    
+      }}}

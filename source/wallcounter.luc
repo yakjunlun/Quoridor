@@ -1,0 +1,19 @@
+module wallcounter (
+    input clk,  // clock
+    input rst,  // reset
+    output out[5]
+  ) {
+  dff wallcounter[6](.clk(clk));
+
+  always {
+        
+    if (wallcounter.q/3==20){
+    wallcounter.d = 0;
+  }
+    else{
+    wallcounter.d=wallcounter.q+1;
+    }
+    out=wallcounter.q/3;
+
+}
+}

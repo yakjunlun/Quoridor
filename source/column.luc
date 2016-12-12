@@ -1,0 +1,10 @@
+module column (
+   input pos[5],
+    input clk,
+    input rst, 
+   output out[5]){
+     
+  always{
+    out= pos-(5*(pos/5));
+  }}
+  

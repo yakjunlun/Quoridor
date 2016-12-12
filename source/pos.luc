@@ -1,0 +1,31 @@
+module pos #(
+    WIDTH=36
+  )(
+    input clk,
+    input en,  // enable
+    input rst,  // reset
+    input data[WIDTH],
+    output out[WIDTH],
+    output debug
+  ) {
+  
+  sig debugg;
+  dff regs[WIDTH](#INIT(36hAC000000),.clk(clk),.rst(rst));
+  dff debug1[1](.clk(clk),.rst(rst));
+ 
+  always {
+  
+    if(en==1){
+      regs.d=data;
+      if (debug1.q==0)
+        {debug1.d=1;}
+       else {debug1.d=0;}
+    }
+    else { 
+      regs.d=regs.q;}
+      out=regs.q;
+    
+    debug = debug1.q;
+  }
+    
+}

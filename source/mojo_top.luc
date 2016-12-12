@@ -1,0 +1,169 @@
+module mojo_top (
+    input clk,              // 50MHz clock
+    input rst_n,            // reset button (active low)
+    output led [8],         // 8 user controllable LEDs
+    input cclk,             // configuration clock, AVR ready when high
+    output spi_miso,        // AVR SPI MISO
+    input spi_ss,           // AVR SPI Slave Select
+    input spi_mosi,         // AVR SPI MOSI
+    input spi_sck,          // AVR SPI Clock
+    output spi_channel [4], // AVR general purpose pins (used by default to select ADC channel)
+    input avr_tx,           // AVR TX (FPGA RX)
+    output avr_rx,          // AVR RX (FPGA TX)
+    input avr_rx_busy,      // AVR RX buffer full 
+    //input wall[20][1],
+    
+    input io_button[5],   // 5 buttons on IO Shield
+    input io_dip[8],
+    output io_led[8],
+    
+    output wall0row[4],
+    output gp10row[5],
+    output bp20row[5],
+    output p1col[5],
+    output wall1col[4]){
+    
+    sig a[36];
+    sig b[3];
+    //sig wall;
+    sig rst;                  // reset signal
+    sig fn;
+  sig pos_rst;
+      
+  
+  .clk(clk) {
+     reset_conditioner reset_cond;     
+    // The reset conditioner is used to synchronize the reset signal to the FPGA
+    // clock. Th  reset_conditioner reset_cond;is ensures the entire FPGA comes out of reset at the same time.
+
+    
+    // The edge detector and button conditioner ensures that the button changes the 
+    // state only once per press. There are five buttons altogether, excluding the 
+    // rst button
+
+
+
+    .rst(rst)  {
+    counter sclk(#SIZE(1),#DIV(25));
+    buttonHandler buttonHandler;
+    counter1 counter1;
+    wallcounter wallcounter;
+      row row;
+      column column;
+
+
+      
+    //reset_conditioner reset_cond;
+    //button_conditioner btn_cond;
+    //edge_detector edge;  
+    
+      }
+  }
+    .clk(sclk.value){
+
+     pos pos(#WIDTH(36),.rst(pos_rst));
+
+      fsm main(#INIT(S0))={S0,S1,S2,S3};
+      alutest alu(.rst(rst));
+
+
+    .rst(rst){
+      counter cntr(#SIZE(1));
+
+
+       //counter cntr(#SIZE(4));
+    }
+  }
+    
+   
+  
+  always {
+  
+     //a=35hAC000000;
+     b=3b0;
+     fn=5b0; 
+    
+    reset_cond.in = ~rst_n; // input raw inverted reset signal
+    rst = reset_cond.out;   // conditioned reset
+    
+    io_led=8h00;
+    led = 8h00;             // turn LEDs off
+    spi_miso = bz;          // not using SPI
+    spi_channel = bzzzz;    // not using flags
+    avr_rx = bz;            // not using serial port
+    
+    wall0row=b1111;
+    gp10row=b11111;
+    bp20row=b11111;
+    p1col=b00000;
+    wall1col=b00000;      //set whole matrix to off first 
+    
+    pos.data = 0;
+    pos.en = 0;
+    
+    buttonHandler.btntop=io_button[0];
+    buttonHandler.btndown=io_button[2];
+    buttonHandler.btnleft=io_button[3];
+    buttonHandler.btnright=io_button[4];
+    buttonHandler.enter=io_button[1];
+    
+    fn=b100000;
+    //fn=c{io_dip[2:0],buttonHandler.out[4:3]}; //fn is determined by dip(modes - p1, p2, wall) and buttonHandler
+    b=b001;
+    //b=buttonHandler.out[2:0];  
+    a=pos.out;    
+    
+    alu.alufn=fn; //ALUFN mode selector 
+    alu.a=a;      //36bit input to alu.a - [errorbit][apos][bpos][wallpos][wallmodes]
+    alu.b=b;      //3bit input 
+    
+    led=a[34:30];
+    io_led[7] = cntr.value;
+    //io_led[4:0] = column.out;
+   //io_led[2:0]= io_dip[2:0];
+    io_led[6] = pos.debug;
+
+    buttonHandler.button_rst=io_dip[3]; //buttonHandler reset signal
+    
+    case(main.q){
+      main.S0:    //default mode, check if button press 
+        if (buttonHandler.out[5] == 1){
+            main.d=main.S1;
+          }
+        buttonHandler.button_rst=0;
+      main.S1:
+        pos.en=1;
+        pos.data = alu.result;
+        main.d=main.S2;
+        
+      main.S2:
+        pos.en=0;
+        buttonHandler.button_rst=1;
+        main.d = main.S3;
+      main.S3:
+        buttonHandler.button_rst=0;
+        main.d = main.S0;
+    
+    }
+
+
+    //io_led[0]=pos.out[35];  //error LED
+   // pos.data=alu.result;     //write output of alu into pos register
+    pos_rst = io_dip[7];    //dip switch to reset all positions
+    row.pos = 0;
+    column.pos = 0;
+    
+    row.pos = a[34:30]; //input player 1 position into row module to get the row to ON
+        gp10row[row.out]=0;  //output of row module is wired to all my rows
+        column.pos = a[34:30]; //same for columns
+        p1col[column.out] = 1;
+    io_led[column.out]=1;
+    
+    
+    
+      
+    
+    
+    
+  }
+}

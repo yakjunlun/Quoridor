@@ -1,0 +1,18 @@
+module counter1 (
+    input clk,  // clock
+    input rst,  // reset
+    output out[2]
+  ) {
+  dff counter[2](.clk(clk));
+
+  always {
+        out=counter.q;
+    if (counter.q==b10){
+    counter.d = 0;
+  }
+    else{
+    counter.d=counter.q+1;
+    }
+
+}
+}
