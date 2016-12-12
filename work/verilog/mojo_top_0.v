@@ -221,6 +221,14 @@ module mojo_top_0 (
         M_column_pos = a[25+4-:5];
         p1col[(M_column_out)*1+0-:1] = 1'h1;
       end
+      2'h2: begin
+        if (a[(M_wallcounter_out)*1+0-:1] == 1'h1) begin
+          M_row_pos = M_wallcounter_out;
+          wall0row[(M_row_out)*1+0-:1] = 1'h0;
+          M_column_pos = M_wallcounter_out;
+          wall1col[(M_column_out)*1+0-:1] = 1'h1;
+        end
+      end
     endcase
   end
   

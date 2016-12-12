@@ -44,7 +44,7 @@ module mojo_top (
 
 
     .rst(rst)  {
-    counter sclk(#SIZE(1),#DIV(24));
+    counter sclk(#SIZE(1),#DIV(21));
     counter scanclk(#SIZE(1),#DIV(10));
     buttonHandler buttonHandler;
     
@@ -175,7 +175,17 @@ module mojo_top (
         column.pos = a[29:25];
         p1col[column.out] = 1;
         //light up player 2
-      //b10: //io_led[0]=1;//scan wall
+      b10:
+     
+        if(a[wallcounter.out]==1){
+        row.pos = wallcounter.out;
+          wall0row[row.out]=0;
+          column.pos = wallcounter.out;
+          wall1col[column.out]=1;
+          
+        }
+          
+          
       
     }
     

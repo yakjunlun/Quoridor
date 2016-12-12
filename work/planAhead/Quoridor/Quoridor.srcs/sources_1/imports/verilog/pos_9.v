@@ -22,7 +22,7 @@ module pos_9 (
   
   reg debugg;
   
-  reg [35:0] M_regs_d, M_regs_q = 36'h0ac000000;
+  reg [35:0] M_regs_d, M_regs_q = 103'h7f7e6a15e0b8a0898542557eb5;
   
   reg [0:0] M_debug1_d, M_debug1_q = 1'h0;
   
@@ -46,7 +46,7 @@ module pos_9 (
   
   always @(posedge clk) begin
     if (rst == 1'b1) begin
-      M_regs_q <= 36'h0ac000000;
+      M_regs_q <= 103'h7f7e6a15e0b8a0898542557eb5;
     end else begin
       M_regs_q <= M_regs_d;
     end
