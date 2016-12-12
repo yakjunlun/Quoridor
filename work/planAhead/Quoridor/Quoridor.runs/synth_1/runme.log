@@ -465,26 +465,6 @@ Optimizing unit <alutest_11> ...
 
 Optimizing unit <adder_23> ...
 WARNING:Xst:2677 - Node <pos/M_regs_q_35> of sequential type is unconnected in block <mojo_top_0>.
-WARNING:Xst:1293 - FF/Latch <pos/M_regs_q_0> has a constant value of 1 in block <mojo_top_0>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <pos/M_regs_q_1> has a constant value of 1 in block <mojo_top_0>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <pos/M_regs_q_2> has a constant value of 1 in block <mojo_top_0>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <pos/M_regs_q_3> has a constant value of 1 in block <mojo_top_0>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <pos/M_regs_q_4> has a constant value of 1 in block <mojo_top_0>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <pos/M_regs_q_5> has a constant value of 1 in block <mojo_top_0>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <pos/M_regs_q_6> has a constant value of 1 in block <mojo_top_0>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <pos/M_regs_q_7> has a constant value of 1 in block <mojo_top_0>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <pos/M_regs_q_8> has a constant value of 1 in block <mojo_top_0>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <pos/M_regs_q_9> has a constant value of 1 in block <mojo_top_0>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <pos/M_regs_q_10> has a constant value of 1 in block <mojo_top_0>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <pos/M_regs_q_11> has a constant value of 1 in block <mojo_top_0>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <pos/M_regs_q_12> has a constant value of 1 in block <mojo_top_0>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <pos/M_regs_q_13> has a constant value of 1 in block <mojo_top_0>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <pos/M_regs_q_14> has a constant value of 1 in block <mojo_top_0>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <pos/M_regs_q_15> has a constant value of 1 in block <mojo_top_0>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <pos/M_regs_q_16> has a constant value of 1 in block <mojo_top_0>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <pos/M_regs_q_17> has a constant value of 1 in block <mojo_top_0>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <pos/M_regs_q_18> has a constant value of 1 in block <mojo_top_0>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <pos/M_regs_q_19> has a constant value of 1 in block <mojo_top_0>. This FF/Latch will be trimmed during the optimization process.
 INFO:Xst:2261 - The FF/Latch <sclk/M_ctr_q_10> in Unit <mojo_top_0> is equivalent to the following FF/Latch, which will be removed : <scanclk/M_ctr_q_10> 
 INFO:Xst:2261 - The FF/Latch <sclk/M_ctr_q_11> in Unit <mojo_top_0> is equivalent to the following FF/Latch, which will be removed : <scanclk/M_ctr_q_11> 
 INFO:Xst:2261 - The FF/Latch <sclk/M_ctr_q_12> in Unit <mojo_top_0> is equivalent to the following FF/Latch, which will be removed : <scanclk/M_ctr_q_12> 
@@ -502,7 +482,7 @@ INFO:Xst:3203 - The FF/Latch <buttonHandler/M_button_q_4> in Unit <mojo_top_0> i
 
 Mapping all equations...
 Building and optimizing final netlist ...
-Found area constraint ratio of 100 (+ 0) on block mojo_top_0, actual ratio is 7.
+Found area constraint ratio of 100 (+ 0) on block mojo_top_0, actual ratio is 8.
 
 Final Macro Processing ...
 
@@ -519,8 +499,8 @@ Unit <mojo_top_0> processed.
 Final Register Report
 
 Macro Statistics
-# Registers                                            : 162
- Flip-Flops                                            : 162
+# Registers                                            : 182
+ Flip-Flops                                            : 182
 # Shift Registers                                      : 5
  2-bit shift register                                  : 5
 
@@ -546,7 +526,7 @@ Clock Information:
 -----------------------------------+-----------------------------+-------+
 Clock Signal                       | Clock buffer(FF name)       | Load  |
 -----------------------------------+-----------------------------+-------+
-sclk/M_ctr_q_21                    | NONE(M_main_q_FSM_FFd2)     | 19    |
+sclk/M_ctr_q_21                    | BUFG                        | 39    |
 clk                                | BUFGP                       | 145   |
 sclk/M_ctr_q_12                    | NONE(counter1/M_counter_q_0)| 8     |
 -----------------------------------+-----------------------------+-------+
@@ -560,9 +540,9 @@ Timing Summary:
 ---------------
 Speed Grade: -2
 
-   Minimum period: 9.897ns (Maximum Frequency: 101.041MHz)
-   Minimum input arrival time before clock: 12.032ns
-   Maximum output required time after clock: 16.889ns
+   Minimum period: 11.170ns (Maximum Frequency: 89.526MHz)
+   Minimum input arrival time before clock: 13.607ns
+   Maximum output required time after clock: 16.949ns
    Maximum combinational path delay: No path found
 
 =========================================================================

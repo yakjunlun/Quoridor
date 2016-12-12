@@ -511,26 +511,6 @@ Optimizing unit <alutest_11> ...
 
 Optimizing unit <adder_23> ...
 WARNING:Xst:2677 - Node <pos/M_regs_q_35> of sequential type is unconnected in block <mojo_top_0>.
-WARNING:Xst:1293 - FF/Latch <pos/M_regs_q_0> has a constant value of 1 in block <mojo_top_0>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <pos/M_regs_q_1> has a constant value of 1 in block <mojo_top_0>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <pos/M_regs_q_2> has a constant value of 1 in block <mojo_top_0>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <pos/M_regs_q_3> has a constant value of 1 in block <mojo_top_0>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <pos/M_regs_q_4> has a constant value of 1 in block <mojo_top_0>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <pos/M_regs_q_5> has a constant value of 1 in block <mojo_top_0>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <pos/M_regs_q_6> has a constant value of 1 in block <mojo_top_0>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <pos/M_regs_q_7> has a constant value of 1 in block <mojo_top_0>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <pos/M_regs_q_8> has a constant value of 1 in block <mojo_top_0>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <pos/M_regs_q_9> has a constant value of 1 in block <mojo_top_0>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <pos/M_regs_q_10> has a constant value of 1 in block <mojo_top_0>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <pos/M_regs_q_11> has a constant value of 1 in block <mojo_top_0>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <pos/M_regs_q_12> has a constant value of 1 in block <mojo_top_0>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <pos/M_regs_q_13> has a constant value of 1 in block <mojo_top_0>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <pos/M_regs_q_14> has a constant value of 1 in block <mojo_top_0>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <pos/M_regs_q_15> has a constant value of 1 in block <mojo_top_0>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <pos/M_regs_q_16> has a constant value of 1 in block <mojo_top_0>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <pos/M_regs_q_17> has a constant value of 1 in block <mojo_top_0>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <pos/M_regs_q_18> has a constant value of 1 in block <mojo_top_0>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <pos/M_regs_q_19> has a constant value of 1 in block <mojo_top_0>. This FF/Latch will be trimmed during the optimization process.
 INFO:Xst:2261 - The FF/Latch <sclk/M_ctr_q_10> in Unit <mojo_top_0> is equivalent to the following FF/Latch, which will be removed : <scanclk/M_ctr_q_10> 
 INFO:Xst:2261 - The FF/Latch <sclk/M_ctr_q_11> in Unit <mojo_top_0> is equivalent to the following FF/Latch, which will be removed : <scanclk/M_ctr_q_11> 
 INFO:Xst:2261 - The FF/Latch <sclk/M_ctr_q_12> in Unit <mojo_top_0> is equivalent to the following FF/Latch, which will be removed : <scanclk/M_ctr_q_12> 
@@ -548,7 +528,7 @@ INFO:Xst:3203 - The FF/Latch <buttonHandler/M_button_q_4> in Unit <mojo_top_0> i
 
 Mapping all equations...
 Building and optimizing final netlist ...
-Found area constraint ratio of 100 (+ 0) on block mojo_top_0, actual ratio is 7.
+Found area constraint ratio of 100 (+ 0) on block mojo_top_0, actual ratio is 8.
 
 Final Macro Processing ...
 
@@ -565,8 +545,8 @@ Unit <mojo_top_0> processed.
 Final Register Report
 
 Macro Statistics
-# Registers                                            : 162
- Flip-Flops                                            : 162
+# Registers                                            : 182
+ Flip-Flops                                            : 182
 # Shift Registers                                      : 5
  2-bit shift register                                  : 5
 
@@ -591,28 +571,29 @@ Top Level Output File Name         : mojo_top_0.ngc
 
 Primitive and Black Box Usage:
 ------------------------------
-# BELS                             : 641
+# BELS                             : 727
 #      GND                         : 14
 #      INV                         : 16
 #      LUT1                        : 116
-#      LUT2                        : 11
-#      LUT3                        : 19
-#      LUT4                        : 16
-#      LUT5                        : 48
-#      LUT6                        : 139
+#      LUT2                        : 15
+#      LUT3                        : 22
+#      LUT4                        : 21
+#      LUT5                        : 60
+#      LUT6                        : 204
 #      MUXCY                       : 116
-#      MUXF7                       : 11
+#      MUXF7                       : 8
 #      VCC                         : 12
 #      XORCY                       : 123
-# FlipFlops/Latches                : 167
+# FlipFlops/Latches                : 187
 #      FD                          : 7
-#      FDE                         : 24
+#      FDE                         : 44
 #      FDR                         : 31
 #      FDRE                        : 101
 #      FDS                         : 4
 # Shift Registers                  : 5
 #      SRLC16E                     : 5
-# Clock Buffers                    : 1
+# Clock Buffers                    : 2
+#      BUFG                        : 1
 #      BUFGP                       : 1
 # IO Buffers                       : 57
 #      IBUF                        : 11
@@ -626,17 +607,17 @@ Selected Device : 6slx9tqg144-2
 
 
 Slice Logic Utilization: 
- Number of Slice Registers:             167  out of  11440     1%  
- Number of Slice LUTs:                  370  out of   5720     6%  
-    Number used as Logic:               365  out of   5720     6%  
+ Number of Slice Registers:             187  out of  11440     1%  
+ Number of Slice LUTs:                  459  out of   5720     8%  
+    Number used as Logic:               454  out of   5720     7%  
     Number used as Memory:                5  out of   1440     0%  
        Number used as SRL:                5
 
 Slice Logic Distribution: 
- Number of LUT Flip Flop pairs used:    383
-   Number with an unused Flip Flop:     216  out of    383    56%  
-   Number with an unused LUT:            13  out of    383     3%  
-   Number of fully used LUT-FF pairs:   154  out of    383    40%  
+ Number of LUT Flip Flop pairs used:    472
+   Number with an unused Flip Flop:     285  out of    472    60%  
+   Number with an unused LUT:            13  out of    472     2%  
+   Number of fully used LUT-FF pairs:   174  out of    472    36%  
    Number of unique control sets:        24
 
 IO Utilization: 
@@ -644,7 +625,7 @@ IO Utilization:
  Number of bonded IOBs:                  58  out of    102    56%  
 
 Specific Feature Utilization:
- Number of BUFG/BUFGCTRLs:                1  out of     16     6%  
+ Number of BUFG/BUFGCTRLs:                2  out of     16    12%  
 
 ---------------------------
 Partition Resource Summary:
@@ -667,7 +648,7 @@ Clock Information:
 -----------------------------------+-----------------------------+-------+
 Clock Signal                       | Clock buffer(FF name)       | Load  |
 -----------------------------------+-----------------------------+-------+
-sclk/M_ctr_q_21                    | NONE(M_main_q_FSM_FFd2)     | 19    |
+sclk/M_ctr_q_21                    | BUFG                        | 39    |
 clk                                | BUFGP                       | 145   |
 sclk/M_ctr_q_12                    | NONE(counter1/M_counter_q_0)| 8     |
 -----------------------------------+-----------------------------+-------+
@@ -681,9 +662,9 @@ Timing Summary:
 ---------------
 Speed Grade: -2
 
-   Minimum period: 9.897ns (Maximum Frequency: 101.041MHz)
-   Minimum input arrival time before clock: 12.032ns
-   Maximum output required time after clock: 16.889ns
+   Minimum period: 11.170ns (Maximum Frequency: 89.526MHz)
+   Minimum input arrival time before clock: 13.607ns
+   Maximum output required time after clock: 16.949ns
    Maximum combinational path delay: No path found
 
 Timing Details:
@@ -692,37 +673,38 @@ All values displayed in nanoseconds (ns)
 
 =========================================================================
 Timing constraint: Default period analysis for Clock 'sclk/M_ctr_q_21'
-  Clock period: 9.897ns (frequency: 101.041MHz)
-  Total number of paths / destination ports: 8766 / 35
+  Clock period: 11.170ns (frequency: 89.526MHz)
+  Total number of paths / destination ports: 27082 / 75
 -------------------------------------------------------------------------
-Delay:               9.897ns (Levels of Logic = 11)
-  Source:            pos/M_regs_q_25 (FF)
-  Destination:       pos/M_regs_q_31 (FF)
+Delay:               11.170ns (Levels of Logic = 12)
+  Source:            pos/M_regs_q_30 (FF)
+  Destination:       pos/M_regs_q_29 (FF)
   Source Clock:      sclk/M_ctr_q_21 rising
   Destination Clock: sclk/M_ctr_q_21 rising
 
-  Data Path: pos/M_regs_q_25 to pos/M_regs_q_31
+  Data Path: pos/M_regs_q_30 to pos/M_regs_q_29
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     FDE:C->Q              9   0.525   1.084  M_regs_q_25 (M_regs_q_25)
-     end scope: 'pos:out<25>'
-     begin scope: 'alu:a<25>'
-     LUT6:I4->O            2   0.250   0.726  Mmux_M_adder_a1_SW0 (N58)
-     LUT6:I5->O           19   0.254   1.261  Mmux_M_adder_a1 (M_adder_a<0>)
-     begin scope: 'alu/adder:a<0>'
-     LUT5:I4->O            1   0.254   0.790  Madd_a[4]_GND_19_o_add_0_OUT_cy<2>11 (Madd_a[4]_GND_19_o_add_0_OUT_cy<2>)
-     LUT6:I4->O           17   0.250   1.209  sum<4>1 (sum<4>)
-     end scope: 'alu/adder:sum<4>'
-     LUT5:I4->O            7   0.254   0.909  M_adder_sum[4]_a[29]_equal_2_o5 (M_adder_sum[4]_a[29]_equal_2_o)
-     end scope: 'alu:M_adder_sum[4]_a[29]_equal_2_o'
-     begin scope: 'pos:M_adder_sum[4]_a[29]_equal_2_o'
-     MUXF7:S->O            1   0.185   0.682  Mmux_M_regs_d[35]_GND_17_o_mux_6_OUT24_SW1_SW2 (N91)
-     LUT6:I5->O            1   0.254   0.682  Mmux_M_regs_d[35]_GND_17_o_mux_6_OUT24_SW0 (N151)
-     LUT6:I5->O            1   0.254   0.000  Mmux_M_regs_d[35]_GND_17_o_mux_6_OUT24 (M_regs_d[35]_GND_17_o_mux_6_OUT<30>)
-     FDE:D                     0.074          M_regs_q_30
+     FDE:C->Q             14   0.525   1.127  M_regs_q_30 (M_regs_q_30)
+     end scope: 'pos:out<30>'
+     begin scope: 'alu:a<30>'
+     LUT6:I5->O            4   0.254   0.804  Mmux_M_adder_a1_SW0 (N98)
+     LUT6:I5->O           17   0.254   1.209  Mmux_M_adder_a1 (M_adder_a<0>)
+     begin scope: 'alu/adder:M_adder_a<0>'
+     LUT5:I4->O            5   0.254   0.949  Msub_a[4]_GND_19_o_sub_2_OUT_cy<2>11 (Msub_a[4]_GND_19_o_sub_2_OUT_cy<2>)
+     end scope: 'alu/adder:Msub_a[4]_GND_19_o_sub_2_OUT_cy<2>'
+     LUT6:I4->O            1   0.250   0.958  Mmux_M_adder_sum[0]_a[25]_MUX_1028_o1111 (Mmux_M_adder_sum[0]_a[25]_MUX_1028_o1111)
+     LUT6:I2->O            1   0.254   0.790  Mmux_M_adder_sum[0]_a[25]_MUX_1028_o1113 (Mmux_M_adder_sum[0]_a[25]_MUX_1028_o1113)
+     LUT5:I3->O            3   0.250   0.766  Mmux_M_adder_sum[0]_a[25]_MUX_1028_o1115 (Mmux_M_adder_sum[0]_a[25]_MUX_1028_o1115)
+     LUT6:I5->O           10   0.254   1.008  Mmux_M_adder_sum[0]_a[25]_MUX_1028_o1116 (Mmux_M_adder_sum[0]_a[25]_MUX_1028_o1116)
+     end scope: 'alu:Mmux_M_adder_sum[0]_a[25]_MUX_1028_o1116'
+     begin scope: 'pos:Mmux_M_adder_sum[0]_a[25]_MUX_1028_o1116'
+     LUT6:I5->O            1   0.254   0.682  Mmux_M_regs_d[35]_GND_17_o_mux_6_OUT21_SW1 (N108)
+     LUT6:I5->O            1   0.254   0.000  Mmux_M_regs_d[35]_GND_17_o_mux_6_OUT21 (M_regs_d[35]_GND_17_o_mux_6_OUT<28>)
+     FDE:D                     0.074          M_regs_q_28
     ----------------------------------------
-    Total                      9.897ns (2.554ns logic, 7.343ns route)
+    Total                     11.170ns (2.877ns logic, 8.293ns route)
                                        (25.8% logic, 74.2% route)
 
 =========================================================================
@@ -799,41 +781,42 @@ Offset:              4.427ns (Levels of Logic = 4)
 
 =========================================================================
 Timing constraint: Default OFFSET IN BEFORE for Clock 'sclk/M_ctr_q_21'
-  Total number of paths / destination ports: 11665 / 31
+  Total number of paths / destination ports: 33993 / 71
 -------------------------------------------------------------------------
-Offset:              12.032ns (Levels of Logic = 12)
+Offset:              13.607ns (Levels of Logic = 13)
   Source:            io_dip<2> (PAD)
-  Destination:       pos/M_regs_q_31 (FF)
+  Destination:       pos/M_regs_q_29 (FF)
   Destination Clock: sclk/M_ctr_q_21 rising
 
-  Data Path: io_dip<2> to pos/M_regs_q_31
+  Data Path: io_dip<2> to pos/M_regs_q_29
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     IBUF:I->O            15   1.328   1.585  io_dip_2_IBUF (io_dip_2_IBUF)
+     IBUF:I->O            26   1.328   1.850  io_dip_2_IBUF (io_dip_2_IBUF)
      begin scope: 'alu:alufn<4>'
-     LUT5:I0->O           13   0.254   1.553  Mmux_result2911 (Mmux_result291)
-     LUT6:I0->O           19   0.254   1.261  Mmux_M_adder_a1 (M_adder_a<0>)
-     begin scope: 'alu/adder:a<0>'
-     LUT5:I4->O            1   0.254   0.790  Madd_a[4]_GND_19_o_add_0_OUT_cy<2>11 (Madd_a[4]_GND_19_o_add_0_OUT_cy<2>)
-     LUT6:I4->O           17   0.250   1.209  sum<4>1 (sum<4>)
-     end scope: 'alu/adder:sum<4>'
-     LUT5:I4->O            7   0.254   0.909  M_adder_sum[4]_a[29]_equal_2_o5 (M_adder_sum[4]_a[29]_equal_2_o)
-     end scope: 'alu:M_adder_sum[4]_a[29]_equal_2_o'
-     begin scope: 'pos:M_adder_sum[4]_a[29]_equal_2_o'
-     MUXF7:S->O            1   0.185   0.682  Mmux_M_regs_d[35]_GND_17_o_mux_6_OUT24_SW1_SW2 (N91)
-     LUT6:I5->O            1   0.254   0.682  Mmux_M_regs_d[35]_GND_17_o_mux_6_OUT24_SW0 (N151)
-     LUT6:I5->O            1   0.254   0.000  Mmux_M_regs_d[35]_GND_17_o_mux_6_OUT24 (M_regs_d[35]_GND_17_o_mux_6_OUT<30>)
-     FDE:D                     0.074          M_regs_q_30
+     LUT5:I0->O           15   0.254   1.610  Mmux_result2911 (Mmux_result291)
+     LUT6:I0->O           17   0.254   1.437  Mmux_M_adder_a3 (M_adder_a<2>)
+     begin scope: 'alu/adder:a<2>'
+     LUT5:I2->O            5   0.235   0.841  Madd_a[4]_GND_19_o_add_0_OUT_cy<2>11 (Madd_a[4]_GND_19_o_add_0_OUT_cy<2>)
+     end scope: 'alu/adder:Madd_a[4]_GND_19_o_add_0_OUT_cy<2>'
+     LUT6:I5->O            1   0.254   0.958  Mmux_M_adder_sum[0]_a[25]_MUX_1028_o1111 (Mmux_M_adder_sum[0]_a[25]_MUX_1028_o1111)
+     LUT6:I2->O            1   0.254   0.790  Mmux_M_adder_sum[0]_a[25]_MUX_1028_o1113 (Mmux_M_adder_sum[0]_a[25]_MUX_1028_o1113)
+     LUT5:I3->O            3   0.250   0.766  Mmux_M_adder_sum[0]_a[25]_MUX_1028_o1115 (Mmux_M_adder_sum[0]_a[25]_MUX_1028_o1115)
+     LUT6:I5->O           10   0.254   1.008  Mmux_M_adder_sum[0]_a[25]_MUX_1028_o1116 (Mmux_M_adder_sum[0]_a[25]_MUX_1028_o1116)
+     end scope: 'alu:Mmux_M_adder_sum[0]_a[25]_MUX_1028_o1116'
+     begin scope: 'pos:Mmux_M_adder_sum[0]_a[25]_MUX_1028_o1116'
+     LUT6:I5->O            1   0.254   0.682  Mmux_M_regs_d[35]_GND_17_o_mux_6_OUT21_SW1 (N108)
+     LUT6:I5->O            1   0.254   0.000  Mmux_M_regs_d[35]_GND_17_o_mux_6_OUT21 (M_regs_d[35]_GND_17_o_mux_6_OUT<28>)
+     FDE:D                     0.074          M_regs_q_28
     ----------------------------------------
-    Total                     12.032ns (3.361ns logic, 8.671ns route)
-                                       (27.9% logic, 72.1% route)
+    Total                     13.607ns (3.665ns logic, 9.942ns route)
+                                       (26.9% logic, 73.1% route)
 
 =========================================================================
 Timing constraint: Default OFFSET OUT AFTER for Clock 'sclk/M_ctr_q_12'
-  Total number of paths / destination ports: 27129 / 40
+  Total number of paths / destination ports: 45693 / 40
 -------------------------------------------------------------------------
-Offset:              16.889ns (Levels of Logic = 13)
+Offset:              16.949ns (Levels of Logic = 13)
   Source:            wallcounter/M_wallcounter_q_4 (FF)
   Destination:       io_led<3> (PAD)
   Source Clock:      sclk/M_ctr_q_12 rising
@@ -842,14 +825,14 @@ Offset:              16.889ns (Levels of Logic = 13)
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     FDR:C->Q             13   0.525   1.374  M_wallcounter_q_4 (M_wallcounter_q_4)
+     FDR:C->Q             10   0.525   1.284  M_wallcounter_q_4 (M_wallcounter_q_4)
      begin scope: 'wallcounter/M_wallcounter_q[5]_PWR_10_o_div_4:a<4>'
-     LUT4:I0->O            5   0.254   1.271  o<2>1 (o<2>)
+     LUT4:I0->O            9   0.254   1.431  o<2>1 (o<2>)
      end scope: 'wallcounter/M_wallcounter_q[5]_PWR_10_o_div_4:o<2>'
      end scope: 'wallcounter:out<2>'
-     LUT5:I0->O            1   0.254   0.958  Sh1222 (Sh1222)
-     LUT6:I2->O            6   0.254   1.104  Sh1225 (Sh122)
-     LUT3:I0->O           19   0.235   1.369  Sh1771 (Sh177)
+     LUT6:I0->O            1   0.254   0.958  Sh1772 (Sh1772)
+     LUT6:I2->O            2   0.254   1.002  Sh1775 (Sh1775)
+     LUT4:I0->O           22   0.254   1.442  Sh1776 (Sh177)
      LUT6:I4->O           23   0.250   1.788  Mmux_M_row_pos31 (M_row_pos<2>)
      begin scope: 'column:pos<2>'
      LUT5:I0->O            0   0.254   0.000  Maddsub_n0005_Madd1_lut<2> (Maddsub_n0005_Madd1_lut<2>)
@@ -859,14 +842,14 @@ Offset:              16.889ns (Levels of Logic = 13)
      LUT6:I0->O            2   0.254   0.725  wall1col<3>1 (wall1col_3_OBUF)
      OBUF:I->O                 2.912          io_led_3_OBUF (io_led<3>)
     ----------------------------------------
-    Total                     16.889ns (5.595ns logic, 11.294ns route)
+    Total                     16.949ns (5.614ns logic, 11.335ns route)
                                        (33.1% logic, 66.9% route)
 
 =========================================================================
 Timing constraint: Default OFFSET OUT AFTER for Clock 'sclk/M_ctr_q_21'
-  Total number of paths / destination ports: 8128 / 40
+  Total number of paths / destination ports: 18080 / 40
 -------------------------------------------------------------------------
-Offset:              15.497ns (Levels of Logic = 11)
+Offset:              15.523ns (Levels of Logic = 11)
   Source:            pos/M_regs_q_21 (FF)
   Destination:       io_led<3> (PAD)
   Source Clock:      sclk/M_ctr_q_21 rising
@@ -875,11 +858,11 @@ Offset:              15.497ns (Levels of Logic = 11)
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     FDE:C->Q             25   0.525   1.511  M_regs_q_21 (M_regs_q_21)
+     FDE:C->Q             31   0.525   1.779  M_regs_q_21 (M_regs_q_21)
      end scope: 'pos:out<21>'
-     LUT5:I3->O            1   0.250   0.958  Sh1222 (Sh1222)
-     LUT6:I2->O            6   0.254   1.104  Sh1225 (Sh122)
-     LUT3:I0->O           19   0.235   1.369  Sh1771 (Sh177)
+     LUT6:I2->O            1   0.254   0.958  Sh1222 (Sh1222)
+     LUT6:I2->O            3   0.254   0.766  Sh1225 (Sh122)
+     LUT4:I3->O           22   0.254   1.442  Sh1776 (Sh177)
      LUT6:I4->O           23   0.250   1.788  Mmux_M_row_pos31 (M_row_pos<2>)
      begin scope: 'column:pos<2>'
      LUT5:I0->O            0   0.254   0.000  Maddsub_n0005_Madd1_lut<2> (Maddsub_n0005_Madd1_lut<2>)
@@ -889,8 +872,8 @@ Offset:              15.497ns (Levels of Logic = 11)
      LUT6:I0->O            2   0.254   0.725  wall1col<3>1 (wall1col_3_OBUF)
      OBUF:I->O                 2.912          io_led_3_OBUF (io_led<3>)
     ----------------------------------------
-    Total                     15.497ns (5.337ns logic, 10.160ns route)
-                                       (34.4% logic, 65.6% route)
+    Total                     15.523ns (5.360ns logic, 10.163ns route)
+                                       (34.5% logic, 65.5% route)
 
 =========================================================================
 
@@ -903,7 +886,7 @@ Clock to Setup on destination clock clk
 Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ---------------+---------+---------+---------+---------+
 clk            |    6.446|         |         |         |
-sclk/M_ctr_q_21|    4.339|         |         |         |
+sclk/M_ctr_q_21|    4.409|         |         |         |
 ---------------+---------+---------+---------+---------+
 
 Clock to Setup on destination clock sclk/M_ctr_q_12
@@ -919,21 +902,21 @@ Clock to Setup on destination clock sclk/M_ctr_q_21
                | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ---------------+---------+---------+---------+---------+
-clk            |   11.574|         |         |         |
-sclk/M_ctr_q_21|    9.897|         |         |         |
+clk            |   13.047|         |         |         |
+sclk/M_ctr_q_21|   11.170|         |         |         |
 ---------------+---------+---------+---------+---------+
 
 =========================================================================
 
 
-Total REAL time to Xst completion: 12.00 secs
-Total CPU time to Xst completion: 11.70 secs
+Total REAL time to Xst completion: 19.00 secs
+Total CPU time to Xst completion: 19.50 secs
  
 --> 
 
-Total memory usage is 298384 kilobytes
+Total memory usage is 298256 kilobytes
 
 Number of errors   :    0 (   0 filtered)
-Number of warnings :   43 (   0 filtered)
+Number of warnings :   23 (   0 filtered)
 Number of infos    :   19 (   0 filtered)
 
