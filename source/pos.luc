@@ -10,7 +10,7 @@ module pos #(
   ) {
   
   sig debugg;
-  dff regs[WIDTH](#INIT(000010101100000001010101010101010101),.clk(clk),.rst(rst));//36hAC000000
+  dff regs[WIDTH](#INIT(b000010101100000010000000000000000000),.clk(clk),.rst(rst));//36hAC000000
   dff debug1[1](.clk(clk),.rst(rst));
  
   always {

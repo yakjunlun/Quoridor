@@ -21,7 +21,7 @@ module mojo_top (
     output gp10row[5],
     output bp20row[5],
     output p1col[5],
-    output wall1col[4]){
+    output wall1col[5]){
     
     sig a[36];
     sig b[3];
@@ -45,7 +45,7 @@ module mojo_top (
 
     .rst(rst)  {
     counter sclk(#SIZE(1),#DIV(21));
-    counter scanclk(#SIZE(1),#DIV(10));
+    counter scanclk(#SIZE(1),#DIV(11));
     buttonHandler buttonHandler;
     
 
@@ -63,6 +63,7 @@ module mojo_top (
     wallcounter wallcounter;
       row row;
       column column;
+      wallcol wallcol;
     }
   
   }
@@ -121,7 +122,7 @@ module mojo_top (
     a=pos.out;    
     
     alu.alufn=fn; //ALUFN mode selector 
-    led[4:0]=fn;
+    //led[4:0]=fn;
     alu.a=a;      //36bit input to alu.a - [errorbit][apos][bpos][wallpos][wallmodes]
     alu.b=b;      //3bit input 
     
@@ -130,7 +131,7 @@ module mojo_top (
     //io_led[4:0] = column.out;
    //io_led[2:0]= io_dip[2:0];
     io_led[6] = pos.debug;
-    led[7:5] = alu.debug;
+    //led[7:5] = alu.debug;
 
     buttonHandler.button_rst=io_dip[3]; //buttonHandler reset signal
     
@@ -161,8 +162,9 @@ module mojo_top (
     pos_rst = io_dip[7];    //dip switch to reset all positions
     row.pos = 0;
     column.pos = 0;
+    wallcol.pos=0;
     
-    case(counter1.out){
+     case(counter1.out){
       b00:
         row.pos = a[34:30]; //input player 1 position into row module to get the row to ON
         gp10row[row.out]=0;  //output of row module is wired to all my rows
@@ -176,18 +178,22 @@ module mojo_top (
         p1col[column.out] = 1;
         //light up player 2
       b10:
+      
+        if (a[wallcounter.out]==1){
      
-        if(a[wallcounter.out]==1){
-        row.pos = wallcounter.out;
+    row.pos = wallcounter.out;
+        led[row.out] = 1;
+        
           wall0row[row.out]=0;
           column.pos = wallcounter.out;
           wall1col[column.out]=1;
-          
+        io_led[column.out]=1;
         }
           
-          
-      
-    }
+        }
+    
+
+   
     
     
     

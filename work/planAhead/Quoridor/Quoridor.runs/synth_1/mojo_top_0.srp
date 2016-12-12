@@ -3,7 +3,7 @@ Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 --> 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.07 secs
+Total CPU time to Xst completion: 0.08 secs
  
 --> Reading design: mojo_top_0.prj
 
@@ -53,36 +53,38 @@ Netlist Hierarchy                  : rebuilt
 =========================================================================
 *                          HDL Parsing                                  *
 =========================================================================
-Analyzing Verilog file "C:/Users/Yak Jun Lun/Documents/mojo/Quoridor/Quoridor/work/planAhead/Quoridor/Quoridor.srcs/sources_1/imports/verilog/pipeline_23.v" into library work
-Parsing module <pipeline_23>.
-Analyzing Verilog file "C:/Users/Yak Jun Lun/Documents/mojo/Quoridor/Quoridor/work/planAhead/Quoridor/Quoridor.srcs/sources_1/imports/verilog/edge_detector_12.v" into library work
-Parsing module <edge_detector_12>.
-Analyzing Verilog file "C:/Users/Yak Jun Lun/Documents/mojo/Quoridor/Quoridor/work/planAhead/Quoridor/Quoridor.srcs/sources_1/imports/verilog/button_conditioner_13.v" into library work
-Parsing module <button_conditioner_13>.
-Analyzing Verilog file "C:/Users/Yak Jun Lun/Documents/mojo/Quoridor/Quoridor/work/planAhead/Quoridor/Quoridor.srcs/sources_1/imports/verilog/adder_22.v" into library work
-Parsing module <adder_22>.
+Analyzing Verilog file "C:/Users/Yak Jun Lun/Documents/mojo/Quoridor/Quoridor/work/planAhead/Quoridor/Quoridor.srcs/sources_1/imports/verilog/pipeline_24.v" into library work
+Parsing module <pipeline_24>.
+Analyzing Verilog file "C:/Users/Yak Jun Lun/Documents/mojo/Quoridor/Quoridor/work/planAhead/Quoridor/Quoridor.srcs/sources_1/imports/verilog/edge_detector_13.v" into library work
+Parsing module <edge_detector_13>.
+Analyzing Verilog file "C:/Users/Yak Jun Lun/Documents/mojo/Quoridor/Quoridor/work/planAhead/Quoridor/Quoridor.srcs/sources_1/imports/verilog/button_conditioner_14.v" into library work
+Parsing module <button_conditioner_14>.
+Analyzing Verilog file "C:/Users/Yak Jun Lun/Documents/mojo/Quoridor/Quoridor/work/planAhead/Quoridor/Quoridor.srcs/sources_1/imports/verilog/adder_23.v" into library work
+Parsing module <adder_23>.
 Analyzing Verilog file "C:/Users/Yak Jun Lun/Documents/mojo/Quoridor/Quoridor/work/planAhead/Quoridor/Quoridor.srcs/sources_1/imports/verilog/wallcounter_6.v" into library work
 Parsing module <wallcounter_6>.
+Analyzing Verilog file "C:/Users/Yak Jun Lun/Documents/mojo/Quoridor/Quoridor/work/planAhead/Quoridor/Quoridor.srcs/sources_1/imports/verilog/wallcol_9.v" into library work
+Parsing module <wallcol_9>.
 Analyzing Verilog file "C:/Users/Yak Jun Lun/Documents/mojo/Quoridor/Quoridor/work/planAhead/Quoridor/Quoridor.srcs/sources_1/imports/verilog/row_7.v" into library work
 Parsing module <row_7>.
 Analyzing Verilog file "C:/Users/Yak Jun Lun/Documents/mojo/Quoridor/Quoridor/work/planAhead/Quoridor/Quoridor.srcs/sources_1/imports/verilog/reset_conditioner_1.v" into library work
 Parsing module <reset_conditioner_1>.
-Analyzing Verilog file "C:/Users/Yak Jun Lun/Documents/mojo/Quoridor/Quoridor/work/planAhead/Quoridor/Quoridor.srcs/sources_1/imports/verilog/pos_9.v" into library work
-Parsing module <pos_9>.
+Analyzing Verilog file "C:/Users/Yak Jun Lun/Documents/mojo/Quoridor/Quoridor/work/planAhead/Quoridor/Quoridor.srcs/sources_1/imports/verilog/pos_10.v" into library work
+Parsing module <pos_10>.
 Analyzing Verilog file "C:/Users/Yak Jun Lun/Documents/mojo/Quoridor/Quoridor/work/planAhead/Quoridor/Quoridor.srcs/sources_1/imports/verilog/counter_3.v" into library work
 Parsing module <counter_3>.
 Analyzing Verilog file "C:/Users/Yak Jun Lun/Documents/mojo/Quoridor/Quoridor/work/planAhead/Quoridor/Quoridor.srcs/sources_1/imports/verilog/counter_2.v" into library work
 Parsing module <counter_2>.
-Analyzing Verilog file "C:/Users/Yak Jun Lun/Documents/mojo/Quoridor/Quoridor/work/planAhead/Quoridor/Quoridor.srcs/sources_1/imports/verilog/counter_11.v" into library work
-Parsing module <counter_11>.
+Analyzing Verilog file "C:/Users/Yak Jun Lun/Documents/mojo/Quoridor/Quoridor/work/planAhead/Quoridor/Quoridor.srcs/sources_1/imports/verilog/counter_12.v" into library work
+Parsing module <counter_12>.
 Analyzing Verilog file "C:/Users/Yak Jun Lun/Documents/mojo/Quoridor/Quoridor/work/planAhead/Quoridor/Quoridor.srcs/sources_1/imports/verilog/counter1_5.v" into library work
 Parsing module <counter1_5>.
 Analyzing Verilog file "C:/Users/Yak Jun Lun/Documents/mojo/Quoridor/Quoridor/work/planAhead/Quoridor/Quoridor.srcs/sources_1/imports/verilog/column_8.v" into library work
 Parsing module <column_8>.
 Analyzing Verilog file "C:/Users/Yak Jun Lun/Documents/mojo/Quoridor/Quoridor/work/planAhead/Quoridor/Quoridor.srcs/sources_1/imports/verilog/buttonhandler_4.v" into library work
 Parsing module <buttonHandler_4>.
-Analyzing Verilog file "C:/Users/Yak Jun Lun/Documents/mojo/Quoridor/Quoridor/work/planAhead/Quoridor/Quoridor.srcs/sources_1/imports/verilog/alutest_10.v" into library work
-Parsing module <alutest_10>.
+Analyzing Verilog file "C:/Users/Yak Jun Lun/Documents/mojo/Quoridor/Quoridor/work/planAhead/Quoridor/Quoridor.srcs/sources_1/imports/verilog/alutest_11.v" into library work
+Parsing module <alutest_11>.
 Analyzing Verilog file "C:/Users/Yak Jun Lun/Documents/mojo/Quoridor/Quoridor/work/planAhead/Quoridor/Quoridor.srcs/sources_1/imports/verilog/mojo_top_0.v" into library work
 Parsing module <mojo_top_0>.
 
@@ -100,11 +102,11 @@ Elaborating module <counter_3>.
 
 Elaborating module <buttonHandler_4>.
 
-Elaborating module <edge_detector_12>.
+Elaborating module <edge_detector_13>.
 
-Elaborating module <button_conditioner_13>.
+Elaborating module <button_conditioner_14>.
 
-Elaborating module <pipeline_23>.
+Elaborating module <pipeline_24>.
 WARNING:HDLCompiler:1127 - "C:/Users/Yak Jun Lun/Documents/mojo/Quoridor/Quoridor/work/planAhead/Quoridor/Quoridor.srcs/sources_1/imports/verilog/mojo_top_0.v" Line 79: Assignment to M_buttonHandler_debug ignored, since the identifier is never used
 
 Elaborating module <counter1_5>.
@@ -116,14 +118,18 @@ Elaborating module <row_7>.
 
 Elaborating module <column_8>.
 
-Elaborating module <pos_9>.
-WARNING:HDLCompiler:413 - "C:/Users/Yak Jun Lun/Documents/mojo/Quoridor/Quoridor/work/planAhead/Quoridor/Quoridor.srcs/sources_1/imports/verilog/pos_9.v" Line 49: Result of 103-bit expression is truncated to fit in 36-bit target.
+Elaborating module <wallcol_9>.
+WARNING:HDLCompiler:1127 - "C:/Users/Yak Jun Lun/Documents/mojo/Quoridor/Quoridor/work/planAhead/Quoridor/Quoridor.srcs/sources_1/imports/verilog/mojo_top_0.v" Line 116: Assignment to M_wallcol_out ignored, since the identifier is never used
 
-Elaborating module <alutest_10>.
+Elaborating module <pos_10>.
 
-Elaborating module <adder_22>.
+Elaborating module <alutest_11>.
 
-Elaborating module <counter_11>.
+Elaborating module <adder_23>.
+WARNING:HDLCompiler:1127 - "C:/Users/Yak Jun Lun/Documents/mojo/Quoridor/Quoridor/work/planAhead/Quoridor/Quoridor.srcs/sources_1/imports/verilog/mojo_top_0.v" Line 148: Assignment to M_alu_debug ignored, since the identifier is never used
+
+Elaborating module <counter_12>.
+WARNING:Xst:2972 - "C:/Users/Yak Jun Lun/Documents/mojo/Quoridor/Quoridor/work/planAhead/Quoridor/Quoridor.srcs/sources_1/imports/verilog/mojo_top_0.v" line 112. All outputs of instance <wallcol> of block <wallcol_9> are unconnected in block <mojo_top_0>. Underlying logic will be removed.
 
 =========================================================================
 *                           HDL Synthesis                               *
@@ -139,6 +145,8 @@ WARNING:Xst:647 - Input <spi_sck> is never used. This port will be preserved and
 WARNING:Xst:647 - Input <avr_tx> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
 WARNING:Xst:647 - Input <avr_rx_busy> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
 INFO:Xst:3210 - "C:/Users/Yak Jun Lun/Documents/mojo/Quoridor/Quoridor/work/planAhead/Quoridor/Quoridor.srcs/sources_1/imports/verilog/mojo_top_0.v" line 69: Output port <debug> of the instance <buttonHandler> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:/Users/Yak Jun Lun/Documents/mojo/Quoridor/Quoridor/work/planAhead/Quoridor/Quoridor.srcs/sources_1/imports/verilog/mojo_top_0.v" line 112: Output port <out> of the instance <wallcol> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:/Users/Yak Jun Lun/Documents/mojo/Quoridor/Quoridor/work/planAhead/Quoridor/Quoridor.srcs/sources_1/imports/verilog/mojo_top_0.v" line 142: Output port <debug> of the instance <alu> is unconnected or connected to loadless signal.
     Found 2-bit register for signal <M_main_q>.
     Found finite state machine <FSM_0> for signal <M_main_q>.
     -----------------------------------------------------------------------
@@ -151,16 +159,16 @@ INFO:Xst:3210 - "C:/Users/Yak Jun Lun/Documents/mojo/Quoridor/Quoridor/work/plan
     | Encoding           | auto                                           |
     | Implementation     | LUT                                            |
     -----------------------------------------------------------------------
-    Found 71-bit shifter logical right for signal <n0081> created at line 225
-    Found 5-bit 4-to-1 multiplexer for signal <M_row_pos> created at line 211.
-    Found 1-bit tristate buffer for signal <spi_miso> created at line 150
-    Found 1-bit tristate buffer for signal <spi_channel<3>> created at line 150
-    Found 1-bit tristate buffer for signal <spi_channel<2>> created at line 150
-    Found 1-bit tristate buffer for signal <spi_channel<1>> created at line 150
-    Found 1-bit tristate buffer for signal <spi_channel<0>> created at line 150
-    Found 1-bit tristate buffer for signal <avr_rx> created at line 150
+    Found 71-bit shifter logical right for signal <n0083> created at line 232
+    Found 5-bit 4-to-1 multiplexer for signal <M_row_pos> created at line 218.
+    Found 1-bit tristate buffer for signal <spi_miso> created at line 158
+    Found 1-bit tristate buffer for signal <spi_channel<3>> created at line 158
+    Found 1-bit tristate buffer for signal <spi_channel<2>> created at line 158
+    Found 1-bit tristate buffer for signal <spi_channel<1>> created at line 158
+    Found 1-bit tristate buffer for signal <spi_channel<0>> created at line 158
+    Found 1-bit tristate buffer for signal <avr_rx> created at line 158
     Summary:
-	inferred  10 Multiplexer(s).
+	inferred  16 Multiplexer(s).
 	inferred   1 Combinational logic shifter(s).
 	inferred   6 Tristate(s).
 	inferred   1 Finite State Machine(s).
@@ -184,11 +192,11 @@ Unit <counter_2> synthesized.
 
 Synthesizing Unit <counter_3>.
     Related source file is "C:/Users/Yak Jun Lun/Documents/mojo/Quoridor/Quoridor/work/planAhead/Quoridor/Quoridor.srcs/sources_1/imports/verilog/counter_3.v".
-    Found 11-bit register for signal <M_ctr_q>.
-    Found 11-bit adder for signal <M_ctr_d> created at line 35.
+    Found 13-bit register for signal <M_ctr_q>.
+    Found 13-bit adder for signal <M_ctr_d> created at line 35.
     Summary:
 	inferred   1 Adder/Subtractor(s).
-	inferred  11 D-type flip-flop(s).
+	inferred  13 D-type flip-flop(s).
 Unit <counter_3> synthesized.
 
 Synthesizing Unit <buttonHandler_4>.
@@ -200,29 +208,29 @@ WARNING:Xst:647 - Input <rst> is never used. This port will be preserved and lef
 	inferred   4 Multiplexer(s).
 Unit <buttonHandler_4> synthesized.
 
-Synthesizing Unit <edge_detector_12>.
-    Related source file is "C:/Users/Yak Jun Lun/Documents/mojo/Quoridor/Quoridor/work/planAhead/Quoridor/Quoridor.srcs/sources_1/imports/verilog/edge_detector_12.v".
+Synthesizing Unit <edge_detector_13>.
+    Related source file is "C:/Users/Yak Jun Lun/Documents/mojo/Quoridor/Quoridor/work/planAhead/Quoridor/Quoridor.srcs/sources_1/imports/verilog/edge_detector_13.v".
     Found 1-bit register for signal <M_last_q>.
     Summary:
 	inferred   1 D-type flip-flop(s).
 	inferred   1 Multiplexer(s).
-Unit <edge_detector_12> synthesized.
+Unit <edge_detector_13> synthesized.
 
-Synthesizing Unit <button_conditioner_13>.
-    Related source file is "C:/Users/Yak Jun Lun/Documents/mojo/Quoridor/Quoridor/work/planAhead/Quoridor/Quoridor.srcs/sources_1/imports/verilog/button_conditioner_13.v".
+Synthesizing Unit <button_conditioner_14>.
+    Related source file is "C:/Users/Yak Jun Lun/Documents/mojo/Quoridor/Quoridor/work/planAhead/Quoridor/Quoridor.srcs/sources_1/imports/verilog/button_conditioner_14.v".
     Found 20-bit register for signal <M_ctr_q>.
     Found 20-bit adder for signal <M_ctr_q[19]_GND_7_o_add_2_OUT> created at line 39.
     Summary:
 	inferred   1 Adder/Subtractor(s).
 	inferred  20 D-type flip-flop(s).
-Unit <button_conditioner_13> synthesized.
+Unit <button_conditioner_14> synthesized.
 
-Synthesizing Unit <pipeline_23>.
-    Related source file is "C:/Users/Yak Jun Lun/Documents/mojo/Quoridor/Quoridor/work/planAhead/Quoridor/Quoridor.srcs/sources_1/imports/verilog/pipeline_23.v".
+Synthesizing Unit <pipeline_24>.
+    Related source file is "C:/Users/Yak Jun Lun/Documents/mojo/Quoridor/Quoridor/work/planAhead/Quoridor/Quoridor.srcs/sources_1/imports/verilog/pipeline_24.v".
     Found 2-bit register for signal <M_pipe_q>.
     Summary:
 	inferred   2 D-type flip-flop(s).
-Unit <pipeline_23> synthesized.
+Unit <pipeline_24> synthesized.
 
 Synthesizing Unit <counter1_5>.
     Related source file is "C:/Users/Yak Jun Lun/Documents/mojo/Quoridor/Quoridor/work/planAhead/Quoridor/Quoridor.srcs/sources_1/imports/verilog/counter1_5.v".
@@ -308,20 +316,20 @@ WARNING:Xst:647 - Input <rst> is never used. This port will be preserved and lef
 	inferred   1 Adder/Subtractor(s).
 Unit <column_8> synthesized.
 
-Synthesizing Unit <pos_9>.
-    Related source file is "C:/Users/Yak Jun Lun/Documents/mojo/Quoridor/Quoridor/work/planAhead/Quoridor/Quoridor.srcs/sources_1/imports/verilog/pos_9.v".
-    Found 1-bit register for signal <M_debug1_q>.
+Synthesizing Unit <pos_10>.
+    Related source file is "C:/Users/Yak Jun Lun/Documents/mojo/Quoridor/Quoridor/work/planAhead/Quoridor/Quoridor.srcs/sources_1/imports/verilog/pos_10.v".
     Found 36-bit register for signal <M_regs_q>.
+    Found 1-bit register for signal <M_debug1_q>.
     Summary:
 	inferred  37 D-type flip-flop(s).
 	inferred   1 Multiplexer(s).
-Unit <pos_9> synthesized.
+Unit <pos_10> synthesized.
 
-Synthesizing Unit <alutest_10>.
-    Related source file is "C:/Users/Yak Jun Lun/Documents/mojo/Quoridor/Quoridor/work/planAhead/Quoridor/Quoridor.srcs/sources_1/imports/verilog/alutest_10.v".
+Synthesizing Unit <alutest_11>.
+    Related source file is "C:/Users/Yak Jun Lun/Documents/mojo/Quoridor/Quoridor/work/planAhead/Quoridor/Quoridor.srcs/sources_1/imports/verilog/alutest_11.v".
 WARNING:Xst:647 - Input <clk> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
 WARNING:Xst:647 - Input <rst> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
-    Found 6-bit subtractor for signal <GND_17_o_GND_17_o_sub_5_OUT> created at line 50.
+    Found 6-bit subtractor for signal <GND_18_o_GND_18_o_sub_5_OUT> created at line 50.
     Found 71-bit shifter logical right for signal <n0121> created at line 50
     Found 71-bit shifter logical right for signal <n0123> created at line 50
     Found 71-bit shifter logical right for signal <n0124> created at line 77
@@ -332,24 +340,24 @@ WARNING:Xst:647 - Input <rst> is never used. This port will be preserved and lef
 	inferred   2 Comparator(s).
 	inferred  89 Multiplexer(s).
 	inferred   3 Combinational logic shifter(s).
-Unit <alutest_10> synthesized.
+Unit <alutest_11> synthesized.
 
-Synthesizing Unit <adder_22>.
-    Related source file is "C:/Users/Yak Jun Lun/Documents/mojo/Quoridor/Quoridor/work/planAhead/Quoridor/Quoridor.srcs/sources_1/imports/verilog/adder_22.v".
-    Found 5-bit subtractor for signal <a[4]_GND_18_o_sub_2_OUT> created at line 24.
-    Found 5-bit adder for signal <a[4]_GND_18_o_add_0_OUT> created at line 21.
+Synthesizing Unit <adder_23>.
+    Related source file is "C:/Users/Yak Jun Lun/Documents/mojo/Quoridor/Quoridor/work/planAhead/Quoridor/Quoridor.srcs/sources_1/imports/verilog/adder_23.v".
+    Found 5-bit subtractor for signal <a[4]_GND_19_o_sub_2_OUT> created at line 24.
+    Found 5-bit adder for signal <a[4]_GND_19_o_add_0_OUT> created at line 21.
     Summary:
 	inferred   2 Adder/Subtractor(s).
-Unit <adder_22> synthesized.
+Unit <adder_23> synthesized.
 
-Synthesizing Unit <counter_11>.
-    Related source file is "C:/Users/Yak Jun Lun/Documents/mojo/Quoridor/Quoridor/work/planAhead/Quoridor/Quoridor.srcs/sources_1/imports/verilog/counter_11.v".
+Synthesizing Unit <counter_12>.
+    Related source file is "C:/Users/Yak Jun Lun/Documents/mojo/Quoridor/Quoridor/work/planAhead/Quoridor/Quoridor.srcs/sources_1/imports/verilog/counter_12.v".
     Found 1-bit register for signal <M_ctr_q>.
     Found 1-bit adder for signal <M_ctr_d> created at line 35.
     Summary:
 	inferred   1 Adder/Subtractor(s).
 	inferred   1 D-type flip-flop(s).
-Unit <counter_11> synthesized.
+Unit <counter_12> synthesized.
 
 =========================================================================
 HDL Synthesis Report
@@ -359,7 +367,7 @@ Macro Statistics
  5x3-bit multiplier                                    : 1
 # Adders/Subtractors                                   : 40
  1-bit adder                                           : 1
- 11-bit adder                                          : 1
+ 13-bit adder                                          : 1
  2-bit adder                                           : 1
  20-bit adder                                          : 5
  22-bit adder                                          : 1
@@ -371,7 +379,7 @@ Macro Statistics
  8-bit adder                                           : 5
 # Registers                                            : 24
  1-bit register                                        : 7
- 11-bit register                                       : 1
+ 13-bit register                                       : 1
  2-bit register                                        : 6
  20-bit register                                       : 5
  22-bit register                                       : 1
@@ -384,14 +392,15 @@ Macro Statistics
  6-bit comparator lessequal                            : 7
  7-bit comparator lessequal                            : 3
  8-bit comparator lessequal                            : 3
-# Multiplexers                                         : 156
- 1-bit 2-to-1 multiplexer                              : 129
+# Multiplexers                                         : 162
+ 1-bit 2-to-1 multiplexer                              : 131
  3-bit 2-to-1 multiplexer                              : 1
  36-bit 2-to-1 multiplexer                             : 3
- 4-bit 2-to-1 multiplexer                              : 4
- 5-bit 2-to-1 multiplexer                              : 11
+ 4-bit 2-to-1 multiplexer                              : 2
+ 5-bit 2-to-1 multiplexer                              : 13
  5-bit 4-to-1 multiplexer                              : 1
  6-bit 2-to-1 multiplexer                              : 7
+ 8-bit 2-to-1 multiplexer                              : 4
 # Logic shifters                                       : 4
  71-bit shifter logical right                          : 4
 # Tristates                                            : 6
@@ -405,9 +414,9 @@ Macro Statistics
 =========================================================================
 
 
-Synthesizing (advanced) Unit <button_conditioner_13>.
+Synthesizing (advanced) Unit <button_conditioner_14>.
 The following registers are absorbed into counter <M_ctr_q>: 1 register on signal <M_ctr_q>.
-Unit <button_conditioner_13> synthesized (advanced).
+Unit <button_conditioner_14> synthesized (advanced).
 
 Synthesizing (advanced) Unit <column_8>.
 	Multiplier <Mmult_n0005> in block <column_8> and adder/subtractor <Msub_out> in block <column_8> are combined into a MAC<Maddsub_n0005>.
@@ -417,9 +426,9 @@ Synthesizing (advanced) Unit <counter1_5>.
 The following registers are absorbed into counter <M_counter_q>: 1 register on signal <M_counter_q>.
 Unit <counter1_5> synthesized (advanced).
 
-Synthesizing (advanced) Unit <counter_11>.
+Synthesizing (advanced) Unit <counter_12>.
 The following registers are absorbed into counter <M_ctr_q_0>: 1 register on signal <M_ctr_q_0>.
-Unit <counter_11> synthesized (advanced).
+Unit <counter_12> synthesized (advanced).
 
 Synthesizing (advanced) Unit <counter_2>.
 The following registers are absorbed into counter <M_ctr_q>: 1 register on signal <M_ctr_q>.
@@ -447,7 +456,7 @@ Macro Statistics
  6-bit subtractor                                      : 1
 # Counters                                             : 10
  1-bit up counter                                      : 1
- 11-bit up counter                                     : 1
+ 13-bit up counter                                     : 1
  2-bit up counter                                      : 1
  20-bit up counter                                     : 5
  22-bit up counter                                     : 1
@@ -460,14 +469,15 @@ Macro Statistics
  6-bit comparator lessequal                            : 7
  7-bit comparator lessequal                            : 3
  8-bit comparator lessequal                            : 3
-# Multiplexers                                         : 151
- 1-bit 2-to-1 multiplexer                              : 124
+# Multiplexers                                         : 157
+ 1-bit 2-to-1 multiplexer                              : 126
  3-bit 2-to-1 multiplexer                              : 1
  36-bit 2-to-1 multiplexer                             : 3
- 4-bit 2-to-1 multiplexer                              : 4
- 5-bit 2-to-1 multiplexer                              : 11
+ 4-bit 2-to-1 multiplexer                              : 2
+ 5-bit 2-to-1 multiplexer                              : 13
  5-bit 4-to-1 multiplexer                              : 1
  6-bit 2-to-1 multiplexer                              : 7
+ 8-bit 2-to-1 multiplexer                              : 4
 # Logic shifters                                       : 4
  71-bit shifter logical right                          : 4
 # FSMs                                                 : 1
@@ -493,28 +503,18 @@ Optimizing unit <mojo_top_0> ...
 
 Optimizing unit <buttonHandler_4> ...
 
-Optimizing unit <pos_9> ...
+Optimizing unit <pos_10> ...
 
 Optimizing unit <div_6u_2u> ...
 
-Optimizing unit <alutest_10> ...
+Optimizing unit <alutest_11> ...
 
-Optimizing unit <adder_22> ...
+Optimizing unit <adder_23> ...
 WARNING:Xst:2677 - Node <pos/M_regs_q_35> of sequential type is unconnected in block <mojo_top_0>.
-WARNING:Xst:1293 - FF/Latch <pos/M_regs_q_18> has a constant value of 1 in block <mojo_top_0>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <pos/M_regs_q_16> has a constant value of 1 in block <mojo_top_0>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <pos/M_regs_q_14> has a constant value of 1 in block <mojo_top_0>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <pos/M_regs_q_13> has a constant value of 1 in block <mojo_top_0>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <pos/M_regs_q_12> has a constant value of 1 in block <mojo_top_0>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <pos/M_regs_q_11> has a constant value of 1 in block <mojo_top_0>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <pos/M_regs_q_10> has a constant value of 1 in block <mojo_top_0>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <pos/M_regs_q_9> has a constant value of 1 in block <mojo_top_0>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <pos/M_regs_q_7> has a constant value of 1 in block <mojo_top_0>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <pos/M_regs_q_5> has a constant value of 1 in block <mojo_top_0>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <pos/M_regs_q_4> has a constant value of 1 in block <mojo_top_0>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <pos/M_regs_q_2> has a constant value of 1 in block <mojo_top_0>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <pos/M_regs_q_0> has a constant value of 1 in block <mojo_top_0>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <pos/M_regs_q_19> has a constant value of 1 in block <mojo_top_0>. This FF/Latch will be trimmed during the optimization process.
 INFO:Xst:2261 - The FF/Latch <sclk/M_ctr_q_10> in Unit <mojo_top_0> is equivalent to the following FF/Latch, which will be removed : <scanclk/M_ctr_q_10> 
+INFO:Xst:2261 - The FF/Latch <sclk/M_ctr_q_11> in Unit <mojo_top_0> is equivalent to the following FF/Latch, which will be removed : <scanclk/M_ctr_q_11> 
+INFO:Xst:2261 - The FF/Latch <sclk/M_ctr_q_12> in Unit <mojo_top_0> is equivalent to the following FF/Latch, which will be removed : <scanclk/M_ctr_q_12> 
 INFO:Xst:2261 - The FF/Latch <sclk/M_ctr_q_0> in Unit <mojo_top_0> is equivalent to the following FF/Latch, which will be removed : <scanclk/M_ctr_q_0> 
 INFO:Xst:2261 - The FF/Latch <sclk/M_ctr_q_1> in Unit <mojo_top_0> is equivalent to the following FF/Latch, which will be removed : <scanclk/M_ctr_q_1> 
 INFO:Xst:2261 - The FF/Latch <sclk/M_ctr_q_2> in Unit <mojo_top_0> is equivalent to the following FF/Latch, which will be removed : <scanclk/M_ctr_q_2> 
@@ -529,9 +529,10 @@ INFO:Xst:3203 - The FF/Latch <buttonHandler/M_button_q_4> in Unit <mojo_top_0> i
 
 Mapping all equations...
 Building and optimizing final netlist ...
-Found area constraint ratio of 100 (+ 0) on block mojo_top_0, actual ratio is 7.
+Found area constraint ratio of 100 (+ 0) on block mojo_top_0, actual ratio is 8.
 FlipFlop pos/M_regs_q_20 has been replicated 1 time(s)
 FlipFlop pos/M_regs_q_21 has been replicated 1 time(s)
+FlipFlop pos/M_regs_q_23 has been replicated 1 time(s)
 
 Final Macro Processing ...
 
@@ -548,8 +549,8 @@ Unit <mojo_top_0> processed.
 Final Register Report
 
 Macro Statistics
-# Registers                                            : 171
- Flip-Flops                                            : 171
+# Registers                                            : 184
+ Flip-Flops                                            : 184
 # Shift Registers                                      : 5
  2-bit shift register                                  : 5
 
@@ -574,22 +575,22 @@ Top Level Output File Name         : mojo_top_0.ngc
 
 Primitive and Black Box Usage:
 ------------------------------
-# BELS                             : 686
+# BELS                             : 752
 #      GND                         : 14
 #      INV                         : 16
 #      LUT1                        : 116
-#      LUT2                        : 13
-#      LUT3                        : 13
-#      LUT4                        : 32
-#      LUT5                        : 81
-#      LUT6                        : 145
+#      LUT2                        : 17
+#      LUT3                        : 22
+#      LUT4                        : 33
+#      LUT5                        : 64
+#      LUT6                        : 209
 #      MUXCY                       : 116
-#      MUXF7                       : 4
-#      VCC                         : 13
+#      MUXF7                       : 10
+#      VCC                         : 12
 #      XORCY                       : 123
-# FlipFlops/Latches                : 176
+# FlipFlops/Latches                : 189
 #      FD                          : 7
-#      FDE                         : 33
+#      FDE                         : 46
 #      FDR                         : 31
 #      FDRE                        : 101
 #      FDS                         : 4
@@ -598,9 +599,9 @@ Primitive and Black Box Usage:
 # Clock Buffers                    : 2
 #      BUFG                        : 1
 #      BUFGP                       : 1
-# IO Buffers                       : 56
+# IO Buffers                       : 57
 #      IBUF                        : 11
-#      OBUF                        : 39
+#      OBUF                        : 40
 #      OBUFT                       : 6
 
 Device utilization summary:
@@ -610,22 +611,22 @@ Selected Device : 6slx9tqg144-2
 
 
 Slice Logic Utilization: 
- Number of Slice Registers:             176  out of  11440     1%  
- Number of Slice LUTs:                  421  out of   5720     7%  
-    Number used as Logic:               416  out of   5720     7%  
+ Number of Slice Registers:             189  out of  11440     1%  
+ Number of Slice LUTs:                  482  out of   5720     8%  
+    Number used as Logic:               477  out of   5720     8%  
     Number used as Memory:                5  out of   1440     0%  
        Number used as SRL:                5
 
 Slice Logic Distribution: 
- Number of LUT Flip Flop pairs used:    436
-   Number with an unused Flip Flop:     260  out of    436    59%  
-   Number with an unused LUT:            15  out of    436     3%  
-   Number of fully used LUT-FF pairs:   161  out of    436    36%  
+ Number of LUT Flip Flop pairs used:    498
+   Number with an unused Flip Flop:     309  out of    498    62%  
+   Number with an unused LUT:            16  out of    498     3%  
+   Number of fully used LUT-FF pairs:   173  out of    498    34%  
    Number of unique control sets:        24
 
 IO Utilization: 
- Number of IOs:                          66
- Number of bonded IOBs:                  57  out of    102    55%  
+ Number of IOs:                          67
+ Number of bonded IOBs:                  58  out of    102    56%  
 
 Specific Feature Utilization:
  Number of BUFG/BUFGCTRLs:                2  out of     16    12%  
@@ -651,9 +652,9 @@ Clock Information:
 -----------------------------------+-----------------------------+-------+
 Clock Signal                       | Clock buffer(FF name)       | Load  |
 -----------------------------------+-----------------------------+-------+
-sclk/M_ctr_q_21                    | BUFG                        | 28    |
+sclk/M_ctr_q_21                    | BUFG                        | 41    |
 clk                                | BUFGP                       | 145   |
-sclk/M_ctr_q_10                    | NONE(counter1/M_counter_q_0)| 8     |
+sclk/M_ctr_q_12                    | NONE(counter1/M_counter_q_0)| 8     |
 -----------------------------------+-----------------------------+-------+
 INFO:Xst:2169 - HDL ADVISOR - Some clock signals were not automatically buffered by XST with BUFG/BUFR resources. Please use the buffer_type constraint in order to insert these buffers to the clock signals to help prevent skew problems.
 
@@ -665,10 +666,10 @@ Timing Summary:
 ---------------
 Speed Grade: -2
 
-   Minimum period: 10.037ns (Maximum Frequency: 99.631MHz)
-   Minimum input arrival time before clock: 12.660ns
-   Maximum output required time after clock: 15.062ns
-   Maximum combinational path delay: 8.445ns
+   Minimum period: 10.333ns (Maximum Frequency: 96.777MHz)
+   Minimum input arrival time before clock: 12.902ns
+   Maximum output required time after clock: 16.949ns
+   Maximum combinational path delay: No path found
 
 Timing Details:
 ---------------
@@ -676,38 +677,39 @@ All values displayed in nanoseconds (ns)
 
 =========================================================================
 Timing constraint: Default period analysis for Clock 'sclk/M_ctr_q_21'
-  Clock period: 10.037ns (frequency: 99.631MHz)
-  Total number of paths / destination ports: 11041 / 53
+  Clock period: 10.333ns (frequency: 96.777MHz)
+  Total number of paths / destination ports: 20207 / 79
 -------------------------------------------------------------------------
-Delay:               10.037ns (Levels of Logic = 11)
-  Source:            pos/M_regs_q_27 (FF)
-  Destination:       pos/M_regs_q_34 (FF)
+Delay:               10.333ns (Levels of Logic = 12)
+  Source:            pos/M_regs_q_22 (FF)
+  Destination:       pos/M_regs_q_28 (FF)
   Source Clock:      sclk/M_ctr_q_21 rising
   Destination Clock: sclk/M_ctr_q_21 rising
 
-  Data Path: pos/M_regs_q_27 to pos/M_regs_q_34
+  Data Path: pos/M_regs_q_22 to pos/M_regs_q_28
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     FDE:C->Q             18   0.525   1.343  M_regs_q_27 (M_regs_q_27)
-     end scope: 'pos:out<27>'
-     begin scope: 'alu:a<27>'
-     LUT4:I2->O            2   0.250   0.726  Mmux_M_adder_a3_SW0 (N47)
-     LUT6:I5->O           18   0.254   1.511  Mmux_M_adder_a3 (M_adder_a<2>)
-     begin scope: 'alu/adder:a<2>'
-     LUT6:I2->O            1   0.254   0.000  sum<3>1_G (N232)
-     MUXF7:I1->O          19   0.175   1.261  sum<3>1 (sum<3>)
-     end scope: 'alu/adder:sum<3>'
-     LUT5:I4->O            1   0.254   0.958  a[35]_a[35]_OR_45_o1 (a[35]_a[35]_OR_45_o1)
-     LUT6:I2->O            1   0.254   0.682  a[35]_a[35]_OR_45_o4 (a[35]_a[35]_OR_45_o4)
-     LUT6:I5->O           10   0.254   1.008  a[35]_a[35]_OR_45_o14 (a[35]_a[35]_OR_45_o)
-     end scope: 'alu:a[35]_a[35]_OR_45_o'
-     begin scope: 'pos:a[35]_a[35]_OR_45_o'
-     LUT6:I5->O            1   0.254   0.000  Mmux_M_regs_d[35]_GND_16_o_mux_6_OUT26 (M_regs_d[35]_GND_16_o_mux_6_OUT<32>)
-     FDE:D                     0.074          M_regs_q_32
+     FDE:C->Q             20   0.525   1.286  M_regs_q_22 (M_regs_q_22)
+     end scope: 'pos:out<22>'
+     begin scope: 'alu:a<22>'
+     LUT4:I3->O            2   0.254   0.726  Mmux_M_adder_a3_SW0 (N96)
+     LUT6:I5->O           19   0.254   1.261  Mmux_M_adder_a3 (M_adder_a<2>)
+     begin scope: 'alu/adder:M_adder_a<2>'
+     LUT6:I5->O            1   0.254   0.000  sum<3>1_1_F (N303)
+     MUXF7:I0->O           5   0.163   0.841  sum<3>1_1 (sum<3>1)
+     end scope: 'alu/adder:sum<3>1'
+     LUT6:I5->O            1   0.254   0.682  a[35]_a[35]_OR_47_o10_SW3 (N233)
+     LUT5:I4->O            1   0.254   0.682  a[35]_a[35]_OR_47_o10 (a[35]_a[35]_OR_47_o10)
+     LUT6:I5->O            8   0.254   1.172  a[35]_a[35]_OR_47_o11 (a[35]_a[35]_OR_47_o11)
+     LUT6:I3->O            4   0.235   0.912  Mmux_result183 (Mmux_result183)
+     end scope: 'alu:Mmux_result183'
+     begin scope: 'pos:Mmux_result183'
+     LUT6:I4->O            1   0.250   0.000  Mmux_M_regs_d[35]_GND_17_o_mux_8_OUT18 (M_regs_d[35]_GND_17_o_mux_8_OUT<25>)
+     FDE:D                     0.074          M_regs_q_25
     ----------------------------------------
-    Total                     10.037ns (2.548ns logic, 7.489ns route)
-                                       (25.4% logic, 74.6% route)
+    Total                     10.333ns (2.771ns logic, 7.562ns route)
+                                       (26.8% logic, 73.2% route)
 
 =========================================================================
 Timing constraint: Default period analysis for Clock 'clk'
@@ -728,7 +730,7 @@ Delay:               6.446ns (Levels of Logic = 5)
      LUT6:I0->O            2   0.254   0.954  out1 (buttonHandler/button_cond/out)
      LUT5:I2->O            2   0.235   1.002  out4 (out)
      end scope: 'buttonHandler/button_cond:out'
-     LUT5:I1->O            1   0.254   0.682  _n0047_inv_SW0 (N0)
+     LUT5:I1->O            1   0.254   0.682  _n0047_inv_SW0 (N23)
      LUT6:I5->O            4   0.254   0.803  _n0047_inv (_n0047_inv)
      FDE:CE                    0.302          M_button_q_2
     ----------------------------------------
@@ -736,26 +738,28 @@ Delay:               6.446ns (Levels of Logic = 5)
                                        (28.3% logic, 71.7% route)
 
 =========================================================================
-Timing constraint: Default period analysis for Clock 'sclk/M_ctr_q_10'
-  Clock period: 3.512ns (frequency: 284.738MHz)
+Timing constraint: Default period analysis for Clock 'sclk/M_ctr_q_12'
+  Clock period: 3.852ns (frequency: 259.584MHz)
   Total number of paths / destination ports: 64 / 16
 -------------------------------------------------------------------------
-Delay:               3.512ns (Levels of Logic = 1)
-  Source:            wallcounter/M_wallcounter_q_2 (FF)
-  Destination:       wallcounter/M_wallcounter_q_0 (FF)
-  Source Clock:      sclk/M_ctr_q_10 rising
-  Destination Clock: sclk/M_ctr_q_10 rising
+Delay:               3.852ns (Levels of Logic = 2)
+  Source:            counter1/M_counter_q_1 (FF)
+  Destination:       counter1/M_counter_q_0 (FF)
+  Source Clock:      sclk/M_ctr_q_12 rising
+  Destination Clock: sclk/M_ctr_q_12 rising
 
-  Data Path: wallcounter/M_wallcounter_q_2 to wallcounter/M_wallcounter_q_0
+  Data Path: counter1/M_counter_q_1 to counter1/M_counter_q_0
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     FDR:C->Q              8   0.525   1.399  M_wallcounter_q_2 (M_wallcounter_q_2)
-     LUT6:I0->O            6   0.254   0.875  M_wallcounter_q[5]_GND_10_o_equal_2_o<5>1 (M_wallcounter_q[5]_GND_10_o_equal_2_o)
-     FDR:R                     0.459          M_wallcounter_q_0
+     FDR:C->Q             31   0.525   1.611  M_counter_q_1 (M_counter_q_1)
+     end scope: 'counter1:out<1>'
+     LUT2:I0->O           10   0.250   1.007  _n01091 (_n0109)
+     begin scope: 'counter1:_n0109'
+     FDR:R                     0.459          M_counter_q_0
     ----------------------------------------
-    Total                      3.512ns (1.238ns logic, 2.274ns route)
-                                       (35.3% logic, 64.7% route)
+    Total                      3.852ns (1.234ns logic, 2.618ns route)
+                                       (32.0% logic, 68.0% route)
 
 =========================================================================
 Timing constraint: Default OFFSET IN BEFORE for Clock 'clk'
@@ -772,7 +776,7 @@ Offset:              4.427ns (Levels of Logic = 4)
     ----------------------------------------  ------------
      IBUF:I->O             4   1.328   0.804  io_dip_3_IBUF (io_dip_3_IBUF)
      begin scope: 'buttonHandler:io_dip_3_IBUF'
-     LUT5:I4->O            1   0.254   0.682  _n0047_inv_SW0 (N0)
+     LUT5:I4->O            1   0.254   0.682  _n0047_inv_SW0 (N23)
      LUT6:I5->O            4   0.254   0.803  _n0047_inv (_n0047_inv)
      FDE:CE                    0.302          M_button_q_2
     ----------------------------------------
@@ -781,143 +785,100 @@ Offset:              4.427ns (Levels of Logic = 4)
 
 =========================================================================
 Timing constraint: Default OFFSET IN BEFORE for Clock 'sclk/M_ctr_q_21'
-  Total number of paths / destination ports: 46250 / 49
+  Total number of paths / destination ports: 78650 / 75
 -------------------------------------------------------------------------
-Offset:              12.660ns (Levels of Logic = 12)
-  Source:            io_dip<2> (PAD)
-  Destination:       pos/M_regs_q_34 (FF)
+Offset:              12.902ns (Levels of Logic = 14)
+  Source:            io_dip<1> (PAD)
+  Destination:       pos/M_regs_q_28 (FF)
   Destination Clock: sclk/M_ctr_q_21 rising
 
-  Data Path: io_dip<2> to pos/M_regs_q_34
+  Data Path: io_dip<1> to pos/M_regs_q_28
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     IBUF:I->O            15   1.328   1.431  io_dip_2_IBUF (led_4_OBUF)
-     begin scope: 'alu:alufn<4>'
-     LUT4:I0->O           12   0.254   1.297  alufn[4]_GND_17_o_equal_18_o<4>1 (alufn[4]_GND_17_o_equal_18_o)
-     LUT4:I1->O            3   0.235   0.766  Mmux_M_adder_a2_SW0 (N45)
-     LUT6:I5->O            5   0.254   1.069  Mmux_M_adder_a2_1 (Mmux_M_adder_a2)
-     LUT6:I3->O            4   0.235   0.804  a[35]_a[35]_OR_45_o5_SW0 (N140)
-     LUT5:I4->O            1   0.254   0.958  a[35]_a[35]_OR_45_o6 (a[35]_a[35]_OR_45_o6)
-     LUT6:I2->O            1   0.254   0.910  a[35]_a[35]_OR_45_o9 (a[35]_a[35]_OR_45_o9)
-     LUT6:I3->O            1   0.235   0.790  a[35]_a[35]_OR_45_o11 (a[35]_a[35]_OR_45_o11)
-     LUT6:I4->O           10   0.250   1.008  a[35]_a[35]_OR_45_o14 (a[35]_a[35]_OR_45_o)
-     end scope: 'alu:a[35]_a[35]_OR_45_o'
-     begin scope: 'pos:a[35]_a[35]_OR_45_o'
-     LUT6:I5->O            1   0.254   0.000  Mmux_M_regs_d[35]_GND_16_o_mux_6_OUT26 (M_regs_d[35]_GND_16_o_mux_6_OUT<32>)
-     FDE:D                     0.074          M_regs_q_32
+     IBUF:I->O            11   1.328   1.267  io_dip_1_IBUF (io_dip_1_IBUF)
+     begin scope: 'alu:alufn<3>'
+     LUT4:I1->O           10   0.235   1.236  alufn[4]_GND_18_o_equal_19_o<4>1 (alufn[4]_GND_18_o_equal_19_o)
+     LUT4:I1->O            4   0.235   0.804  Mmux_M_adder_a1_SW0 (N92)
+     LUT6:I5->O            6   0.254   0.984  Mmux_M_adder_a1_1 (Mmux_M_adder_a1)
+     begin scope: 'alu/adder:a<0>'
+     LUT4:I2->O           19   0.250   1.261  sum<1>1 (sum<1>)
+     end scope: 'alu/adder:sum<1>'
+     LUT6:I5->O            1   0.254   0.910  Msub_GND_18_o_GND_18_o_sub_5_OUT_xor<3>11_SW7_G (N288)
+     LUT6:I3->O            1   0.235   0.000  Sh5321_G (N300)
+     MUXF7:I1->O           1   0.175   0.682  Sh5321 (Sh5321)
+     LUT6:I5->O            8   0.254   1.052  Sh5324 (Sh532)
+     LUT6:I4->O            4   0.250   0.912  Mmux_result183 (Mmux_result183)
+     end scope: 'alu:Mmux_result183'
+     begin scope: 'pos:Mmux_result183'
+     LUT6:I4->O            1   0.250   0.000  Mmux_M_regs_d[35]_GND_17_o_mux_8_OUT18 (M_regs_d[35]_GND_17_o_mux_8_OUT<25>)
+     FDE:D                     0.074          M_regs_q_25
     ----------------------------------------
-    Total                     12.660ns (3.627ns logic, 9.033ns route)
-                                       (28.6% logic, 71.4% route)
+    Total                     12.902ns (3.794ns logic, 9.108ns route)
+                                       (29.4% logic, 70.6% route)
 
 =========================================================================
-Timing constraint: Default OFFSET OUT AFTER for Clock 'clk'
-  Total number of paths / destination ports: 11 / 5
+Timing constraint: Default OFFSET OUT AFTER for Clock 'sclk/M_ctr_q_12'
+  Total number of paths / destination ports: 45693 / 40
 -------------------------------------------------------------------------
-Offset:              8.415ns (Levels of Logic = 5)
-  Source:            buttonHandler/M_button_q_4 (FF)
-  Destination:       led<5> (PAD)
-  Source Clock:      clk rising
+Offset:              16.949ns (Levels of Logic = 13)
+  Source:            wallcounter/M_wallcounter_q_4 (FF)
+  Destination:       io_led<3> (PAD)
+  Source Clock:      sclk/M_ctr_q_12 rising
 
-  Data Path: buttonHandler/M_button_q_4 to led<5>
+  Data Path: wallcounter/M_wallcounter_q_4 to io_led<3>
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     FDE:C->Q             86   0.525   2.208  M_button_q_4 (M_button_q_4)
-     end scope: 'buttonHandler:out<4>'
-     begin scope: 'alu:alufn<1>'
-     LUT4:I2->O           15   0.250   1.585  alufn[4]_GND_17_o_equal_20_o<4>1 (alufn[4]_GND_17_o_equal_20_o)
-     LUT5:I0->O            1   0.254   0.681  Mmux_debug11 (debug<0>)
-     end scope: 'alu:debug<0>'
-     OBUF:I->O                 2.912          led_5_OBUF (led<5>)
+     FDR:C->Q             10   0.525   1.284  M_wallcounter_q_4 (M_wallcounter_q_4)
+     begin scope: 'wallcounter/M_wallcounter_q[5]_PWR_10_o_div_4:a<4>'
+     LUT4:I0->O            9   0.254   1.431  o<2>1 (o<2>)
+     end scope: 'wallcounter/M_wallcounter_q[5]_PWR_10_o_div_4:o<2>'
+     end scope: 'wallcounter:out<2>'
+     LUT6:I0->O            1   0.254   0.958  Sh1772 (Sh1772)
+     LUT6:I2->O            2   0.254   1.002  Sh1775 (Sh1775)
+     LUT4:I0->O           22   0.254   1.442  Sh1776 (Sh177)
+     LUT6:I4->O           23   0.250   1.788  Mmux_M_row_pos31 (M_row_pos<2>)
+     begin scope: 'column:pos<2>'
+     LUT5:I0->O            0   0.254   0.000  Maddsub_n0005_Madd1_lut<2> (Maddsub_n0005_Madd1_lut<2>)
+     XORCY:LI->O           6   0.149   1.306  Maddsub_n0005_Madd1_xor<2> (Maddsub_n0005_2)
+     LUT6:I1->O            8   0.254   1.399  Maddsub_n0005_Madd_xor<2>11 (out<2>)
+     end scope: 'column:out<2>'
+     LUT6:I0->O            2   0.254   0.725  wall1col<3>1 (wall1col_3_OBUF)
+     OBUF:I->O                 2.912          io_led_3_OBUF (io_led<3>)
     ----------------------------------------
-    Total                      8.415ns (3.941ns logic, 4.474ns route)
-                                       (46.8% logic, 53.2% route)
+    Total                     16.949ns (5.614ns logic, 11.335ns route)
+                                       (33.1% logic, 66.9% route)
 
 =========================================================================
 Timing constraint: Default OFFSET OUT AFTER for Clock 'sclk/M_ctr_q_21'
-  Total number of paths / destination ports: 4223 / 25
+  Total number of paths / destination ports: 17496 / 40
 -------------------------------------------------------------------------
-Offset:              13.903ns (Levels of Logic = 11)
-  Source:            pos/M_regs_q_23 (FF)
-  Destination:       p1col<3> (PAD)
+Offset:              15.456ns (Levels of Logic = 11)
+  Source:            pos/M_regs_q_21 (FF)
+  Destination:       io_led<3> (PAD)
   Source Clock:      sclk/M_ctr_q_21 rising
 
-  Data Path: pos/M_regs_q_23 to p1col<3>
+  Data Path: pos/M_regs_q_21 to io_led<3>
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     FDE:C->Q             31   0.525   1.779  M_regs_q_23 (M_regs_q_23)
-     end scope: 'pos:out<23>'
-     LUT6:I2->O            1   0.254   0.910  Sh17711 (Sh17711)
-     LUT6:I3->O            2   0.235   0.726  Sh17715 (Sh1771)
-     LUT6:I5->O           10   0.254   1.116  Sh1774 (Sh177)
-     LUT6:I4->O           20   0.250   1.716  Mmux_M_row_pos31 (M_row_pos<2>)
+     FDE:C->Q             27   0.525   1.712  M_regs_q_21 (M_regs_q_21)
+     end scope: 'pos:out<21>'
+     LUT6:I2->O            1   0.254   0.958  Sh1221 (Sh1221)
+     LUT6:I2->O            3   0.254   0.766  Sh1225 (Sh122)
+     LUT4:I3->O           22   0.254   1.442  Sh1776 (Sh177)
+     LUT6:I4->O           23   0.250   1.788  Mmux_M_row_pos31 (M_row_pos<2>)
      begin scope: 'column:pos<2>'
      LUT5:I0->O            0   0.254   0.000  Maddsub_n0005_Madd1_lut<2> (Maddsub_n0005_Madd1_lut<2>)
-     XORCY:LI->O           4   0.149   0.804  Maddsub_n0005_Madd1_xor<2> (Maddsub_n0005_2)
-     LUT2:I1->O            2   0.254   0.834  Maddsub_n0005_Madd_lut<2>1 (Maddsub_n0005_Madd_lut<2>)
-     end scope: 'column:Maddsub_n0005_Madd_lut<2>'
-     LUT6:I4->O            1   0.250   0.681  Mmux_p1col21 (p1col_1_OBUF)
-     OBUF:I->O                 2.912          p1col_1_OBUF (p1col<1>)
+     XORCY:LI->O           6   0.149   1.306  Maddsub_n0005_Madd1_xor<2> (Maddsub_n0005_2)
+     LUT6:I1->O            8   0.254   1.399  Maddsub_n0005_Madd_xor<2>11 (out<2>)
+     end scope: 'column:out<2>'
+     LUT6:I0->O            2   0.254   0.725  wall1col<3>1 (wall1col_3_OBUF)
+     OBUF:I->O                 2.912          io_led_3_OBUF (io_led<3>)
     ----------------------------------------
-    Total                     13.903ns (5.337ns logic, 8.566ns route)
-                                       (38.4% logic, 61.6% route)
-
-=========================================================================
-Timing constraint: Default OFFSET OUT AFTER for Clock 'sclk/M_ctr_q_10'
-  Total number of paths / destination ports: 14924 / 23
--------------------------------------------------------------------------
-Offset:              15.062ns (Levels of Logic = 13)
-  Source:            wallcounter/M_wallcounter_q_4 (FF)
-  Destination:       p1col<3> (PAD)
-  Source Clock:      sclk/M_ctr_q_10 rising
-
-  Data Path: wallcounter/M_wallcounter_q_4 to p1col<3>
-                                Gate     Net
-    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
-    ----------------------------------------  ------------
-     FDR:C->Q              9   0.525   1.252  M_wallcounter_q_4 (M_wallcounter_q_4)
-     begin scope: 'wallcounter/M_wallcounter_q[5]_PWR_10_o_div_4:a<4>'
-     LUT4:I0->O            7   0.254   1.365  o<2>1 (o<2>)
-     end scope: 'wallcounter/M_wallcounter_q[5]_PWR_10_o_div_4:o<2>'
-     end scope: 'wallcounter:out<2>'
-     LUT6:I0->O            1   0.254   0.958  Sh17712 (Sh17712)
-     LUT6:I2->O            2   0.254   0.726  Sh17715 (Sh1771)
-     LUT6:I5->O           10   0.254   1.116  Sh1774 (Sh177)
-     LUT6:I4->O           20   0.250   1.716  Mmux_M_row_pos31 (M_row_pos<2>)
-     begin scope: 'column:pos<2>'
-     LUT5:I0->O            0   0.254   0.000  Maddsub_n0005_Madd1_lut<2> (Maddsub_n0005_Madd1_lut<2>)
-     XORCY:LI->O           4   0.149   0.804  Maddsub_n0005_Madd1_xor<2> (Maddsub_n0005_2)
-     LUT2:I1->O            2   0.254   0.834  Maddsub_n0005_Madd_lut<2>1 (Maddsub_n0005_Madd_lut<2>)
-     end scope: 'column:Maddsub_n0005_Madd_lut<2>'
-     LUT6:I4->O            1   0.250   0.681  Mmux_p1col21 (p1col_1_OBUF)
-     OBUF:I->O                 2.912          p1col_1_OBUF (p1col<1>)
-    ----------------------------------------
-    Total                     15.062ns (5.610ns logic, 9.452ns route)
-                                       (37.2% logic, 62.8% route)
-
-=========================================================================
-Timing constraint: Default path analysis
-  Total number of paths / destination ports: 18 / 6
--------------------------------------------------------------------------
-Delay:               8.445ns (Levels of Logic = 5)
-  Source:            io_dip<1> (PAD)
-  Destination:       led<5> (PAD)
-
-  Data Path: io_dip<1> to led<5>
-                                Gate     Net
-    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
-    ----------------------------------------  ------------
-     IBUF:I->O            15   1.328   1.431  io_dip_1_IBUF (led_3_OBUF)
-     begin scope: 'alu:alufn<3>'
-     LUT4:I0->O           15   0.254   1.585  alufn[4]_GND_17_o_equal_20_o<4>1 (alufn[4]_GND_17_o_equal_20_o)
-     LUT5:I0->O            1   0.254   0.681  Mmux_debug11 (debug<0>)
-     end scope: 'alu:debug<0>'
-     OBUF:I->O                 2.912          led_5_OBUF (led<5>)
-    ----------------------------------------
-    Total                      8.445ns (4.748ns logic, 3.697ns route)
-                                       (56.2% logic, 43.8% route)
+    Total                     15.456ns (5.360ns logic, 10.096ns route)
+                                       (34.7% logic, 65.3% route)
 
 =========================================================================
 
@@ -930,15 +891,15 @@ Clock to Setup on destination clock clk
 Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ---------------+---------+---------+---------+---------+
 clk            |    6.446|         |         |         |
-sclk/M_ctr_q_21|    4.449|         |         |         |
+sclk/M_ctr_q_21|    4.482|         |         |         |
 ---------------+---------+---------+---------+---------+
 
-Clock to Setup on destination clock sclk/M_ctr_q_10
+Clock to Setup on destination clock sclk/M_ctr_q_12
 ---------------+---------+---------+---------+---------+
                | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ---------------+---------+---------+---------+---------+
-sclk/M_ctr_q_10|    3.512|         |         |         |
+sclk/M_ctr_q_12|    3.852|         |         |         |
 ---------------+---------+---------+---------+---------+
 
 Clock to Setup on destination clock sclk/M_ctr_q_21
@@ -946,21 +907,21 @@ Clock to Setup on destination clock sclk/M_ctr_q_21
                | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ---------------+---------+---------+---------+---------+
-clk            |   12.839|         |         |         |
-sclk/M_ctr_q_21|   10.037|         |         |         |
+clk            |   13.220|         |         |         |
+sclk/M_ctr_q_21|   10.333|         |         |         |
 ---------------+---------+---------+---------+---------+
 
 =========================================================================
 
 
-Total REAL time to Xst completion: 12.00 secs
-Total CPU time to Xst completion: 12.17 secs
+Total REAL time to Xst completion: 14.00 secs
+Total CPU time to Xst completion: 14.56 secs
  
 --> 
 
-Total memory usage is 298000 kilobytes
+Total memory usage is 298192 kilobytes
 
 Number of errors   :    0 (   0 filtered)
-Number of warnings :   34 (   0 filtered)
-Number of infos    :   15 (   0 filtered)
+Number of warnings :   24 (   0 filtered)
+Number of infos    :   19 (   0 filtered)
 

@@ -1,5 +1,5 @@
 //! **************************************************************************
-// Written by: Map P.20131013 on Mon Dec 12 20:59:59 2016
+// Written by: Map P.20131013 on Mon Dec 12 23:00:21 2016
 //! **************************************************************************
 
 SCHEMATIC START;
@@ -11,10 +11,11 @@ COMP "io_button[2]" LOCATE = SITE "P139" LEVEL 1;
 COMP "io_button[3]" LOCATE = SITE "P142" LEVEL 1;
 COMP "io_button[4]" LOCATE = SITE "P138" LEVEL 1;
 COMP "cclk" LOCATE = SITE "P70" LEVEL 1;
-COMP "wall1col[0]" LOCATE = SITE "P40" LEVEL 1;
-COMP "wall1col[1]" LOCATE = SITE "P50" LEVEL 1;
-COMP "wall1col[2]" LOCATE = SITE "P35" LEVEL 1;
-COMP "wall1col[3]" LOCATE = SITE "P41" LEVEL 1;
+COMP "wall1col[0]" LOCATE = SITE "P11" LEVEL 1;
+COMP "wall1col[1]" LOCATE = SITE "P14" LEVEL 1;
+COMP "wall1col[2]" LOCATE = SITE "P26" LEVEL 1;
+COMP "wall1col[3]" LOCATE = SITE "P23" LEVEL 1;
+COMP "wall1col[4]" LOCATE = SITE "P24" LEVEL 1;
 COMP "wall0row[0]" LOCATE = SITE "P84" LEVEL 1;
 COMP "wall0row[1]" LOCATE = SITE "P85" LEVEL 1;
 COMP "wall0row[2]" LOCATE = SITE "P82" LEVEL 1;

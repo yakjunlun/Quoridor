@@ -1,0 +1,10 @@
+module wallcol (
+   input pos[5],
+    input clk,
+    input rst, 
+   output out[5]){
+     
+  always{
+    out= pos - (4*(pos/4));
+  }}
+  

@@ -24,7 +24,7 @@ module mojo_top_0 (
     output reg [4:0] gp10row,
     output reg [4:0] bp20row,
     output reg [4:0] p1col,
-    output reg [3:0] wall1col
+    output reg [4:0] wall1col
   );
   
   
@@ -107,12 +107,20 @@ module mojo_top_0 (
     .pos(M_column_pos),
     .out(M_column_out)
   );
+  wire [5-1:0] M_wallcol_out;
+  reg [5-1:0] M_wallcol_pos;
+  wallcol_9 wallcol (
+    .clk(M_scanclk_value),
+    .rst(rst),
+    .pos(M_wallcol_pos),
+    .out(M_wallcol_out)
+  );
   
   wire [36-1:0] M_pos_out;
   wire [1-1:0] M_pos_debug;
   reg [1-1:0] M_pos_en;
   reg [36-1:0] M_pos_data;
-  pos_9 pos (
+  pos_10 pos (
     .clk(M_sclk_value),
     .rst(pos_rst),
     .en(M_pos_en),
@@ -131,7 +139,7 @@ module mojo_top_0 (
   reg [36-1:0] M_alu_a;
   reg [5-1:0] M_alu_alufn;
   reg [3-1:0] M_alu_b;
-  alutest_10 alu (
+  alutest_11 alu (
     .clk(M_sclk_value),
     .rst(rst),
     .a(M_alu_a),
@@ -141,7 +149,7 @@ module mojo_top_0 (
     .result(M_alu_result)
   );
   wire [1-1:0] M_cntr_value;
-  counter_11 cntr (
+  counter_12 cntr (
     .clk(M_sclk_value),
     .rst(rst),
     .value(M_cntr_value)
@@ -174,12 +182,10 @@ module mojo_top_0 (
     b = M_buttonHandler_out[0+2-:3];
     a = M_pos_out;
     M_alu_alufn = fn;
-    led[0+4-:5] = fn;
     M_alu_a = a;
     M_alu_b = b;
     io_led[7+0-:1] = M_cntr_value;
     io_led[6+0-:1] = M_pos_debug;
-    led[5+2-:3] = M_alu_debug;
     M_buttonHandler_button_rst = io_dip[3+0-:1];
     
     case (M_main_q)
@@ -207,6 +213,7 @@ module mojo_top_0 (
     pos_rst = io_dip[7+0-:1];
     M_row_pos = 1'h0;
     M_column_pos = 1'h0;
+    M_wallcol_pos = 1'h0;
     
     case (M_counter1_out)
       2'h0: begin
@@ -224,9 +231,11 @@ module mojo_top_0 (
       2'h2: begin
         if (a[(M_wallcounter_out)*1+0-:1] == 1'h1) begin
           M_row_pos = M_wallcounter_out;
+          led[(M_row_out)*1+0-:1] = 1'h1;
           wall0row[(M_row_out)*1+0-:1] = 1'h0;
           M_column_pos = M_wallcounter_out;
           wall1col[(M_column_out)*1+0-:1] = 1'h1;
+          io_led[(M_column_out)*1+0-:1] = 1'h1;
         end
       end
     endcase

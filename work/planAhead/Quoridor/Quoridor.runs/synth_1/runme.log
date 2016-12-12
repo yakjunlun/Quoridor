@@ -7,36 +7,38 @@ Reading design: mojo_top_0.prj
 =========================================================================
 *                          HDL Parsing                                  *
 =========================================================================
-Analyzing Verilog file "C:/Users/Yak Jun Lun/Documents/mojo/Quoridor/Quoridor/work/planAhead/Quoridor/Quoridor.srcs/sources_1/imports/verilog/pipeline_23.v" into library work
-Parsing module <pipeline_23>.
-Analyzing Verilog file "C:/Users/Yak Jun Lun/Documents/mojo/Quoridor/Quoridor/work/planAhead/Quoridor/Quoridor.srcs/sources_1/imports/verilog/edge_detector_12.v" into library work
-Parsing module <edge_detector_12>.
-Analyzing Verilog file "C:/Users/Yak Jun Lun/Documents/mojo/Quoridor/Quoridor/work/planAhead/Quoridor/Quoridor.srcs/sources_1/imports/verilog/button_conditioner_13.v" into library work
-Parsing module <button_conditioner_13>.
-Analyzing Verilog file "C:/Users/Yak Jun Lun/Documents/mojo/Quoridor/Quoridor/work/planAhead/Quoridor/Quoridor.srcs/sources_1/imports/verilog/adder_22.v" into library work
-Parsing module <adder_22>.
+Analyzing Verilog file "C:/Users/Yak Jun Lun/Documents/mojo/Quoridor/Quoridor/work/planAhead/Quoridor/Quoridor.srcs/sources_1/imports/verilog/pipeline_24.v" into library work
+Parsing module <pipeline_24>.
+Analyzing Verilog file "C:/Users/Yak Jun Lun/Documents/mojo/Quoridor/Quoridor/work/planAhead/Quoridor/Quoridor.srcs/sources_1/imports/verilog/edge_detector_13.v" into library work
+Parsing module <edge_detector_13>.
+Analyzing Verilog file "C:/Users/Yak Jun Lun/Documents/mojo/Quoridor/Quoridor/work/planAhead/Quoridor/Quoridor.srcs/sources_1/imports/verilog/button_conditioner_14.v" into library work
+Parsing module <button_conditioner_14>.
+Analyzing Verilog file "C:/Users/Yak Jun Lun/Documents/mojo/Quoridor/Quoridor/work/planAhead/Quoridor/Quoridor.srcs/sources_1/imports/verilog/adder_23.v" into library work
+Parsing module <adder_23>.
 Analyzing Verilog file "C:/Users/Yak Jun Lun/Documents/mojo/Quoridor/Quoridor/work/planAhead/Quoridor/Quoridor.srcs/sources_1/imports/verilog/wallcounter_6.v" into library work
 Parsing module <wallcounter_6>.
+Analyzing Verilog file "C:/Users/Yak Jun Lun/Documents/mojo/Quoridor/Quoridor/work/planAhead/Quoridor/Quoridor.srcs/sources_1/imports/verilog/wallcol_9.v" into library work
+Parsing module <wallcol_9>.
 Analyzing Verilog file "C:/Users/Yak Jun Lun/Documents/mojo/Quoridor/Quoridor/work/planAhead/Quoridor/Quoridor.srcs/sources_1/imports/verilog/row_7.v" into library work
 Parsing module <row_7>.
 Analyzing Verilog file "C:/Users/Yak Jun Lun/Documents/mojo/Quoridor/Quoridor/work/planAhead/Quoridor/Quoridor.srcs/sources_1/imports/verilog/reset_conditioner_1.v" into library work
 Parsing module <reset_conditioner_1>.
-Analyzing Verilog file "C:/Users/Yak Jun Lun/Documents/mojo/Quoridor/Quoridor/work/planAhead/Quoridor/Quoridor.srcs/sources_1/imports/verilog/pos_9.v" into library work
-Parsing module <pos_9>.
+Analyzing Verilog file "C:/Users/Yak Jun Lun/Documents/mojo/Quoridor/Quoridor/work/planAhead/Quoridor/Quoridor.srcs/sources_1/imports/verilog/pos_10.v" into library work
+Parsing module <pos_10>.
 Analyzing Verilog file "C:/Users/Yak Jun Lun/Documents/mojo/Quoridor/Quoridor/work/planAhead/Quoridor/Quoridor.srcs/sources_1/imports/verilog/counter_3.v" into library work
 Parsing module <counter_3>.
 Analyzing Verilog file "C:/Users/Yak Jun Lun/Documents/mojo/Quoridor/Quoridor/work/planAhead/Quoridor/Quoridor.srcs/sources_1/imports/verilog/counter_2.v" into library work
 Parsing module <counter_2>.
-Analyzing Verilog file "C:/Users/Yak Jun Lun/Documents/mojo/Quoridor/Quoridor/work/planAhead/Quoridor/Quoridor.srcs/sources_1/imports/verilog/counter_11.v" into library work
-Parsing module <counter_11>.
+Analyzing Verilog file "C:/Users/Yak Jun Lun/Documents/mojo/Quoridor/Quoridor/work/planAhead/Quoridor/Quoridor.srcs/sources_1/imports/verilog/counter_12.v" into library work
+Parsing module <counter_12>.
 Analyzing Verilog file "C:/Users/Yak Jun Lun/Documents/mojo/Quoridor/Quoridor/work/planAhead/Quoridor/Quoridor.srcs/sources_1/imports/verilog/counter1_5.v" into library work
 Parsing module <counter1_5>.
 Analyzing Verilog file "C:/Users/Yak Jun Lun/Documents/mojo/Quoridor/Quoridor/work/planAhead/Quoridor/Quoridor.srcs/sources_1/imports/verilog/column_8.v" into library work
 Parsing module <column_8>.
 Analyzing Verilog file "C:/Users/Yak Jun Lun/Documents/mojo/Quoridor/Quoridor/work/planAhead/Quoridor/Quoridor.srcs/sources_1/imports/verilog/buttonhandler_4.v" into library work
 Parsing module <buttonHandler_4>.
-Analyzing Verilog file "C:/Users/Yak Jun Lun/Documents/mojo/Quoridor/Quoridor/work/planAhead/Quoridor/Quoridor.srcs/sources_1/imports/verilog/alutest_10.v" into library work
-Parsing module <alutest_10>.
+Analyzing Verilog file "C:/Users/Yak Jun Lun/Documents/mojo/Quoridor/Quoridor/work/planAhead/Quoridor/Quoridor.srcs/sources_1/imports/verilog/alutest_11.v" into library work
+Parsing module <alutest_11>.
 Analyzing Verilog file "C:/Users/Yak Jun Lun/Documents/mojo/Quoridor/Quoridor/work/planAhead/Quoridor/Quoridor.srcs/sources_1/imports/verilog/mojo_top_0.v" into library work
 Parsing module <mojo_top_0>.
 
@@ -54,11 +56,11 @@ Elaborating module <counter_3>.
 
 Elaborating module <buttonHandler_4>.
 
-Elaborating module <edge_detector_12>.
+Elaborating module <edge_detector_13>.
 
-Elaborating module <button_conditioner_13>.
+Elaborating module <button_conditioner_14>.
 
-Elaborating module <pipeline_23>.
+Elaborating module <pipeline_24>.
 WARNING:HDLCompiler:1127 - "C:/Users/Yak Jun Lun/Documents/mojo/Quoridor/Quoridor/work/planAhead/Quoridor/Quoridor.srcs/sources_1/imports/verilog/mojo_top_0.v" Line 79: Assignment to M_buttonHandler_debug ignored, since the identifier is never used
 
 Elaborating module <counter1_5>.
@@ -70,14 +72,18 @@ Elaborating module <row_7>.
 
 Elaborating module <column_8>.
 
-Elaborating module <pos_9>.
-WARNING:HDLCompiler:413 - "C:/Users/Yak Jun Lun/Documents/mojo/Quoridor/Quoridor/work/planAhead/Quoridor/Quoridor.srcs/sources_1/imports/verilog/pos_9.v" Line 49: Result of 103-bit expression is truncated to fit in 36-bit target.
+Elaborating module <wallcol_9>.
+WARNING:HDLCompiler:1127 - "C:/Users/Yak Jun Lun/Documents/mojo/Quoridor/Quoridor/work/planAhead/Quoridor/Quoridor.srcs/sources_1/imports/verilog/mojo_top_0.v" Line 116: Assignment to M_wallcol_out ignored, since the identifier is never used
 
-Elaborating module <alutest_10>.
+Elaborating module <pos_10>.
 
-Elaborating module <adder_22>.
+Elaborating module <alutest_11>.
 
-Elaborating module <counter_11>.
+Elaborating module <adder_23>.
+WARNING:HDLCompiler:1127 - "C:/Users/Yak Jun Lun/Documents/mojo/Quoridor/Quoridor/work/planAhead/Quoridor/Quoridor.srcs/sources_1/imports/verilog/mojo_top_0.v" Line 148: Assignment to M_alu_debug ignored, since the identifier is never used
+
+Elaborating module <counter_12>.
+WARNING:Xst:2972 - "C:/Users/Yak Jun Lun/Documents/mojo/Quoridor/Quoridor/work/planAhead/Quoridor/Quoridor.srcs/sources_1/imports/verilog/mojo_top_0.v" line 112. All outputs of instance <wallcol> of block <wallcol_9> are unconnected in block <mojo_top_0>. Underlying logic will be removed.
 
 =========================================================================
 *                           HDL Synthesis                               *
@@ -93,6 +99,8 @@ WARNING:Xst:647 - Input <spi_sck> is never used. This port will be preserved and
 WARNING:Xst:647 - Input <avr_tx> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
 WARNING:Xst:647 - Input <avr_rx_busy> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
 INFO:Xst:3210 - "C:/Users/Yak Jun Lun/Documents/mojo/Quoridor/Quoridor/work/planAhead/Quoridor/Quoridor.srcs/sources_1/imports/verilog/mojo_top_0.v" line 69: Output port <debug> of the instance <buttonHandler> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:/Users/Yak Jun Lun/Documents/mojo/Quoridor/Quoridor/work/planAhead/Quoridor/Quoridor.srcs/sources_1/imports/verilog/mojo_top_0.v" line 112: Output port <out> of the instance <wallcol> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:/Users/Yak Jun Lun/Documents/mojo/Quoridor/Quoridor/work/planAhead/Quoridor/Quoridor.srcs/sources_1/imports/verilog/mojo_top_0.v" line 142: Output port <debug> of the instance <alu> is unconnected or connected to loadless signal.
     Found 2-bit register for signal <M_main_q>.
     Found finite state machine <FSM_0> for signal <M_main_q>.
     -----------------------------------------------------------------------
@@ -105,16 +113,16 @@ INFO:Xst:3210 - "C:/Users/Yak Jun Lun/Documents/mojo/Quoridor/Quoridor/work/plan
     | Encoding           | auto                                           |
     | Implementation     | LUT                                            |
     -----------------------------------------------------------------------
-    Found 71-bit shifter logical right for signal <n0081> created at line 225
-    Found 5-bit 4-to-1 multiplexer for signal <M_row_pos> created at line 211.
-    Found 1-bit tristate buffer for signal <spi_miso> created at line 150
-    Found 1-bit tristate buffer for signal <spi_channel<3>> created at line 150
-    Found 1-bit tristate buffer for signal <spi_channel<2>> created at line 150
-    Found 1-bit tristate buffer for signal <spi_channel<1>> created at line 150
-    Found 1-bit tristate buffer for signal <spi_channel<0>> created at line 150
-    Found 1-bit tristate buffer for signal <avr_rx> created at line 150
+    Found 71-bit shifter logical right for signal <n0083> created at line 232
+    Found 5-bit 4-to-1 multiplexer for signal <M_row_pos> created at line 218.
+    Found 1-bit tristate buffer for signal <spi_miso> created at line 158
+    Found 1-bit tristate buffer for signal <spi_channel<3>> created at line 158
+    Found 1-bit tristate buffer for signal <spi_channel<2>> created at line 158
+    Found 1-bit tristate buffer for signal <spi_channel<1>> created at line 158
+    Found 1-bit tristate buffer for signal <spi_channel<0>> created at line 158
+    Found 1-bit tristate buffer for signal <avr_rx> created at line 158
     Summary:
-	inferred  10 Multiplexer(s).
+	inferred  16 Multiplexer(s).
 	inferred   1 Combinational logic shifter(s).
 	inferred   6 Tristate(s).
 	inferred   1 Finite State Machine(s).
@@ -138,11 +146,11 @@ Unit <counter_2> synthesized.
 
 Synthesizing Unit <counter_3>.
     Related source file is "C:/Users/Yak Jun Lun/Documents/mojo/Quoridor/Quoridor/work/planAhead/Quoridor/Quoridor.srcs/sources_1/imports/verilog/counter_3.v".
-    Found 11-bit register for signal <M_ctr_q>.
-    Found 11-bit adder for signal <M_ctr_d> created at line 35.
+    Found 13-bit register for signal <M_ctr_q>.
+    Found 13-bit adder for signal <M_ctr_d> created at line 35.
     Summary:
 	inferred   1 Adder/Subtractor(s).
-	inferred  11 D-type flip-flop(s).
+	inferred  13 D-type flip-flop(s).
 Unit <counter_3> synthesized.
 
 Synthesizing Unit <buttonHandler_4>.
@@ -154,29 +162,29 @@ WARNING:Xst:647 - Input <rst> is never used. This port will be preserved and lef
 	inferred   4 Multiplexer(s).
 Unit <buttonHandler_4> synthesized.
 
-Synthesizing Unit <edge_detector_12>.
-    Related source file is "C:/Users/Yak Jun Lun/Documents/mojo/Quoridor/Quoridor/work/planAhead/Quoridor/Quoridor.srcs/sources_1/imports/verilog/edge_detector_12.v".
+Synthesizing Unit <edge_detector_13>.
+    Related source file is "C:/Users/Yak Jun Lun/Documents/mojo/Quoridor/Quoridor/work/planAhead/Quoridor/Quoridor.srcs/sources_1/imports/verilog/edge_detector_13.v".
     Found 1-bit register for signal <M_last_q>.
     Summary:
 	inferred   1 D-type flip-flop(s).
 	inferred   1 Multiplexer(s).
-Unit <edge_detector_12> synthesized.
+Unit <edge_detector_13> synthesized.
 
-Synthesizing Unit <button_conditioner_13>.
-    Related source file is "C:/Users/Yak Jun Lun/Documents/mojo/Quoridor/Quoridor/work/planAhead/Quoridor/Quoridor.srcs/sources_1/imports/verilog/button_conditioner_13.v".
+Synthesizing Unit <button_conditioner_14>.
+    Related source file is "C:/Users/Yak Jun Lun/Documents/mojo/Quoridor/Quoridor/work/planAhead/Quoridor/Quoridor.srcs/sources_1/imports/verilog/button_conditioner_14.v".
     Found 20-bit register for signal <M_ctr_q>.
     Found 20-bit adder for signal <M_ctr_q[19]_GND_7_o_add_2_OUT> created at line 39.
     Summary:
 	inferred   1 Adder/Subtractor(s).
 	inferred  20 D-type flip-flop(s).
-Unit <button_conditioner_13> synthesized.
+Unit <button_conditioner_14> synthesized.
 
-Synthesizing Unit <pipeline_23>.
-    Related source file is "C:/Users/Yak Jun Lun/Documents/mojo/Quoridor/Quoridor/work/planAhead/Quoridor/Quoridor.srcs/sources_1/imports/verilog/pipeline_23.v".
+Synthesizing Unit <pipeline_24>.
+    Related source file is "C:/Users/Yak Jun Lun/Documents/mojo/Quoridor/Quoridor/work/planAhead/Quoridor/Quoridor.srcs/sources_1/imports/verilog/pipeline_24.v".
     Found 2-bit register for signal <M_pipe_q>.
     Summary:
 	inferred   2 D-type flip-flop(s).
-Unit <pipeline_23> synthesized.
+Unit <pipeline_24> synthesized.
 
 Synthesizing Unit <counter1_5>.
     Related source file is "C:/Users/Yak Jun Lun/Documents/mojo/Quoridor/Quoridor/work/planAhead/Quoridor/Quoridor.srcs/sources_1/imports/verilog/counter1_5.v".
@@ -262,20 +270,20 @@ WARNING:Xst:647 - Input <rst> is never used. This port will be preserved and lef
 	inferred   1 Adder/Subtractor(s).
 Unit <column_8> synthesized.
 
-Synthesizing Unit <pos_9>.
-    Related source file is "C:/Users/Yak Jun Lun/Documents/mojo/Quoridor/Quoridor/work/planAhead/Quoridor/Quoridor.srcs/sources_1/imports/verilog/pos_9.v".
-    Found 1-bit register for signal <M_debug1_q>.
+Synthesizing Unit <pos_10>.
+    Related source file is "C:/Users/Yak Jun Lun/Documents/mojo/Quoridor/Quoridor/work/planAhead/Quoridor/Quoridor.srcs/sources_1/imports/verilog/pos_10.v".
     Found 36-bit register for signal <M_regs_q>.
+    Found 1-bit register for signal <M_debug1_q>.
     Summary:
 	inferred  37 D-type flip-flop(s).
 	inferred   1 Multiplexer(s).
-Unit <pos_9> synthesized.
+Unit <pos_10> synthesized.
 
-Synthesizing Unit <alutest_10>.
-    Related source file is "C:/Users/Yak Jun Lun/Documents/mojo/Quoridor/Quoridor/work/planAhead/Quoridor/Quoridor.srcs/sources_1/imports/verilog/alutest_10.v".
+Synthesizing Unit <alutest_11>.
+    Related source file is "C:/Users/Yak Jun Lun/Documents/mojo/Quoridor/Quoridor/work/planAhead/Quoridor/Quoridor.srcs/sources_1/imports/verilog/alutest_11.v".
 WARNING:Xst:647 - Input <clk> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
 WARNING:Xst:647 - Input <rst> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
-    Found 6-bit subtractor for signal <GND_17_o_GND_17_o_sub_5_OUT> created at line 50.
+    Found 6-bit subtractor for signal <GND_18_o_GND_18_o_sub_5_OUT> created at line 50.
     Found 71-bit shifter logical right for signal <n0121> created at line 50
     Found 71-bit shifter logical right for signal <n0123> created at line 50
     Found 71-bit shifter logical right for signal <n0124> created at line 77
@@ -286,24 +294,24 @@ WARNING:Xst:647 - Input <rst> is never used. This port will be preserved and lef
 	inferred   2 Comparator(s).
 	inferred  89 Multiplexer(s).
 	inferred   3 Combinational logic shifter(s).
-Unit <alutest_10> synthesized.
+Unit <alutest_11> synthesized.
 
-Synthesizing Unit <adder_22>.
-    Related source file is "C:/Users/Yak Jun Lun/Documents/mojo/Quoridor/Quoridor/work/planAhead/Quoridor/Quoridor.srcs/sources_1/imports/verilog/adder_22.v".
-    Found 5-bit subtractor for signal <a[4]_GND_18_o_sub_2_OUT> created at line 24.
-    Found 5-bit adder for signal <a[4]_GND_18_o_add_0_OUT> created at line 21.
+Synthesizing Unit <adder_23>.
+    Related source file is "C:/Users/Yak Jun Lun/Documents/mojo/Quoridor/Quoridor/work/planAhead/Quoridor/Quoridor.srcs/sources_1/imports/verilog/adder_23.v".
+    Found 5-bit subtractor for signal <a[4]_GND_19_o_sub_2_OUT> created at line 24.
+    Found 5-bit adder for signal <a[4]_GND_19_o_add_0_OUT> created at line 21.
     Summary:
 	inferred   2 Adder/Subtractor(s).
-Unit <adder_22> synthesized.
+Unit <adder_23> synthesized.
 
-Synthesizing Unit <counter_11>.
-    Related source file is "C:/Users/Yak Jun Lun/Documents/mojo/Quoridor/Quoridor/work/planAhead/Quoridor/Quoridor.srcs/sources_1/imports/verilog/counter_11.v".
+Synthesizing Unit <counter_12>.
+    Related source file is "C:/Users/Yak Jun Lun/Documents/mojo/Quoridor/Quoridor/work/planAhead/Quoridor/Quoridor.srcs/sources_1/imports/verilog/counter_12.v".
     Found 1-bit register for signal <M_ctr_q>.
     Found 1-bit adder for signal <M_ctr_d> created at line 35.
     Summary:
 	inferred   1 Adder/Subtractor(s).
 	inferred   1 D-type flip-flop(s).
-Unit <counter_11> synthesized.
+Unit <counter_12> synthesized.
 
 =========================================================================
 HDL Synthesis Report
@@ -313,7 +321,7 @@ Macro Statistics
  5x3-bit multiplier                                    : 1
 # Adders/Subtractors                                   : 40
  1-bit adder                                           : 1
- 11-bit adder                                          : 1
+ 13-bit adder                                          : 1
  2-bit adder                                           : 1
  20-bit adder                                          : 5
  22-bit adder                                          : 1
@@ -325,7 +333,7 @@ Macro Statistics
  8-bit adder                                           : 5
 # Registers                                            : 24
  1-bit register                                        : 7
- 11-bit register                                       : 1
+ 13-bit register                                       : 1
  2-bit register                                        : 6
  20-bit register                                       : 5
  22-bit register                                       : 1
@@ -338,14 +346,15 @@ Macro Statistics
  6-bit comparator lessequal                            : 7
  7-bit comparator lessequal                            : 3
  8-bit comparator lessequal                            : 3
-# Multiplexers                                         : 156
- 1-bit 2-to-1 multiplexer                              : 129
+# Multiplexers                                         : 162
+ 1-bit 2-to-1 multiplexer                              : 131
  3-bit 2-to-1 multiplexer                              : 1
  36-bit 2-to-1 multiplexer                             : 3
- 4-bit 2-to-1 multiplexer                              : 4
- 5-bit 2-to-1 multiplexer                              : 11
+ 4-bit 2-to-1 multiplexer                              : 2
+ 5-bit 2-to-1 multiplexer                              : 13
  5-bit 4-to-1 multiplexer                              : 1
  6-bit 2-to-1 multiplexer                              : 7
+ 8-bit 2-to-1 multiplexer                              : 4
 # Logic shifters                                       : 4
  71-bit shifter logical right                          : 4
 # Tristates                                            : 6
@@ -359,9 +368,9 @@ Macro Statistics
 =========================================================================
 
 
-Synthesizing (advanced) Unit <button_conditioner_13>.
+Synthesizing (advanced) Unit <button_conditioner_14>.
 The following registers are absorbed into counter <M_ctr_q>: 1 register on signal <M_ctr_q>.
-Unit <button_conditioner_13> synthesized (advanced).
+Unit <button_conditioner_14> synthesized (advanced).
 
 Synthesizing (advanced) Unit <column_8>.
 	Multiplier <Mmult_n0005> in block <column_8> and adder/subtractor <Msub_out> in block <column_8> are combined into a MAC<Maddsub_n0005>.
@@ -371,9 +380,9 @@ Synthesizing (advanced) Unit <counter1_5>.
 The following registers are absorbed into counter <M_counter_q>: 1 register on signal <M_counter_q>.
 Unit <counter1_5> synthesized (advanced).
 
-Synthesizing (advanced) Unit <counter_11>.
+Synthesizing (advanced) Unit <counter_12>.
 The following registers are absorbed into counter <M_ctr_q_0>: 1 register on signal <M_ctr_q_0>.
-Unit <counter_11> synthesized (advanced).
+Unit <counter_12> synthesized (advanced).
 
 Synthesizing (advanced) Unit <counter_2>.
 The following registers are absorbed into counter <M_ctr_q>: 1 register on signal <M_ctr_q>.
@@ -401,7 +410,7 @@ Macro Statistics
  6-bit subtractor                                      : 1
 # Counters                                             : 10
  1-bit up counter                                      : 1
- 11-bit up counter                                     : 1
+ 13-bit up counter                                     : 1
  2-bit up counter                                      : 1
  20-bit up counter                                     : 5
  22-bit up counter                                     : 1
@@ -414,14 +423,15 @@ Macro Statistics
  6-bit comparator lessequal                            : 7
  7-bit comparator lessequal                            : 3
  8-bit comparator lessequal                            : 3
-# Multiplexers                                         : 151
- 1-bit 2-to-1 multiplexer                              : 124
+# Multiplexers                                         : 157
+ 1-bit 2-to-1 multiplexer                              : 126
  3-bit 2-to-1 multiplexer                              : 1
  36-bit 2-to-1 multiplexer                             : 3
- 4-bit 2-to-1 multiplexer                              : 4
- 5-bit 2-to-1 multiplexer                              : 11
+ 4-bit 2-to-1 multiplexer                              : 2
+ 5-bit 2-to-1 multiplexer                              : 13
  5-bit 4-to-1 multiplexer                              : 1
  6-bit 2-to-1 multiplexer                              : 7
+ 8-bit 2-to-1 multiplexer                              : 4
 # Logic shifters                                       : 4
  71-bit shifter logical right                          : 4
 # FSMs                                                 : 1
@@ -447,28 +457,18 @@ Optimizing unit <mojo_top_0> ...
 
 Optimizing unit <buttonHandler_4> ...
 
-Optimizing unit <pos_9> ...
+Optimizing unit <pos_10> ...
 
 Optimizing unit <div_6u_2u> ...
 
-Optimizing unit <alutest_10> ...
+Optimizing unit <alutest_11> ...
 
-Optimizing unit <adder_22> ...
+Optimizing unit <adder_23> ...
 WARNING:Xst:2677 - Node <pos/M_regs_q_35> of sequential type is unconnected in block <mojo_top_0>.
-WARNING:Xst:1293 - FF/Latch <pos/M_regs_q_18> has a constant value of 1 in block <mojo_top_0>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <pos/M_regs_q_16> has a constant value of 1 in block <mojo_top_0>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <pos/M_regs_q_14> has a constant value of 1 in block <mojo_top_0>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <pos/M_regs_q_13> has a constant value of 1 in block <mojo_top_0>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <pos/M_regs_q_12> has a constant value of 1 in block <mojo_top_0>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <pos/M_regs_q_11> has a constant value of 1 in block <mojo_top_0>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <pos/M_regs_q_10> has a constant value of 1 in block <mojo_top_0>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <pos/M_regs_q_9> has a constant value of 1 in block <mojo_top_0>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <pos/M_regs_q_7> has a constant value of 1 in block <mojo_top_0>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <pos/M_regs_q_5> has a constant value of 1 in block <mojo_top_0>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <pos/M_regs_q_4> has a constant value of 1 in block <mojo_top_0>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <pos/M_regs_q_2> has a constant value of 1 in block <mojo_top_0>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <pos/M_regs_q_0> has a constant value of 1 in block <mojo_top_0>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <pos/M_regs_q_19> has a constant value of 1 in block <mojo_top_0>. This FF/Latch will be trimmed during the optimization process.
 INFO:Xst:2261 - The FF/Latch <sclk/M_ctr_q_10> in Unit <mojo_top_0> is equivalent to the following FF/Latch, which will be removed : <scanclk/M_ctr_q_10> 
+INFO:Xst:2261 - The FF/Latch <sclk/M_ctr_q_11> in Unit <mojo_top_0> is equivalent to the following FF/Latch, which will be removed : <scanclk/M_ctr_q_11> 
+INFO:Xst:2261 - The FF/Latch <sclk/M_ctr_q_12> in Unit <mojo_top_0> is equivalent to the following FF/Latch, which will be removed : <scanclk/M_ctr_q_12> 
 INFO:Xst:2261 - The FF/Latch <sclk/M_ctr_q_0> in Unit <mojo_top_0> is equivalent to the following FF/Latch, which will be removed : <scanclk/M_ctr_q_0> 
 INFO:Xst:2261 - The FF/Latch <sclk/M_ctr_q_1> in Unit <mojo_top_0> is equivalent to the following FF/Latch, which will be removed : <scanclk/M_ctr_q_1> 
 INFO:Xst:2261 - The FF/Latch <sclk/M_ctr_q_2> in Unit <mojo_top_0> is equivalent to the following FF/Latch, which will be removed : <scanclk/M_ctr_q_2> 
@@ -483,9 +483,10 @@ INFO:Xst:3203 - The FF/Latch <buttonHandler/M_button_q_4> in Unit <mojo_top_0> i
 
 Mapping all equations...
 Building and optimizing final netlist ...
-Found area constraint ratio of 100 (+ 0) on block mojo_top_0, actual ratio is 7.
+Found area constraint ratio of 100 (+ 0) on block mojo_top_0, actual ratio is 8.
 FlipFlop pos/M_regs_q_20 has been replicated 1 time(s)
 FlipFlop pos/M_regs_q_21 has been replicated 1 time(s)
+FlipFlop pos/M_regs_q_23 has been replicated 1 time(s)
 
 Final Macro Processing ...
 
@@ -502,8 +503,8 @@ Unit <mojo_top_0> processed.
 Final Register Report
 
 Macro Statistics
-# Registers                                            : 171
- Flip-Flops                                            : 171
+# Registers                                            : 184
+ Flip-Flops                                            : 184
 # Shift Registers                                      : 5
  2-bit shift register                                  : 5
 
@@ -529,9 +530,9 @@ Clock Information:
 -----------------------------------+-----------------------------+-------+
 Clock Signal                       | Clock buffer(FF name)       | Load  |
 -----------------------------------+-----------------------------+-------+
-sclk/M_ctr_q_21                    | BUFG                        | 28    |
+sclk/M_ctr_q_21                    | BUFG                        | 41    |
 clk                                | BUFGP                       | 145   |
-sclk/M_ctr_q_10                    | NONE(counter1/M_counter_q_0)| 8     |
+sclk/M_ctr_q_12                    | NONE(counter1/M_counter_q_0)| 8     |
 -----------------------------------+-----------------------------+-------+
 INFO:Xst:2169 - HDL ADVISOR - Some clock signals were not automatically buffered by XST with BUFG/BUFR resources. Please use the buffer_type constraint in order to insert these buffers to the clock signals to help prevent skew problems.
 
@@ -543,9 +544,9 @@ Timing Summary:
 ---------------
 Speed Grade: -2
 
-   Minimum period: 10.037ns (Maximum Frequency: 99.631MHz)
-   Minimum input arrival time before clock: 12.660ns
-   Maximum output required time after clock: 15.062ns
-   Maximum combinational path delay: 8.445ns
+   Minimum period: 10.333ns (Maximum Frequency: 96.777MHz)
+   Minimum input arrival time before clock: 12.902ns
+   Maximum output required time after clock: 16.949ns
+   Maximum combinational path delay: No path found
 
 =========================================================================

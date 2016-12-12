@@ -41,14 +41,16 @@ NET "p1col[3]" IOSTANDARD = LVTTL;
 NET "p1col[4]" LOC = P22;
 NET "p1col[4]" IOSTANDARD = LVTTL;
 
-NET "wall1col[0]" LOC = P40;
+NET "wall1col[0]" LOC = P11;
 NET "wall1col[0]" IOSTANDARD = LVTTL;
-NET "wall1col[1]" LOC = P50;
+NET "wall1col[1]" LOC = P14;
 NET "wall1col[1]" IOSTANDARD = LVTTL;
-NET "wall1col[2]" LOC = P35;
+NET "wall1col[2]" LOC = P26;
 NET "wall1col[2]" IOSTANDARD = LVTTL;
-NET "wall1col[3]" LOC = P41;
+NET "wall1col[3]" LOC = P23;
 NET "wall1col[3]" IOSTANDARD = LVTTL;
+NET "wall1col[4]" LOC = P24;
+NET "wall1col[4]" IOSTANDARD = LVTTL;
 
 NET "wall0row[0]" LOC = P84;
 NET "wall0row[0]" IOSTANDARD = LVTTL;

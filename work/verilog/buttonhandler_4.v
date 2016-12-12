@@ -22,70 +22,70 @@ module buttonHandler_4 (
   reg [5:0] M_button_d, M_button_q = 6'h18;
   wire [1-1:0] M_edge_detector_out;
   reg [1-1:0] M_edge_detector_in;
-  edge_detector_12 edge_detector (
+  edge_detector_13 edge_detector (
     .clk(clk),
     .in(M_edge_detector_in),
     .out(M_edge_detector_out)
   );
   wire [1-1:0] M_button_cond_out;
   reg [1-1:0] M_button_cond_in;
-  button_conditioner_13 button_cond (
+  button_conditioner_14 button_cond (
     .clk(clk),
     .in(M_button_cond_in),
     .out(M_button_cond_out)
   );
   wire [1-1:0] M_edge_detector1_out;
   reg [1-1:0] M_edge_detector1_in;
-  edge_detector_12 edge_detector1 (
+  edge_detector_13 edge_detector1 (
     .clk(clk),
     .in(M_edge_detector1_in),
     .out(M_edge_detector1_out)
   );
   wire [1-1:0] M_button_cond1_out;
   reg [1-1:0] M_button_cond1_in;
-  button_conditioner_13 button_cond1 (
+  button_conditioner_14 button_cond1 (
     .clk(clk),
     .in(M_button_cond1_in),
     .out(M_button_cond1_out)
   );
   wire [1-1:0] M_edge_detector2_out;
   reg [1-1:0] M_edge_detector2_in;
-  edge_detector_12 edge_detector2 (
+  edge_detector_13 edge_detector2 (
     .clk(clk),
     .in(M_edge_detector2_in),
     .out(M_edge_detector2_out)
   );
   wire [1-1:0] M_button_cond2_out;
   reg [1-1:0] M_button_cond2_in;
-  button_conditioner_13 button_cond2 (
+  button_conditioner_14 button_cond2 (
     .clk(clk),
     .in(M_button_cond2_in),
     .out(M_button_cond2_out)
   );
   wire [1-1:0] M_edge_detector3_out;
   reg [1-1:0] M_edge_detector3_in;
-  edge_detector_12 edge_detector3 (
+  edge_detector_13 edge_detector3 (
     .clk(clk),
     .in(M_edge_detector3_in),
     .out(M_edge_detector3_out)
   );
   wire [1-1:0] M_button_cond3_out;
   reg [1-1:0] M_button_cond3_in;
-  button_conditioner_13 button_cond3 (
+  button_conditioner_14 button_cond3 (
     .clk(clk),
     .in(M_button_cond3_in),
     .out(M_button_cond3_out)
   );
   wire [1-1:0] M_edge_detector4_out;
   reg [1-1:0] M_edge_detector4_in;
-  edge_detector_12 edge_detector4 (
+  edge_detector_13 edge_detector4 (
     .clk(clk),
     .in(M_edge_detector4_in),
     .out(M_edge_detector4_out)
   );
   wire [1-1:0] M_button_cond4_out;
   reg [1-1:0] M_button_cond4_in;
-  button_conditioner_13 button_cond4 (
+  button_conditioner_14 button_cond4 (
     .clk(clk),
     .in(M_button_cond4_in),
     .out(M_button_cond4_out)
