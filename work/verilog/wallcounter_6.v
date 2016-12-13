@@ -12,17 +12,17 @@ module wallcounter_6 (
   
   
   
-  reg [5:0] M_wallcounter_d, M_wallcounter_q = 1'h0;
+  reg [6:0] M_wallcounter_d, M_wallcounter_q = 1'h0;
   
   always @* begin
     M_wallcounter_d = M_wallcounter_q;
     
-    if (M_wallcounter_q / 2'h3 == 5'h14) begin
+    if (M_wallcounter_q == 7'h4f) begin
       M_wallcounter_d = 1'h0;
     end else begin
       M_wallcounter_d = M_wallcounter_q + 1'h1;
     end
-    out = M_wallcounter_q / 2'h3;
+    out = M_wallcounter_q / 3'h4;
   end
   
   always @(posedge clk) begin

@@ -3,17 +3,17 @@ module wallcounter (
     input rst,  // reset
     output out[5]
   ) {
-  dff wallcounter[6](.clk(clk));
+  dff wallcounter[7](.clk(clk));
 
   always {
         
-    if (wallcounter.q/3==20){
+    if (wallcounter.q==79){
     wallcounter.d = 0;
   }
     else{
     wallcounter.d=wallcounter.q+1;
     }
-    out=wallcounter.q/3;
+    out=wallcounter.q/4;
 
 }
 }

@@ -64,7 +64,6 @@ WARNING:HDLCompiler:1127 - "C:/Users/Yak Jun Lun/Documents/mojo/Quoridor/Quorido
 Elaborating module <counter1_5>.
 
 Elaborating module <wallcounter_6>.
-WARNING:HDLCompiler:413 - "C:/Users/Yak Jun Lun/Documents/mojo/Quoridor/Quoridor/work/planAhead/Quoridor/Quoridor.srcs/sources_1/imports/verilog/wallcounter_6.v" Line 25: Result of 6-bit expression is truncated to fit in 5-bit target.
 
 Elaborating module <row_7>.
 
@@ -196,33 +195,12 @@ Unit <counter1_5> synthesized.
 Synthesizing Unit <wallcounter_6>.
     Related source file is "C:/Users/Yak Jun Lun/Documents/mojo/Quoridor/Quoridor/work/planAhead/Quoridor/Quoridor.srcs/sources_1/imports/verilog/wallcounter_6.v".
 WARNING:Xst:647 - Input <rst> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
-    Found 6-bit register for signal <M_wallcounter_q>.
-    Found 6-bit adder for signal <M_wallcounter_q[5]_GND_10_o_add_2_OUT> created at line 23.
+    Found 7-bit register for signal <M_wallcounter_q>.
+    Found 7-bit adder for signal <M_wallcounter_q[6]_GND_10_o_add_1_OUT> created at line 23.
     Summary:
 	inferred   1 Adder/Subtractor(s).
-	inferred   6 D-type flip-flop(s).
+	inferred   7 D-type flip-flop(s).
 Unit <wallcounter_6> synthesized.
-
-Synthesizing Unit <div_6u_2u>.
-    Related source file is "".
-    Found 8-bit adder for signal <GND_11_o_b[1]_add_1_OUT> created at line 0.
-    Found 7-bit adder for signal <GND_11_o_b[1]_add_3_OUT> created at line 0.
-    Found 6-bit adder for signal <a[5]_b[1]_add_5_OUT> created at line 0.
-    Found 6-bit adder for signal <a[5]_GND_11_o_add_7_OUT[5:0]> created at line 0.
-    Found 6-bit adder for signal <a[5]_GND_11_o_add_9_OUT[5:0]> created at line 0.
-    Found 6-bit adder for signal <a[5]_GND_11_o_add_11_OUT[5:0]> created at line 0.
-    Found 8-bit comparator lessequal for signal <BUS_0001> created at line 0
-    Found 7-bit comparator lessequal for signal <BUS_0002> created at line 0
-    Found 6-bit comparator lessequal for signal <BUS_0003> created at line 0
-    Found 6-bit comparator lessequal for signal <BUS_0004> created at line 0
-    Found 6-bit comparator lessequal for signal <BUS_0005> created at line 0
-    Found 6-bit comparator lessequal for signal <BUS_0006> created at line 0
-    Found 6-bit comparator lessequal for signal <BUS_0007> created at line 0
-    Summary:
-	inferred   6 Adder/Subtractor(s).
-	inferred   7 Comparator(s).
-	inferred  21 Multiplexer(s).
-Unit <div_6u_2u> synthesized.
 
 Synthesizing Unit <row_7>.
     Related source file is "C:/Users/Yak Jun Lun/Documents/mojo/Quoridor/Quoridor/work/planAhead/Quoridor/Quoridor.srcs/sources_1/imports/verilog/row_7.v".
@@ -235,15 +213,15 @@ Unit <row_7> synthesized.
 Synthesizing Unit <div_5u_3u>.
     Related source file is "".
     Found 8-bit adder for signal <n0125> created at line 0.
-    Found 8-bit adder for signal <GND_13_o_b[2]_add_1_OUT> created at line 0.
+    Found 8-bit adder for signal <GND_12_o_b[2]_add_1_OUT> created at line 0.
     Found 7-bit adder for signal <n0129> created at line 0.
-    Found 7-bit adder for signal <GND_13_o_b[2]_add_3_OUT> created at line 0.
+    Found 7-bit adder for signal <GND_12_o_b[2]_add_3_OUT> created at line 0.
     Found 6-bit adder for signal <n0133> created at line 0.
-    Found 6-bit adder for signal <GND_13_o_b[2]_add_5_OUT> created at line 0.
+    Found 6-bit adder for signal <GND_12_o_b[2]_add_5_OUT> created at line 0.
     Found 5-bit adder for signal <n0137> created at line 0.
     Found 5-bit adder for signal <a[4]_b[2]_add_7_OUT[4:0]> created at line 0.
     Found 5-bit adder for signal <n0141> created at line 0.
-    Found 5-bit adder for signal <a[4]_GND_13_o_add_9_OUT[4:0]> created at line 0.
+    Found 5-bit adder for signal <a[4]_GND_12_o_add_9_OUT[4:0]> created at line 0.
     Found 8-bit comparator lessequal for signal <BUS_0001> created at line 0
     Found 7-bit comparator lessequal for signal <BUS_0002> created at line 0
     Found 6-bit comparator lessequal for signal <BUS_0003> created at line 0
@@ -280,7 +258,7 @@ Synthesizing Unit <alutest_10>.
     Related source file is "C:/Users/Yak Jun Lun/Documents/mojo/Quoridor/Quoridor/work/planAhead/Quoridor/Quoridor.srcs/sources_1/imports/verilog/alutest_10.v".
 WARNING:Xst:647 - Input <clk> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
 WARNING:Xst:647 - Input <rst> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
-    Found 6-bit subtractor for signal <GND_17_o_GND_17_o_sub_6_OUT> created at line 51.
+    Found 6-bit subtractor for signal <GND_16_o_GND_16_o_sub_6_OUT> created at line 51.
     Found 71-bit shifter logical right for signal <n0133> created at line 51
     Found 71-bit shifter logical right for signal <n0135> created at line 51
     Found 71-bit shifter logical right for signal <n0136> created at line 85
@@ -295,8 +273,8 @@ Unit <alutest_10> synthesized.
 
 Synthesizing Unit <adder_22>.
     Related source file is "C:/Users/Yak Jun Lun/Documents/mojo/Quoridor/Quoridor/work/planAhead/Quoridor/Quoridor.srcs/sources_1/imports/verilog/adder_22.v".
-    Found 5-bit subtractor for signal <a[4]_GND_18_o_sub_2_OUT> created at line 24.
-    Found 5-bit adder for signal <a[4]_GND_18_o_add_0_OUT> created at line 21.
+    Found 5-bit subtractor for signal <a[4]_GND_17_o_sub_2_OUT> created at line 24.
+    Found 5-bit adder for signal <a[4]_GND_17_o_add_0_OUT> created at line 21.
     Summary:
 	inferred   2 Adder/Subtractor(s).
 Unit <adder_22> synthesized.
@@ -316,7 +294,7 @@ HDL Synthesis Report
 Macro Statistics
 # Multipliers                                          : 1
  5x3-bit multiplier                                    : 1
-# Adders/Subtractors                                   : 40
+# Adders/Subtractors                                   : 34
  1-bit adder                                           : 1
  13-bit adder                                          : 1
  2-bit adder                                           : 1
@@ -324,10 +302,10 @@ Macro Statistics
  22-bit adder                                          : 1
  5-bit adder                                           : 9
  5-bit subtractor                                      : 2
- 6-bit adder                                           : 9
+ 6-bit adder                                           : 4
  6-bit subtractor                                      : 1
  7-bit adder                                           : 5
- 8-bit adder                                           : 5
+ 8-bit adder                                           : 4
 # Registers                                            : 25
  1-bit register                                        : 8
  13-bit register                                       : 1
@@ -336,15 +314,16 @@ Macro Statistics
  22-bit register                                       : 1
  36-bit register                                       : 1
  4-bit register                                        : 1
- 6-bit register                                        : 2
-# Comparators                                          : 21
+ 6-bit register                                        : 1
+ 7-bit register                                        : 1
+# Comparators                                          : 14
  5-bit comparator equal                                : 2
  5-bit comparator lessequal                            : 6
- 6-bit comparator lessequal                            : 7
- 7-bit comparator lessequal                            : 3
- 8-bit comparator lessequal                            : 3
-# Multiplexers                                         : 170
- 1-bit 2-to-1 multiplexer                              : 139
+ 6-bit comparator lessequal                            : 2
+ 7-bit comparator lessequal                            : 2
+ 8-bit comparator lessequal                            : 2
+# Multiplexers                                         : 149
+ 1-bit 2-to-1 multiplexer                              : 121
  3-bit 2-to-1 multiplexer                              : 2
  36-bit 2-to-1 multiplexer                             : 3
  4-bit 2-to-1 multiplexer                              : 2
@@ -352,7 +331,7 @@ Macro Statistics
  5-bit 2-to-1 multiplexer                              : 14
  5-bit 3-to-1 multiplexer                              : 1
  5-bit 4-to-1 multiplexer                              : 1
- 6-bit 2-to-1 multiplexer                              : 7
+ 6-bit 2-to-1 multiplexer                              : 4
 # Logic shifters                                       : 4
  71-bit shifter logical right                          : 4
 # Tristates                                            : 6
@@ -400,11 +379,10 @@ Advanced HDL Synthesis Report
 Macro Statistics
 # MACs                                                 : 1
  5x3-to-5-bit MAC                                      : 1
-# Adders/Subtractors                                   : 19
+# Adders/Subtractors                                   : 13
  5-bit adder                                           : 1
  5-bit adder carry in                                  : 10
  5-bit subtractor                                      : 1
- 6-bit adder                                           : 6
  6-bit subtractor                                      : 1
 # Counters                                             : 10
  1-bit up counter                                      : 1
@@ -412,17 +390,17 @@ Macro Statistics
  2-bit up counter                                      : 1
  20-bit up counter                                     : 5
  22-bit up counter                                     : 1
- 6-bit up counter                                      : 1
+ 7-bit up counter                                      : 1
 # Registers                                            : 63
  Flip-Flops                                            : 63
-# Comparators                                          : 21
+# Comparators                                          : 14
  5-bit comparator equal                                : 2
  5-bit comparator lessequal                            : 6
- 6-bit comparator lessequal                            : 7
- 7-bit comparator lessequal                            : 3
- 8-bit comparator lessequal                            : 3
-# Multiplexers                                         : 170
- 1-bit 2-to-1 multiplexer                              : 139
+ 6-bit comparator lessequal                            : 2
+ 7-bit comparator lessequal                            : 2
+ 8-bit comparator lessequal                            : 2
+# Multiplexers                                         : 149
+ 1-bit 2-to-1 multiplexer                              : 121
  3-bit 2-to-1 multiplexer                              : 2
  36-bit 2-to-1 multiplexer                             : 3
  4-bit 2-to-1 multiplexer                              : 2
@@ -430,7 +408,7 @@ Macro Statistics
  5-bit 2-to-1 multiplexer                              : 14
  5-bit 3-to-1 multiplexer                              : 1
  5-bit 4-to-1 multiplexer                              : 1
- 6-bit 2-to-1 multiplexer                              : 7
+ 6-bit 2-to-1 multiplexer                              : 4
 # Logic shifters                                       : 4
  71-bit shifter logical right                          : 4
 # FSMs                                                 : 1
@@ -457,8 +435,6 @@ Optimizing unit <mojo_top_0> ...
 Optimizing unit <buttonHandler_4> ...
 
 Optimizing unit <pos_9> ...
-
-Optimizing unit <div_6u_2u> ...
 
 Optimizing unit <alutest_10> ...
 
@@ -504,8 +480,8 @@ Unit <mojo_top_0> processed.
 Final Register Report
 
 Macro Statistics
-# Registers                                            : 190
- Flip-Flops                                            : 190
+# Registers                                            : 191
+ Flip-Flops                                            : 191
 # Shift Registers                                      : 5
  2-bit shift register                                  : 5
 
@@ -528,13 +504,13 @@ Partition Implementation Status
 
 Clock Information:
 ------------------
------------------------------------+-----------------------------+-------+
-Clock Signal                       | Clock buffer(FF name)       | Load  |
------------------------------------+-----------------------------+-------+
-sclk/M_ctr_q_21                    | BUFG                        | 47    |
-clk                                | BUFGP                       | 145   |
-sclk/M_ctr_q_12                    | NONE(counter1/M_counter_q_0)| 8     |
------------------------------------+-----------------------------+-------+
+-----------------------------------+------------------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)              | Load  |
+-----------------------------------+------------------------------------+-------+
+sclk/M_ctr_q_21                    | BUFG                               | 47    |
+sclk/M_ctr_q_12                    | NONE(wallcounter/M_wallcounter_q_0)| 9     |
+clk                                | BUFGP                              | 145   |
+-----------------------------------+------------------------------------+-------+
 INFO:Xst:2169 - HDL ADVISOR - Some clock signals were not automatically buffered by XST with BUFG/BUFR resources. Please use the buffer_type constraint in order to insert these buffers to the clock signals to help prevent skew problems.
 
 Asynchronous Control Signals Information:
@@ -547,7 +523,7 @@ Speed Grade: -2
 
    Minimum period: 10.373ns (Maximum Frequency: 96.404MHz)
    Minimum input arrival time before clock: 12.963ns
-   Maximum output required time after clock: 17.758ns
-   Maximum combinational path delay: 13.721ns
+   Maximum output required time after clock: 16.591ns
+   Maximum combinational path delay: 13.653ns
 
 =========================================================================

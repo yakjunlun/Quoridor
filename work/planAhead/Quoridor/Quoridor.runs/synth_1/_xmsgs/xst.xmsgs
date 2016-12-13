@@ -8,9 +8,6 @@
 <msg type="warning" file="HDLCompiler" num="1127" delta="new" >"C:/Users/Yak Jun Lun/Documents/mojo/Quoridor/Quoridor/work/planAhead/Quoridor/Quoridor.srcs/sources_1/imports/verilog/mojo_top_0.v" Line 83: Assignment to <arg fmt="%s" index="1">M_buttonHandler_debug</arg> ignored, since the identifier is never used
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="413" delta="new" >"C:/Users/Yak Jun Lun/Documents/mojo/Quoridor/Quoridor/work/planAhead/Quoridor/Quoridor.srcs/sources_1/imports/verilog/wallcounter_6.v" Line 25: Result of <arg fmt="%d" index="1">6</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">5</arg>-bit target.
-</msg>
-
 <msg type="warning" file="HDLCompiler" num="1127" delta="new" >"C:/Users/Yak Jun Lun/Documents/mojo/Quoridor/Quoridor/work/planAhead/Quoridor/Quoridor.srcs/sources_1/imports/verilog/mojo_top_0.v" Line 148: Assignment to <arg fmt="%s" index="1">M_alu_debug</arg> ignored, since the identifier is never used
 </msg>
 
