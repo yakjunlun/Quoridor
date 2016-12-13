@@ -115,10 +115,10 @@ INFO:Xst:3210 - "C:/Users/Yak Jun Lun/Documents/mojo/Quoridor/Quoridor/work/plan
     | Encoding           | auto                                           |
     | Implementation     | LUT                                            |
     -----------------------------------------------------------------------
-    Found 71-bit shifter logical right for signal <n0096> created at line 261
-    Found 5-bit 4-to-1 multiplexer for signal <M_row_pos> created at line 247.
-    Found 4-bit 3-to-1 multiplexer for signal <wall0row> created at line 247.
-    Found 5-bit 3-to-1 multiplexer for signal <wall1col> created at line 247.
+    Found 71-bit shifter logical right for signal <n0099> created at line 273
+    Found 5-bit 4-to-1 multiplexer for signal <M_row_pos> created at line 259.
+    Found 4-bit 3-to-1 multiplexer for signal <wall0row> created at line 259.
+    Found 5-bit 3-to-1 multiplexer for signal <wall1col> created at line 259.
     Found 1-bit tristate buffer for signal <spi_miso> created at line 164
     Found 1-bit tristate buffer for signal <spi_channel<3>> created at line 164
     Found 1-bit tristate buffer for signal <spi_channel<2>> created at line 164
@@ -127,7 +127,7 @@ INFO:Xst:3210 - "C:/Users/Yak Jun Lun/Documents/mojo/Quoridor/Quoridor/work/plan
     Found 1-bit tristate buffer for signal <avr_rx> created at line 164
     Summary:
 	inferred   1 D-type flip-flop(s).
-	inferred  20 Multiplexer(s).
+	inferred  14 Multiplexer(s).
 	inferred   1 Combinational logic shifter(s).
 	inferred   6 Tristate(s).
 	inferred   1 Finite State Machine(s).
@@ -164,7 +164,7 @@ WARNING:Xst:647 - Input <rst> is never used. This port will be preserved and lef
     Found 6-bit register for signal <M_button_q>.
     Summary:
 	inferred   6 D-type flip-flop(s).
-	inferred   4 Multiplexer(s).
+	inferred   8 Multiplexer(s).
 Unit <buttonHandler_4> synthesized.
 
 Synthesizing Unit <edge_detector_13>.
@@ -350,8 +350,8 @@ Macro Statistics
  6-bit comparator lessequal                            : 7
  7-bit comparator lessequal                            : 3
  8-bit comparator lessequal                            : 3
-# Multiplexers                                         : 172
- 1-bit 2-to-1 multiplexer                              : 137
+# Multiplexers                                         : 170
+ 1-bit 2-to-1 multiplexer                              : 139
  3-bit 2-to-1 multiplexer                              : 2
  36-bit 2-to-1 multiplexer                             : 3
  4-bit 2-to-1 multiplexer                              : 2
@@ -360,7 +360,6 @@ Macro Statistics
  5-bit 3-to-1 multiplexer                              : 1
  5-bit 4-to-1 multiplexer                              : 1
  6-bit 2-to-1 multiplexer                              : 7
- 8-bit 2-to-1 multiplexer                              : 4
 # Logic shifters                                       : 4
  71-bit shifter logical right                          : 4
 # Tristates                                            : 6
@@ -429,8 +428,8 @@ Macro Statistics
  6-bit comparator lessequal                            : 7
  7-bit comparator lessequal                            : 3
  8-bit comparator lessequal                            : 3
-# Multiplexers                                         : 172
- 1-bit 2-to-1 multiplexer                              : 137
+# Multiplexers                                         : 170
+ 1-bit 2-to-1 multiplexer                              : 139
  3-bit 2-to-1 multiplexer                              : 2
  36-bit 2-to-1 multiplexer                             : 3
  4-bit 2-to-1 multiplexer                              : 2
@@ -439,7 +438,6 @@ Macro Statistics
  5-bit 3-to-1 multiplexer                              : 1
  5-bit 4-to-1 multiplexer                              : 1
  6-bit 2-to-1 multiplexer                              : 7
- 8-bit 2-to-1 multiplexer                              : 4
 # Logic shifters                                       : 4
  71-bit shifter logical right                          : 4
 # FSMs                                                 : 1
@@ -495,7 +493,7 @@ FlipFlop M_player_q has been replicated 2 time(s)
 FlipFlop pos/M_regs_q_20 has been replicated 1 time(s)
 FlipFlop pos/M_regs_q_21 has been replicated 1 time(s)
 FlipFlop pos/M_regs_q_22 has been replicated 1 time(s)
-FlipFlop pos/M_regs_q_23 has been replicated 2 time(s)
+FlipFlop pos/M_regs_q_23 has been replicated 1 time(s)
 FlipFlop pos/M_regs_q_33 has been replicated 1 time(s)
 
 Final Macro Processing ...
@@ -513,8 +511,8 @@ Unit <mojo_top_0> processed.
 Final Register Report
 
 Macro Statistics
-# Registers                                            : 191
- Flip-Flops                                            : 191
+# Registers                                            : 190
+ Flip-Flops                                            : 190
 # Shift Registers                                      : 5
  2-bit shift register                                  : 5
 
@@ -540,7 +538,7 @@ Clock Information:
 -----------------------------------+-----------------------------+-------+
 Clock Signal                       | Clock buffer(FF name)       | Load  |
 -----------------------------------+-----------------------------+-------+
-sclk/M_ctr_q_21                    | BUFG                        | 48    |
+sclk/M_ctr_q_21                    | BUFG                        | 47    |
 clk                                | BUFGP                       | 145   |
 sclk/M_ctr_q_12                    | NONE(counter1/M_counter_q_0)| 8     |
 -----------------------------------+-----------------------------+-------+
@@ -554,9 +552,9 @@ Timing Summary:
 ---------------
 Speed Grade: -2
 
-   Minimum period: 10.205ns (Maximum Frequency: 97.991MHz)
-   Minimum input arrival time before clock: 12.963ns
-   Maximum output required time after clock: 18.757ns
-   Maximum combinational path delay: 15.054ns
+   Minimum period: 10.234ns (Maximum Frequency: 97.713MHz)
+   Minimum input arrival time before clock: 12.980ns
+   Maximum output required time after clock: 17.758ns
+   Maximum combinational path delay: 13.738ns
 
 =========================================================================

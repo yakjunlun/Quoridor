@@ -46,7 +46,7 @@ module buttonHandler (
     /*  Up button  */  
     if(edge_detector1.out==1){
       button.d=b100101;
-      debug=1;
+      
     }
       
     /*  Down Button  */
@@ -67,6 +67,7 @@ module buttonHandler (
     //enter for wall  
     else if(edge_detector.out==1){
       button.d=b110000;
+      debug=1;
     }
     else{
     button.d= button.q;

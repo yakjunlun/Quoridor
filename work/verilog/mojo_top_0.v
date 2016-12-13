@@ -188,6 +188,7 @@ module mojo_top_0 (
     
     case (M_player_q)
       P1_player: begin
+        led[0+0-:1] = 1'h1;
         if (io_dip[0+0-:1] == 1'h1) begin
           plyr = 3'h1;
         end else begin
@@ -195,6 +196,7 @@ module mojo_top_0 (
         end
       end
       P2_player: begin
+        led[1+0-:1] = 1'h1;
         if (io_dip[0+0-:1] == 1'h1) begin
           plyr = 3'h1;
         end else begin
@@ -211,23 +213,33 @@ module mojo_top_0 (
     io_led[7+0-:1] = M_cntr_value;
     io_led[6+0-:1] = M_pos_debug;
     M_buttonHandler_button_rst = io_dip[3+0-:1];
+    io_led[0+0-:1] = io_dip[0+0-:1];
     
     case (M_main_q)
       S0_main: begin
         if (M_buttonHandler_out[5+0-:1] == 1'h1) begin
+          if (io_dip[0+0-:1] == 1'h0) begin
+            if (M_player_q == P1_player) begin
+              M_player_d = P2_player;
+            end else begin
+              M_player_d = P1_player;
+            end
+          end else begin
+            if (M_buttonHandler_out[4+0-:1] == 1'h1) begin
+              if (M_player_q == P1_player) begin
+                M_player_d = P2_player;
+              end else begin
+                M_player_d = P1_player;
+              end
+            end
+          end
           M_main_d = S1_main;
         end
-        M_buttonHandler_button_rst = 1'h0;
       end
       S1_main: begin
         M_pos_en = 1'h1;
         M_pos_data = M_alu_result;
         M_main_d = S2_main;
-        if (M_player_q == P1_player) begin
-          M_player_d = P2_player;
-        end else begin
-          M_player_d = P1_player;
-        end
       end
       S2_main: begin
         M_pos_en = 1'h0;
@@ -260,11 +272,9 @@ module mojo_top_0 (
       2'h2: begin
         if (a[(M_wallcounter_out)*1+0-:1] == 1'h1) begin
           M_row_pos = M_wallcounter_out;
-          led[(M_row_out)*1+0-:1] = 1'h1;
           wall0row[(M_row_out)*1+0-:1] = 1'h0;
           M_column_pos = M_wallcounter_out;
           wall1col[(M_column_out)*1+0-:1] = 1'h1;
-          io_led[(M_column_out)*1+0-:1] = 1'h1;
         end
       end
       2'h3: begin

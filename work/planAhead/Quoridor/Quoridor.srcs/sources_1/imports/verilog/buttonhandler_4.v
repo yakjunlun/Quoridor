@@ -107,7 +107,6 @@ module buttonHandler_4 (
     debug = 1'h0;
     if (M_edge_detector1_out == 1'h1) begin
       M_button_d = 6'h25;
-      debug = 1'h1;
     end else begin
       if (M_edge_detector2_out == 1'h1) begin
         M_button_d = 6'h2d;
@@ -120,6 +119,7 @@ module buttonHandler_4 (
           end else begin
             if (M_edge_detector_out == 1'h1) begin
               M_button_d = 6'h30;
+              debug = 1'h1;
             end else begin
               M_button_d = M_button_q;
             end
