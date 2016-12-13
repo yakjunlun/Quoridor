@@ -39,6 +39,8 @@ module mojo_top_0 (
   
   reg pos_rst;
   
+  reg [2:0] plyr;
+  
   wire [1-1:0] M_reset_cond_out;
   reg [1-1:0] M_reset_cond_in;
   reset_conditioner_1 reset_cond (
@@ -134,6 +136,10 @@ module mojo_top_0 (
   localparam S3_main = 2'd3;
   
   reg [1:0] M_main_d, M_main_q = S0_main;
+  localparam P1_player = 1'd0;
+  localparam P2_player = 1'd1;
+  
+  reg M_player_d, M_player_q = P1_player;
   wire [3-1:0] M_alu_debug;
   wire [36-1:0] M_alu_result;
   reg [36-1:0] M_alu_a;
@@ -156,6 +162,7 @@ module mojo_top_0 (
   );
   
   always @* begin
+    M_player_d = M_player_q;
     M_main_d = M_main_q;
     
     b = 3'h0;
@@ -178,7 +185,24 @@ module mojo_top_0 (
     M_buttonHandler_btnleft = io_button[3+0-:1];
     M_buttonHandler_btnright = io_button[4+0-:1];
     M_buttonHandler_enter = io_button[1+0-:1];
-    fn = {io_dip[0+2-:3], M_buttonHandler_out[3+1-:2]};
+    
+    case (M_player_q)
+      P1_player: begin
+        if (io_dip == 1'h1) begin
+          plyr = 3'h1;
+        end else begin
+          plyr = 3'h4;
+        end
+      end
+      P2_player: begin
+        if (io_dip == 1'h1) begin
+          plyr = 3'h2;
+        end else begin
+          plyr = 3'h4;
+        end
+      end
+    endcase
+    fn = {plyr, M_buttonHandler_out[3+1-:2]};
     b = M_buttonHandler_out[0+2-:3];
     a = M_pos_out;
     M_alu_alufn = fn;
@@ -199,6 +223,11 @@ module mojo_top_0 (
         M_pos_en = 1'h1;
         M_pos_data = M_alu_result;
         M_main_d = S2_main;
+        if (M_player_q == P1_player) begin
+          M_player_d = P2_player;
+        end else begin
+          M_player_d = P1_player;
+        end
       end
       S2_main: begin
         M_pos_en = 1'h0;
@@ -238,11 +267,20 @@ module mojo_top_0 (
           io_led[(M_column_out)*1+0-:1] = 1'h1;
         end
       end
+      2'h3: begin
+        if (io_dip[0+0-:1] == 1'h1) begin
+          M_row_pos = a[20+4-:5];
+          wall0row[(M_row_out)*1+0-:1] = 1'h0;
+          M_column_pos = a[20+4-:5];
+          wall1col[(M_column_out)*1+0-:1] = 1'h1;
+        end
+      end
     endcase
   end
   
   always @(posedge M_sclk_value) begin
     M_main_q <= M_main_d;
+    M_player_q <= M_player_d;
   end
   
 endmodule

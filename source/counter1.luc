@@ -7,7 +7,7 @@ module counter1 (
 
   always {
         out=counter.q;
-    if (counter.q==b10){
+    if (counter.q==b11){
     counter.d = 0;
   }
     else{

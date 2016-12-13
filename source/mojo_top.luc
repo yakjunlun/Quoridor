@@ -29,6 +29,7 @@ module mojo_top (
     sig rst;                  // reset signal
     sig fn[5];
   sig pos_rst;
+  sig plyr[3];
       
   
   .clk(clk) {
@@ -72,6 +73,7 @@ module mojo_top (
      pos pos(#WIDTH(36),.rst(pos_rst));
 
       fsm main(#INIT(S0))={S0,S1,S2,S3};
+    fsm player(#INIT(P1))={P1,P2};
       alutest alu(.rst(rst));
 
 
@@ -115,8 +117,25 @@ module mojo_top (
     buttonHandler.btnright=io_button[4];
     buttonHandler.enter=io_button[1];
     
+    case(player.q){
+      player.P1:
+        if (io_dip==1){
+        plyr = b001;}
+          else {
+        plyr = b100;}
+          
+      player.P2:
+        if (io_dip==1){
+        plyr = b010;}
+          else {
+        plyr = b100;}
+      
+    
+    }
+    
+    
     //fn=b10000;
-    fn=c{io_dip[2:0],buttonHandler.out[4:3]}; //fn is determined by dip(modes - p1, p2, wall) and buttonHandler
+    fn=c{plyr,buttonHandler.out[4:3]}; //fn is determined by dip(modes - p1, p2, wall) and buttonHandler
     //b=b001;
     b=buttonHandler.out[2:0];  
     a=pos.out;    
@@ -145,6 +164,9 @@ module mojo_top (
         pos.en=1;
         pos.data = alu.result;
         main.d=main.S2;
+        if (player.q==player.P1){
+        player.d=player.P2;}
+          else{player.d=player.P1;}
         
       main.S2:
         pos.en=0;
@@ -189,9 +211,15 @@ module mojo_top (
           wall1col[column.out]=1;
         io_led[column.out]=1;
         }
+      b11:
+      if (io_dip[0]==1){
+        row.pos=a[24:20];
+        wall0row[row.out]=0;
+        column.pos = a[24:20];
+        wall1col[column.out]=1;
           
         }
-    
+    }
 
    
     

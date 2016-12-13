@@ -18,7 +18,7 @@ module counter1_5 (
     M_counter_d = M_counter_q;
     
     out = M_counter_q;
-    if (M_counter_q == 2'h2) begin
+    if (M_counter_q == 2'h3) begin
       M_counter_d = 1'h0;
     end else begin
       M_counter_d = M_counter_q + 1'h1;

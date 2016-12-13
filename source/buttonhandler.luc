@@ -16,15 +16,15 @@ module buttonHandler (
   
   .clk(clk){
     dff button[6](#INIT(b011000),.rst(button_rst));
-    edge_detector edge_detector;
+    edge_detector edge_detector(#RISE(1),#FALL(0));
     button_conditioner button_cond;
-    edge_detector edge_detector1;
+    edge_detector edge_detector1(#RISE(1),#FALL(0));
     button_conditioner button_cond1;
-    edge_detector edge_detector2;
+    edge_detector edge_detector2(#RISE(1),#FALL(0));
     button_conditioner button_cond2;
-    edge_detector edge_detector3;
+    edge_detector edge_detector3(#RISE(1),#FALL(0));
     button_conditioner button_cond3;
-    edge_detector edge_detector4;
+    edge_detector edge_detector4(#RISE(1),#FALL(0));
     button_conditioner button_cond4;
     
   }

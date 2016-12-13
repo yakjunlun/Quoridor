@@ -1,0 +1,52 @@
+NET "gp10row[0]" LOC = P80;
+NET "gp10row[0]" IOSTANDARD = LVTTL;
+NET "gp10row[1]" LOC = P81;
+NET "gp10row[1]" IOSTANDARD = LVTTL;
+NET "gp10row[2]" LOC = P79;
+NET "gp10row[2]" IOSTANDARD = LVTTL;
+NET "gp10row[3]" LOC = P75;
+NET "gp10row[3]" IOSTANDARD = LVTTL;
+NET "gp10row[4]" LOC = P74;
+NET "gp10row[4]" IOSTANDARD = LVTTL;
+
+NET "bp20row[0]" LOC = P100;
+NET "bp20row[0]" IOSTANDARD = LVTTL;
+NET "bp20row[1]" LOC = P101;
+NET "bp20row[1]" IOSTANDARD = LVTTL;
+NET "bp20row[2]" LOC = P102;
+NET "bp20row[2]" IOSTANDARD = LVTTL;
+NET "bp20row[3]" LOC = P104;
+NET "bp20row[3]" IOSTANDARD = LVTTL;
+NET "bp20row[4]" LOC = P105;
+NET "bp20row[4]" IOSTANDARD = LVTTL;
+
+NET "p1col[0]" LOC = P15;
+NET "p1col[0]" IOSTANDARD = LVTTL;
+NET "p1col[1]" LOC = P16;
+NET "p1col[1]" IOSTANDARD = LVTTL;
+NET "p1col[2]" LOC = P17;
+NET "p1col[2]" IOSTANDARD = LVTTL;
+NET "p1col[3]" LOC = P21;
+NET "p1col[3]" IOSTANDARD = LVTTL;
+NET "p1col[4]" LOC = P22;
+NET "p1col[4]" IOSTANDARD = LVTTL;
+
+NET "wall1col[0]" LOC = P11;
+NET "wall1col[0]" IOSTANDARD = LVTTL;
+NET "wall1col[1]" LOC = P14;
+NET "wall1col[1]" IOSTANDARD = LVTTL;
+NET "wall1col[2]" LOC = P26;
+NET "wall1col[2]" IOSTANDARD = LVTTL;
+NET "wall1col[3]" LOC = P23;
+NET "wall1col[3]" IOSTANDARD = LVTTL;
+NET "wall1col[4]" LOC = P24;
+NET "wall1col[4]" IOSTANDARD = LVTTL;
+
+NET "wall0row[0]" LOC = P84;
+NET "wall0row[0]" IOSTANDARD = LVTTL;
+NET "wall0row[1]" LOC = P85;
+NET "wall0row[1]" IOSTANDARD = LVTTL;
+NET "wall0row[2]" LOC = P82;
+NET "wall0row[2]" IOSTANDARD = LVTTL;
+NET "wall0row[3]" LOC = P83;
+NET "wall0row[3]" IOSTANDARD = LVTTL;

@@ -1,0 +1,8 @@
+INTSTYLE=pa
+INFILE=C:\Users\Yak Jun Lun\Documents\mojo\Quoridor\Quoridor\work\planAhead\Quoridor\Quoridor.runs\impl_1\mojo_top_0_routed.ncd
+OUTFILE=C:\Users\Yak Jun Lun\Documents\mojo\Quoridor\Quoridor\work\planAhead\Quoridor\Quoridor.runs\impl_1\mojo_top_0.bit
+FAMILY=Spartan6
+PART=xc6slx9-2tqg144
+WORKINGDIR=C:\Users\Yak Jun Lun\Documents\mojo\Quoridor\Quoridor\work\planAhead\Quoridor\Quoridor.runs\impl_1
+LICENSE=WebPack
+USER_INFO=211238197_0_0_155
