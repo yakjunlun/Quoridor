@@ -4,16 +4,25 @@
    This is a temporary file and any changes made to it will be destroyed.
 */
 
-module wallcol_9 (
-    input [4:0] pos,
-    input clk,
-    input rst,
-    output reg [4:0] out
+module adder_22 (
+    input [4:0] a,
+    input [2:0] b,
+    input [1:0] alufn,
+    output reg [4:0] sum
   );
   
   
   
   always @* begin
-    out = pos - (3'h4 * (pos / 3'h4));
+    sum = a;
+    
+    case (alufn)
+      1'h0: begin
+        sum = a + b;
+      end
+      1'h1: begin
+        sum = a - b;
+      end
+    endcase
   end
 endmodule

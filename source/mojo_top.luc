@@ -21,7 +21,9 @@ module mojo_top (
     output gp10row[5],
     output bp20row[5],
     output p1col[5],
-    output wall1col[5]){
+    output wall1col[5],
+    output player1,
+    output player2){
     
     sig a[36];
     sig b[3];
@@ -46,7 +48,7 @@ module mojo_top (
 
     .rst(rst)  {
     counter sclk(#SIZE(1),#DIV(21));
-    counter scanclk(#SIZE(1),#DIV(12));
+    counter scanclk(#SIZE(1),#DIV(12));//12
     buttonHandler buttonHandler;
     
 
@@ -64,7 +66,6 @@ module mojo_top (
     wallcounter wallcounter;
       row row;
       column column;
-      wallcol wallcol;
     }
   
   }
@@ -91,7 +92,9 @@ module mojo_top (
   
      //a=35hAC000000;
      b=3b0;
-     //fn=5b0; 
+     //fn=5b0;
+    player1=0;
+    player2=0; 
     
     reset_cond.in = ~rst_n; // input raw inverted reset signal
     rst = reset_cond.out;   // conditioned reset
@@ -120,6 +123,7 @@ module mojo_top (
     case(player.q){
       player.P1:
       led[0]=1;
+        player1=1;
         if (io_dip[0]==1){
         plyr = b001;}
           else {
@@ -127,6 +131,7 @@ module mojo_top (
           
       player.P2:
       led[1]=1;
+        player2 = 1;
         if (io_dip[0]==1){
         plyr = b001;}
           else {
@@ -194,9 +199,8 @@ module mojo_top (
     //io_led[0]=pos.out[35];  //error LED
    // pos.data=alu.result;     //write output of alu into pos register
     pos_rst = io_dip[7];    //dip switch to reset all positions
-    row.pos = 0;
-    column.pos = 0;
-    wallcol.pos=0;
+    row.pos = 5h00;
+    column.pos = 5h00;
     
      case(counter1.out){
       b00:

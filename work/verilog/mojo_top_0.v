@@ -24,7 +24,9 @@ module mojo_top_0 (
     output reg [4:0] gp10row,
     output reg [4:0] bp20row,
     output reg [4:0] p1col,
-    output reg [4:0] wall1col
+    output reg [4:0] wall1col,
+    output reg player1,
+    output reg player2
   );
   
   
@@ -109,20 +111,12 @@ module mojo_top_0 (
     .pos(M_column_pos),
     .out(M_column_out)
   );
-  wire [5-1:0] M_wallcol_out;
-  reg [5-1:0] M_wallcol_pos;
-  wallcol_9 wallcol (
-    .clk(M_scanclk_value),
-    .rst(rst),
-    .pos(M_wallcol_pos),
-    .out(M_wallcol_out)
-  );
   
   wire [36-1:0] M_pos_out;
   wire [1-1:0] M_pos_debug;
   reg [1-1:0] M_pos_en;
   reg [36-1:0] M_pos_data;
-  pos_10 pos (
+  pos_9 pos (
     .clk(M_sclk_value),
     .rst(pos_rst),
     .en(M_pos_en),
@@ -145,7 +139,7 @@ module mojo_top_0 (
   reg [36-1:0] M_alu_a;
   reg [5-1:0] M_alu_alufn;
   reg [3-1:0] M_alu_b;
-  alutest_11 alu (
+  alutest_10 alu (
     .clk(M_sclk_value),
     .rst(rst),
     .a(M_alu_a),
@@ -155,7 +149,7 @@ module mojo_top_0 (
     .result(M_alu_result)
   );
   wire [1-1:0] M_cntr_value;
-  counter_12 cntr (
+  counter_11 cntr (
     .clk(M_sclk_value),
     .rst(rst),
     .value(M_cntr_value)
@@ -166,6 +160,8 @@ module mojo_top_0 (
     M_main_d = M_main_q;
     
     b = 3'h0;
+    player1 = 1'h0;
+    player2 = 1'h0;
     M_reset_cond_in = ~rst_n;
     rst = M_reset_cond_out;
     io_led = 8'h00;
@@ -189,6 +185,7 @@ module mojo_top_0 (
     case (M_player_q)
       P1_player: begin
         led[0+0-:1] = 1'h1;
+        player1 = 1'h1;
         if (io_dip[0+0-:1] == 1'h1) begin
           plyr = 3'h1;
         end else begin
@@ -197,6 +194,7 @@ module mojo_top_0 (
       end
       P2_player: begin
         led[1+0-:1] = 1'h1;
+        player2 = 1'h1;
         if (io_dip[0+0-:1] == 1'h1) begin
           plyr = 3'h1;
         end else begin
@@ -252,9 +250,8 @@ module mojo_top_0 (
       end
     endcase
     pos_rst = io_dip[7+0-:1];
-    M_row_pos = 1'h0;
-    M_column_pos = 1'h0;
-    M_wallcol_pos = 1'h0;
+    M_row_pos = 5'h00;
+    M_column_pos = 5'h00;
     
     case (M_counter1_out)
       2'h0: begin

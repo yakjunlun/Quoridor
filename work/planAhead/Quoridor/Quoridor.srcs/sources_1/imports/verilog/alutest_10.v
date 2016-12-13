@@ -4,7 +4,7 @@
    This is a temporary file and any changes made to it will be destroyed.
 */
 
-module alutest_11 (
+module alutest_10 (
     input clk,
     input rst,
     input [35:0] a,
@@ -20,7 +20,7 @@ module alutest_11 (
   reg [5-1:0] M_adder_a;
   reg [3-1:0] M_adder_b;
   reg [2-1:0] M_adder_alufn;
-  adder_23 adder (
+  adder_22 adder (
     .a(M_adder_a),
     .b(M_adder_b),
     .alufn(M_adder_alufn),

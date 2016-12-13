@@ -8,7 +8,7 @@
    Parameters:
      WIDTH = 36
 */
-module pos_10 (
+module pos_9 (
     input clk,
     input en,
     input rst,
