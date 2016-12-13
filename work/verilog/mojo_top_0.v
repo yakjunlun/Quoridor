@@ -188,17 +188,17 @@ module mojo_top_0 (
     
     case (M_player_q)
       P1_player: begin
-        if (io_dip == 1'h1) begin
+        if (io_dip[0+0-:1] == 1'h1) begin
           plyr = 3'h1;
         end else begin
           plyr = 3'h4;
         end
       end
       P2_player: begin
-        if (io_dip == 1'h1) begin
-          plyr = 3'h2;
+        if (io_dip[0+0-:1] == 1'h1) begin
+          plyr = 3'h1;
         end else begin
-          plyr = 3'h4;
+          plyr = 3'h2;
         end
       end
     endcase

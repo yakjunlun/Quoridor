@@ -91,6 +91,8 @@ WARNING:Xst:2972 - "C:/Users/Yak Jun Lun/Documents/mojo/Quoridor/Quoridor/work/p
 
 Synthesizing Unit <mojo_top_0>.
     Related source file is "C:/Users/Yak Jun Lun/Documents/mojo/Quoridor/Quoridor/work/planAhead/Quoridor/Quoridor.srcs/sources_1/imports/verilog/mojo_top_0.v".
+WARNING:Xst:647 - Input <io_dip<2:1>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <io_dip<6:4>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
 WARNING:Xst:647 - Input <cclk> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
 WARNING:Xst:647 - Input <spi_ss> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
 WARNING:Xst:647 - Input <spi_mosi> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
@@ -113,7 +115,7 @@ INFO:Xst:3210 - "C:/Users/Yak Jun Lun/Documents/mojo/Quoridor/Quoridor/work/plan
     | Encoding           | auto                                           |
     | Implementation     | LUT                                            |
     -----------------------------------------------------------------------
-    Found 71-bit shifter logical right for signal <n0097> created at line 261
+    Found 71-bit shifter logical right for signal <n0096> created at line 261
     Found 5-bit 4-to-1 multiplexer for signal <M_row_pos> created at line 247.
     Found 4-bit 3-to-1 multiplexer for signal <wall0row> created at line 247.
     Found 5-bit 3-to-1 multiplexer for signal <wall1col> created at line 247.
@@ -489,10 +491,12 @@ INFO:Xst:3203 - The FF/Latch <buttonHandler/M_button_q_4> in Unit <mojo_top_0> i
 Mapping all equations...
 Building and optimizing final netlist ...
 Found area constraint ratio of 100 (+ 0) on block mojo_top_0, actual ratio is 8.
+FlipFlop M_player_q has been replicated 2 time(s)
 FlipFlop pos/M_regs_q_20 has been replicated 1 time(s)
 FlipFlop pos/M_regs_q_21 has been replicated 1 time(s)
 FlipFlop pos/M_regs_q_22 has been replicated 1 time(s)
-FlipFlop pos/M_regs_q_23 has been replicated 1 time(s)
+FlipFlop pos/M_regs_q_23 has been replicated 2 time(s)
+FlipFlop pos/M_regs_q_33 has been replicated 1 time(s)
 
 Final Macro Processing ...
 
@@ -509,8 +513,8 @@ Unit <mojo_top_0> processed.
 Final Register Report
 
 Macro Statistics
-# Registers                                            : 187
- Flip-Flops                                            : 187
+# Registers                                            : 191
+ Flip-Flops                                            : 191
 # Shift Registers                                      : 5
  2-bit shift register                                  : 5
 
@@ -536,7 +540,7 @@ Clock Information:
 -----------------------------------+-----------------------------+-------+
 Clock Signal                       | Clock buffer(FF name)       | Load  |
 -----------------------------------+-----------------------------+-------+
-sclk/M_ctr_q_21                    | BUFG                        | 44    |
+sclk/M_ctr_q_21                    | BUFG                        | 48    |
 clk                                | BUFGP                       | 145   |
 sclk/M_ctr_q_12                    | NONE(counter1/M_counter_q_0)| 8     |
 -----------------------------------+-----------------------------+-------+
@@ -550,9 +554,9 @@ Timing Summary:
 ---------------
 Speed Grade: -2
 
-   Minimum period: 10.304ns (Maximum Frequency: 97.050MHz)
-   Minimum input arrival time before clock: 14.988ns
-   Maximum output required time after clock: 19.296ns
-   Maximum combinational path delay: 14.636ns
+   Minimum period: 10.205ns (Maximum Frequency: 97.991MHz)
+   Minimum input arrival time before clock: 12.963ns
+   Maximum output required time after clock: 18.757ns
+   Maximum combinational path delay: 15.054ns
 
 =========================================================================

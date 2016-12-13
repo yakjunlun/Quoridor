@@ -1,5 +1,5 @@
 //! **************************************************************************
-// Written by: Map P.20131013 on Tue Dec 13 20:39:37 2016
+// Written by: Map P.20131013 on Tue Dec 13 20:47:00 2016
 //! **************************************************************************
 
 SCHEMATIC START;
@@ -20,13 +20,13 @@ COMP "wall0row[0]" LOCATE = SITE "P84" LEVEL 1;
 COMP "wall0row[1]" LOCATE = SITE "P85" LEVEL 1;
 COMP "wall0row[2]" LOCATE = SITE "P82" LEVEL 1;
 COMP "wall0row[3]" LOCATE = SITE "P83" LEVEL 1;
+COMP "io_dip(1)" LOCATE = SITE "P121" LEVEL 1;
+COMP "io_dip(2)" LOCATE = SITE "P118" LEVEL 1;
+COMP "io_dip(4)" LOCATE = SITE "P116" LEVEL 1;
+COMP "io_dip(5)" LOCATE = SITE "P117" LEVEL 1;
+COMP "io_dip(6)" LOCATE = SITE "P114" LEVEL 1;
 COMP "io_dip[0]" LOCATE = SITE "P120" LEVEL 1;
-COMP "io_dip[1]" LOCATE = SITE "P121" LEVEL 1;
-COMP "io_dip[2]" LOCATE = SITE "P118" LEVEL 1;
 COMP "io_dip[3]" LOCATE = SITE "P119" LEVEL 1;
-COMP "io_dip[4]" LOCATE = SITE "P116" LEVEL 1;
-COMP "io_dip[5]" LOCATE = SITE "P117" LEVEL 1;
-COMP "io_dip[6]" LOCATE = SITE "P114" LEVEL 1;
 COMP "io_dip[7]" LOCATE = SITE "P115" LEVEL 1;
 COMP "rst_n" LOCATE = SITE "P38" LEVEL 1;
 COMP "io_led[0]" LOCATE = SITE "P97" LEVEL 1;

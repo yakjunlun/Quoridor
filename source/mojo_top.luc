@@ -119,16 +119,16 @@ module mojo_top (
     
     case(player.q){
       player.P1:
-        if (io_dip==1){
+        if (io_dip[0]==1){
         plyr = b001;}
           else {
         plyr = b100;}
           
       player.P2:
-        if (io_dip==1){
-        plyr = b010;}
+        if (io_dip[0]==1){
+        plyr = b001;}
           else {
-        plyr = b100;}
+        plyr = b010;}
       
     
     }
