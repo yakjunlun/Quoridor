@@ -61,9 +61,9 @@ NET "wall0row[2]" IOSTANDARD = LVTTL;
 NET "wall0row[3]" LOC = P83;
 NET "wall0row[3]" IOSTANDARD = LVTTL;
 
-NET "player1" LOC = P57;
+NET "player1" LOC = P58;
 NET "player1" IOSTANDARD = LVTTL;
-NET "player2" LOC = P58;
+NET "player2" LOC = P57;
 NET "player2" IOSTANDARD = LVTTL;
 
 ####################################################################################
